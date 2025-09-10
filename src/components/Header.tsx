@@ -15,7 +15,15 @@ const Header = () => {
 
         {/* Navigation */}
         <div className="flex items-center gap-6">
-          <Button variant="ghost" className="text-primary hover:text-golden">
+          <Button 
+            variant="ghost" 
+            className="text-primary hover:text-golden"
+            onClick={() => {
+              document.getElementById('contact-section')?.scrollIntoView({ 
+                behavior: 'smooth' 
+              });
+            }}
+          >
             Contact
           </Button>
           <Button variant="ghost" size="icon">

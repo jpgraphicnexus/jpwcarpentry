@@ -11,7 +11,7 @@ const HeroSection = () => {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="relative">
-              <h2 className="text-6xl lg:text-7xl font-bold text-primary leading-tight">
+              <h2 className="text-6xl lg:text-7xl font-bold text-primary leading-tight font-playfair">
                 CRAFTING EXCELLENCE
                 <br />
                 FOR YOUR HOME
