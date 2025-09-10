@@ -111,3 +111,30 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .shimmer-text {
+    background: linear-gradient(
+      90deg,
+      hsl(var(--golden)) 0%,
+      hsl(220 100% 70%) 25%,
+      hsl(220 100% 50%) 50%,
+      hsl(220 100% 70%) 75%,
+      hsl(var(--golden)) 100%
+    );
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s ease-in-out infinite;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+}
