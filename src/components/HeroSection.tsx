@@ -21,8 +21,8 @@ const HeroSection = () => {
             {/* Workers Image with Experience Badge */}
             <div className="relative">
               <img
-                src={carpenterWorking}
-                alt="Professional carpenters working on custom woodwork project"
+                src="/lovable-uploads/7dea47aa-c406-454a-b1a3-b51c461b6d3b.png"
+                alt="Professional carpentry tools and craftsmanship in action"
                 className="w-full h-96 object-cover rounded-lg"
               />
               <div className="absolute bottom-6 left-6 bg-light-gray px-6 py-4 rounded-lg shadow-lg">
