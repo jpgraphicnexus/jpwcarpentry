@@ -27,19 +27,19 @@ All colors MUST be HSL.
     --muted: 210 20% 96%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 45 93% 65%; /* Golden yellow */
-    --accent-foreground: 220 13% 18%;
+    --accent: 220 100% 60%; /* Blue */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 210 20% 90%;
     --input: 210 20% 94%;
-    --ring: 45 93% 65%;
+    --ring: 220 100% 60%;
 
-    /* Custom BUILDCORE tokens */
-    --golden: 45 93% 65%;
-    --golden-hover: 45 93% 55%;
+    /* Custom JPWCarpentry tokens */
+    --golden: 220 100% 60%;
+    --golden-hover: 220 100% 50%;
     --dark-bg: 220 13% 18%;
     --light-gray: 210 20% 96%;
     --medium-gray: 215 16% 47%;
