@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import officeInterior from "@/assets/office-interior.jpg";
-import modernBuilding from "@/assets/modern-building.jpg";
+import customFurniture from "@/assets/custom-furniture.jpg";
 
 const ServicesSection = () => {
   const services = [
@@ -19,7 +19,7 @@ const ServicesSection = () => {
       title: "Woodwork Design",
       description: "Seamless integration of design and craftsmanship for stunning wood features.",
       variant: "dark" as const,
-      image: modernBuilding,
+      image: customFurniture,
     },
     {
       title: "Home Improvements",

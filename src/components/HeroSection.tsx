@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import constructionWorkers from "@/assets/construction-workers.jpg";
-import modernBuilding from "@/assets/modern-building.jpg";
+import carpenterWorking from "@/assets/carpenter-working.jpg";
+import customFurniture from "@/assets/custom-furniture.jpg";
 import officeInterior from "@/assets/office-interior.jpg";
 
 const HeroSection = () => {
@@ -21,8 +21,8 @@ const HeroSection = () => {
             {/* Workers Image with Experience Badge */}
             <div className="relative">
               <img
-                src={constructionWorkers}
-                alt="Professional carpenters reviewing project plans"
+                src={carpenterWorking}
+                alt="Professional carpenters working on custom woodwork project"
                 className="w-full h-96 object-cover rounded-lg"
               />
               <div className="absolute bottom-6 left-6 bg-light-gray px-6 py-4 rounded-lg shadow-lg">
@@ -74,8 +74,8 @@ const HeroSection = () => {
             {/* Building Image */}
             <div className="relative">
               <img
-                src={modernBuilding}
-                alt="Modern building architecture"
+                src={customFurniture}
+                alt="Beautiful custom furniture and woodwork craftsmanship"
                 className="w-full h-96 object-cover rounded-lg"
               />
               <div className="absolute bottom-6 right-6 w-16 h-16 bg-golden rounded-full flex items-center justify-center">
