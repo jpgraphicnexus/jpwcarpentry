@@ -6,24 +6,24 @@ import modernBuilding from "@/assets/modern-building.jpg";
 const ServicesSection = () => {
   const services = [
     {
-      title: "General Contracting",
-      description: "From concept to completion, we handle every aspect of your project.",
+      title: "Custom Cabinetry",
+      description: "From concept to completion, we craft beautiful custom cabinets for your home.",
       variant: "light" as const,
     },
     {
-      title: "Renovation Process",
-      description: "Breathe new life into your space with our expertise in renovation and restoration.",
+      title: "Furniture Making",
+      description: "Handcrafted furniture pieces designed to your specifications and style.",
       variant: "light" as const,
     },
     {
-      title: "Building Design",
-      description: "Seamless integration of design and construction for efficiency and cost savings.",
+      title: "Woodwork Design",
+      description: "Seamless integration of design and craftsmanship for stunning wood features.",
       variant: "dark" as const,
       image: modernBuilding,
     },
     {
-      title: "Building Management",
-      description: "We oversee every detail to ensure timely and cost-effective project delivery.",
+      title: "Home Improvements",
+      description: "We enhance your living space with expert carpentry and attention to detail.",
       variant: "light" as const,
     },
   ];

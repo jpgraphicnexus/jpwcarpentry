@@ -12,9 +12,9 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="relative">
               <h2 className="text-6xl lg:text-7xl font-bold text-primary leading-tight">
-                YOUR ULTIMATE
+                CRAFTING EXCELLENCE
                 <br />
-                CONSTRUCTION TEAM
+                FOR YOUR HOME
               </h2>
             </div>
 
@@ -22,7 +22,7 @@ const HeroSection = () => {
             <div className="relative">
               <img
                 src={constructionWorkers}
-                alt="Construction workers reviewing blueprints"
+                alt="Professional carpenters reviewing project plans"
                 className="w-full h-96 object-cover rounded-lg"
               />
               <div className="absolute bottom-6 left-6 bg-light-gray px-6 py-4 rounded-lg shadow-lg">
@@ -34,10 +34,10 @@ const HeroSection = () => {
             {/* Service Tags */}
             <div className="flex flex-wrap gap-4">
               <Button variant="outline" className="rounded-full">
-                construction management
+                custom woodwork
               </Button>
               <Button variant="outline" className="rounded-full">
-                architecture design
+                furniture design
               </Button>
             </div>
           </div>
@@ -63,7 +63,7 @@ const HeroSection = () => {
             {/* About Content */}
             <div className="bg-light-gray p-8 rounded-lg">
               <p className="text-medium-gray mb-6 leading-relaxed">
-                Committed to excellence, quality, and innovation, we bring your construction
+                Committed to excellence, quality, and craftsmanship, we bring your carpentry
                 vision to life with unmatched expertise and dedication.
               </p>
               <Button variant="link" className="p-0 text-primary font-medium">

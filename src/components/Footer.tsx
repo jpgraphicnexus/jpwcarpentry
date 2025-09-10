@@ -13,7 +13,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-golden rounded-full flex items-center justify-center">
                 <div className="w-3 h-3 border-t-2 border-r-2 border-dark-bg rotate-45 -ml-0.5 -mb-0.5"></div>
               </div>
-              <h2 className="text-2xl font-bold text-white">BUILDCORE</h2>
+              <h2 className="text-2xl font-bold text-white">JPWCARPENTRY</h2>
             </div>
 
             {/* Tagline */}
@@ -21,7 +21,7 @@ const Footer = () => {
               <h3 className="text-3xl font-bold text-white leading-tight">
                 THE SOLUTION FOR
                 <br />
-                CONSTRUCTION.
+                CARPENTRY.
               </h3>
             </div>
           </div>
@@ -86,16 +86,16 @@ const Footer = () => {
             <h4 className="text-white font-bold mb-6">SERVICES</h4>
             <div className="space-y-4">
               <a href="#" className="block text-gray-300 hover:text-golden transition-colors">
-                General Contracting
+                Custom Cabinetry
               </a>
               <a href="#" className="block text-gray-300 hover:text-golden transition-colors">
-                Building Design
+                Furniture Making
               </a>
               <a href="#" className="block text-gray-300 hover:text-golden transition-colors">
-                Renovation & Restoration
+                Woodwork & Trim
               </a>
               <a href="#" className="block text-gray-300 hover:text-golden transition-colors">
-                Construction Management
+                Home Improvements
               </a>
             </div>
           </div>

@@ -30,7 +30,7 @@ const ContactSection = () => {
             <div className="w-48 h-48">
               <img
                 src={constructionWorkerPortrait}
-                alt="Construction professional"
+                alt="Carpenter reviewing project plans"
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
@@ -43,7 +43,7 @@ const ContactSection = () => {
               </div>
               <div className="flex justify-between items-center py-3 border-b border-border">
                 <span className="text-sm font-medium text-primary">EMAIL</span>
-                <span className="text-right text-primary font-medium">support@buildcore.co</span>
+                <span className="text-right text-primary font-medium">support@jpwcarpentry.co</span>
               </div>
               <div className="flex justify-between items-center py-3 border-b border-border">
                 <span className="text-sm font-medium text-primary">LOCATION</span>
