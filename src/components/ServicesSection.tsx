@@ -36,9 +36,9 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="bg-light-gray border-light-gray transition-all duration-500 hover:bg-dark-bg hover:border-dark-bg hover:text-white hover:scale-105 hover:shadow-2xl group cursor-pointer h-32 hover:h-96"
+              className="bg-light-gray border-light-gray transition-all duration-500 hover:bg-dark-bg hover:border-dark-bg hover:text-white hover:scale-105 hover:shadow-2xl group cursor-pointer h-48 hover:h-[420px]"
             >
-              <CardHeader className="space-y-2 group-hover:space-y-4 transition-all duration-300">
+              <CardHeader className="space-y-2 group-hover:space-y-4 transition-all duration-300 p-6">
                 <CardTitle className="text-lg group-hover:text-xl font-bold text-primary group-hover:text-white transition-all duration-300">
                   {service.title}
                 </CardTitle>
@@ -46,7 +46,7 @@ const ServicesSection = () => {
                   {service.description}
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200">
+              <CardContent className="space-y-4 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200 px-6 pb-6">
                 <div className="relative">
                   <img
                     src={service.image}
