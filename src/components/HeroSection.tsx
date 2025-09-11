@@ -12,9 +12,9 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="relative">
               <h2 className="text-6xl lg:text-7xl font-bold text-primary leading-tight">
-                BRINGING YOUR <span className="font-playfair shimmer-text text-primary">IDEAS</span>
+                BRINGING <span className="font-playfair shimmer-text text-primary">YOUR IDEAS</span>
                 <br />
-                <span className="text-medium-gray">TO LIFE</span>
+                <span className="text-primary">TO LIFE</span>
               </h2>
             </div>
 
