@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import carpenterWorking from "@/assets/carpenter-working.jpg";
 import customFurniture from "@/assets/custom-furniture.jpg";
 import officeInterior from "@/assets/office-interior.jpg";
@@ -48,18 +49,18 @@ const HeroSection = () => {
           <div className="space-y-8">
             {/* Navigation Tabs */}
             <div className="space-y-4">
-              <div className="flex items-center justify-between py-4 border-b border-border">
+              <Link to="/about" className="flex items-center justify-between py-4 border-b border-border hover:bg-light-gray transition-colors">
                 <span className="text-sm font-medium text-primary">ABOUT US</span>
                 <span className="text-2xl font-bold text-golden">01</span>
-              </div>
-              <div className="flex items-center justify-between py-4 border-b border-border">
+              </Link>
+              <Link to="/past-works" className="flex items-center justify-between py-4 border-b border-border hover:bg-light-gray transition-colors">
                 <span className="text-sm font-medium text-primary">PAST WORKS</span>
                 <span className="text-2xl font-bold text-golden">02</span>
-              </div>
-              <div className="flex items-center justify-between py-4 border-b border-border">
+              </Link>
+              <Link to="/services" className="flex items-center justify-between py-4 border-b border-border hover:bg-light-gray transition-colors">
                 <span className="text-sm font-medium text-primary">AVAILABLE SERVICES</span>
                 <span className="text-2xl font-bold text-golden">03</span>
-              </div>
+              </Link>
             </div>
 
             {/* About Content */}
