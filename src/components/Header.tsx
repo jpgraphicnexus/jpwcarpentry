@@ -16,21 +16,6 @@ const Header = () => {
 
         {/* Navigation */}
         <div className="flex items-center gap-6">
-          <Link to="/about">
-            <Button variant="ghost" className="text-primary hover:text-golden">
-              About Us
-            </Button>
-          </Link>
-          <Link to="/past-works">
-            <Button variant="ghost" className="text-primary hover:text-golden">
-              Past Works
-            </Button>
-          </Link>
-          <Link to="/services">
-            <Button variant="ghost" className="text-primary hover:text-golden">
-              Services
-            </Button>
-          </Link>
           <Button 
             variant="ghost" 
             className="text-primary hover:text-golden"
