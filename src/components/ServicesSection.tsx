@@ -2,29 +2,30 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import officeInterior from "@/assets/office-interior.jpg";
 import customFurniture from "@/assets/custom-furniture.jpg";
+import carpenterWorking from "@/assets/carpenter-working.jpg";
+import modernBuilding from "@/assets/modern-building.jpg";
 
 const ServicesSection = () => {
   const services = [
     {
       title: "Kitchen Renovations",
       description: "Complete kitchen transformations with custom carpentry and professional fitting.",
-      variant: "light" as const,
+      image: officeInterior,
     },
     {
       title: "Small Carpentry Jobs",
       description: "Expert carpentry services for shelving, repairs, and bespoke woodwork projects.",
-      variant: "light" as const,
+      image: carpenterWorking,
     },
     {
       title: "Home Renovations",
       description: "Full project management for extensions, conversions, and complete home makeovers.",
-      variant: "dark" as const,
       image: customFurniture,
     },
     {
       title: "General Building Works",
       description: "Comprehensive building services from structural work to finishing touches.",
-      variant: "light" as const,
+      image: modernBuilding,
     },
   ];
 
@@ -35,46 +36,30 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className={`${
-                service.variant === "dark"
-                  ? "bg-dark-bg text-white border-dark-bg"
-                  : "bg-light-gray border-light-gray"
-              } transition-all duration-300 hover:shadow-lg`}
+              className="bg-light-gray border-light-gray transition-all duration-500 hover:bg-dark-bg hover:border-dark-bg hover:text-white hover:scale-105 hover:shadow-2xl group cursor-pointer h-32 hover:h-96"
             >
-              <CardHeader className="space-y-4">
-                <CardTitle
-                  className={`text-xl font-bold ${
-                    service.variant === "dark" ? "text-white" : "text-primary"
-                  }`}
-                >
+              <CardHeader className="space-y-2 group-hover:space-y-4 transition-all duration-300">
+                <CardTitle className="text-lg group-hover:text-xl font-bold text-primary group-hover:text-white transition-all duration-300">
                   {service.title}
                 </CardTitle>
-                <CardDescription
-                  className={`text-sm leading-relaxed ${
-                    service.variant === "dark" ? "text-gray-300" : "text-medium-gray"
-                  }`}
-                >
+                <CardDescription className="text-sm leading-relaxed text-medium-gray group-hover:text-gray-300 transition-all duration-300 group-hover:block">
                   {service.description}
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                {service.image && (
-                  <div className="relative">
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-48 object-cover rounded-lg"
-                    />
-                    <div className="absolute bottom-4 right-4 w-12 h-12 bg-golden rounded-full flex items-center justify-center">
-                      <div className="w-3 h-3 border-t-2 border-r-2 border-dark-bg rotate-45 -ml-0.5 -mb-0.5"></div>
-                    </div>
+              <CardContent className="space-y-4 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200">
+                <div className="relative">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-48 object-cover rounded-lg"
+                  />
+                  <div className="absolute bottom-4 right-4 w-12 h-12 bg-golden rounded-full flex items-center justify-center">
+                    <div className="w-3 h-3 border-t-2 border-r-2 border-dark-bg rotate-45 -ml-0.5 -mb-0.5"></div>
                   </div>
-                )}
+                </div>
                 <Button
                   variant="link"
-                  className={`p-0 font-medium ${
-                    service.variant === "dark" ? "text-white" : "text-primary"
-                  }`}
+                  className="p-0 font-medium text-white transition-all duration-300"
                 >
                   Read More
                 </Button>
