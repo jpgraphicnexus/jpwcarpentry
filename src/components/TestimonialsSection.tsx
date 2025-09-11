@@ -94,7 +94,7 @@ const TestimonialsSection = () => {
   );
 
   return (
-    <section className="w-full py-20 bg-background overflow-hidden">
+    <section className="w-full py-20 bg-background">
       <div className="max-w-7xl mx-auto px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -103,45 +103,39 @@ const TestimonialsSection = () => {
               <span className="text-3xl font-bold text-background">2</span>
             </div>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-primary">
+          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
             WHAT OUR CUSTOMERS SAY
           </h2>
-          <div className="w-20 h-1 bg-golden mx-auto mt-4"></div>
+          <div className="w-20 h-1 bg-golden mx-auto mb-12"></div>
         </div>
 
         {/* Animated Testimonials Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 h-[600px] relative">
-          {/* Left Column - Scrolling Down */}
-          <div className="space-y-6 animate-[slide-down_20s_linear_infinite]">
-            {testimonials.slice(0, 2).map((testimonial) => (
-              <TestimonialCard key={`left-${testimonial.id}`} testimonial={testimonial} />
-            ))}
-            {/* Duplicate for seamless loop */}
-            {testimonials.slice(0, 2).map((testimonial) => (
-              <TestimonialCard key={`left-dup-${testimonial.id}`} testimonial={testimonial} />
-            ))}
-          </div>
+        <div className="relative">
+          {/* Fade overlays */}
+          <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-background to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none"></div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 h-[400px] overflow-hidden relative">
+            {/* Left Column - Scrolling Down */}
+            <div className="space-y-6 animate-slide-down">
+              {[...testimonials.slice(0, 2), ...testimonials.slice(0, 2), ...testimonials.slice(0, 2)].map((testimonial, index) => (
+                <TestimonialCard key={`left-${testimonial.id}-${index}`} testimonial={testimonial} />
+              ))}
+            </div>
 
-          {/* Center Column - Scrolling Up */}
-          <div className="space-y-6 animate-[slide-up_20s_linear_infinite]">
-            {testimonials.slice(2, 4).map((testimonial) => (
-              <TestimonialCard key={`center-${testimonial.id}`} testimonial={testimonial} />
-            ))}
-            {/* Duplicate for seamless loop */}
-            {testimonials.slice(2, 4).map((testimonial) => (
-              <TestimonialCard key={`center-dup-${testimonial.id}`} testimonial={testimonial} />
-            ))}
-          </div>
+            {/* Center Column - Scrolling Up */}
+            <div className="space-y-6 animate-slide-up">
+              {[...testimonials.slice(2, 4), ...testimonials.slice(2, 4), ...testimonials.slice(2, 4)].map((testimonial, index) => (
+                <TestimonialCard key={`center-${testimonial.id}-${index}`} testimonial={testimonial} />
+              ))}
+            </div>
 
-          {/* Right Column - Scrolling Down */}
-          <div className="space-y-6 animate-[slide-down_20s_linear_infinite]">
-            {testimonials.slice(4, 6).map((testimonial) => (
-              <TestimonialCard key={`right-${testimonial.id}`} testimonial={testimonial} />
-            ))}
-            {/* Duplicate for seamless loop */}
-            {testimonials.slice(4, 6).map((testimonial) => (
-              <TestimonialCard key={`right-dup-${testimonial.id}`} testimonial={testimonial} />
-            ))}
+            {/* Right Column - Scrolling Down */}
+            <div className="space-y-6 animate-slide-down">
+              {[...testimonials.slice(4, 6), ...testimonials.slice(4, 6), ...testimonials.slice(4, 6)].map((testimonial, index) => (
+                <TestimonialCard key={`right-${testimonial.id}-${index}`} testimonial={testimonial} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
