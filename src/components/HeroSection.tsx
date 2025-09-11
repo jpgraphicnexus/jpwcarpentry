@@ -12,9 +12,9 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="relative">
               <h2 className="text-6xl lg:text-7xl font-bold text-primary leading-tight">
-                CRAFTING <span className="font-playfair shimmer-text">EXCELLENCE</span>
+                BRINGING YOUR <span className="font-playfair shimmer-text text-primary">IDEAS</span>
                 <br />
-                FOR YOUR HOME
+                <span className="text-medium-gray">TO LIFE</span>
               </h2>
             </div>
 
@@ -63,8 +63,7 @@ const HeroSection = () => {
             {/* About Content */}
             <div className="bg-light-gray p-8 rounded-lg">
               <p className="text-medium-gray mb-6 leading-relaxed">
-                Committed to excellence, quality, and craftsmanship, we bring your carpentry
-                vision to life with unmatched expertise and dedication.
+                Reliable and honest building company specialising in all aspects of carpentry and construction. We also offer full project management with our trusted team of subcontractors.
               </p>
               <Button variant="link" className="p-0 text-primary font-medium">
                 Read More

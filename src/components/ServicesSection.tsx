@@ -6,24 +6,24 @@ import customFurniture from "@/assets/custom-furniture.jpg";
 const ServicesSection = () => {
   const services = [
     {
-      title: "Custom Cabinetry",
-      description: "From concept to completion, we craft beautiful custom cabinets for your home.",
+      title: "Kitchen Renovations",
+      description: "Complete kitchen transformations with custom carpentry and professional fitting.",
       variant: "light" as const,
     },
     {
-      title: "Furniture Making",
-      description: "Handcrafted furniture pieces designed to your specifications and style.",
+      title: "Small Carpentry Jobs",
+      description: "Expert carpentry services for shelving, repairs, and bespoke woodwork projects.",
       variant: "light" as const,
     },
     {
-      title: "Woodwork Design",
-      description: "Seamless integration of design and craftsmanship for stunning wood features.",
+      title: "Home Renovations",
+      description: "Full project management for extensions, conversions, and complete home makeovers.",
       variant: "dark" as const,
       image: customFurniture,
     },
     {
-      title: "Home Improvements",
-      description: "We enhance your living space with expert carpentry and attention to detail.",
+      title: "General Building Works",
+      description: "Comprehensive building services from structural work to finishing touches.",
       variant: "light" as const,
     },
   ];
