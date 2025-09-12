@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 import officeInterior from "@/assets/office-interior.jpg";
 import customFurniture from "@/assets/custom-furniture.jpg";
 import carpenterWorking from "@/assets/carpenter-working.jpg";
@@ -11,21 +12,25 @@ const ServicesSection = () => {
       title: "Kitchen Renovations",
       description: "Complete kitchen transformations with custom carpentry and professional fitting.",
       image: officeInterior,
+      link: "/services/kitchen-renovations",
     },
     {
       title: "Small Carpentry Jobs",
       description: "Expert carpentry services for shelving, repairs, and bespoke woodwork projects.",
       image: carpenterWorking,
+      link: "/services/small-carpentry-jobs",
     },
     {
       title: "Home Renovations",
       description: "Full project management for extensions, conversions, and complete home makeovers.",
       image: customFurniture,
+      link: "/services/home-renovations",
     },
     {
       title: "General Building Works",
       description: "Comprehensive building services from structural work to finishing touches.",
       image: modernBuilding,
+      link: "/services/general-building-works",
     },
   ];
 
@@ -57,12 +62,14 @@ const ServicesSection = () => {
                     <div className="w-3 h-3 border-t-2 border-r-2 border-dark-bg rotate-45 -ml-0.5 -mb-0.5"></div>
                   </div>
                 </div>
-                <Button
-                  variant="link"
-                  className="p-0 font-medium text-white transition-all duration-300"
-                >
-                  Read More
-                </Button>
+                <Link to={service.link}>
+                  <Button
+                    variant="link"
+                    className="p-0 font-medium text-white transition-all duration-300"
+                  >
+                    Read More
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           ))}

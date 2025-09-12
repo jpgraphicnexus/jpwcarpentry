@@ -1,0 +1,225 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import customFurniture from "@/assets/custom-furniture.jpg";
+import modernBuilding from "@/assets/modern-building.jpg";
+
+const HomeRenovations = () => {
+  const features = [
+    "Complete property assessment",
+    "Structural alterations",
+    "Electrical and plumbing upgrades", 
+    "Kitchen and bathroom renovation",
+    "Flooring and decoration",
+    "Energy efficiency improvements",
+    "Garden and outdoor spaces",
+    "Project management"
+  ];
+
+  const renovationTypes = [
+    {
+      title: "Period Property Restoration",
+      description: "Sympathetic restoration of Victorian and Edwardian homes preserving character features",
+      features: ["Original feature restoration", "Modern amenities integration", "Heritage compliance"]
+    },
+    {
+      title: "Modern Home Makeover", 
+      description: "Contemporary updates for properties requiring complete modernization",
+      features: ["Open plan living", "Smart home integration", "Sustainable materials"]
+    },
+    {
+      title: "Family Home Transformation",
+      description: "Practical improvements for growing families needing more space and functionality",
+      features: ["Space optimization", "Child-safe features", "Storage solutions"]
+    }
+  ];
+
+  const processSteps = [
+    {
+      title: "Property Survey",
+      description: "Comprehensive assessment of existing structure and systems",
+      duration: "1-2 days"
+    },
+    {
+      title: "Design Development",
+      description: "Create detailed renovation plans and obtain necessary permits",
+      duration: "3-6 weeks"
+    },
+    {
+      title: "Project Planning",
+      description: "Schedule all trades and order materials for seamless execution",
+      duration: "2-3 weeks"
+    },
+    {
+      title: "Renovation Work",
+      description: "Phased renovation with minimal disruption to daily life",
+      duration: "8-24 weeks"
+    },
+    {
+      title: "Final Handover",
+      description: "Quality checks, snagging, and project completion",
+      duration: "1-2 weeks"
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Header />
+      
+      {/* Hero Section */}
+      <section className="w-full py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <div>
+                <h1 className="text-5xl lg:text-6xl font-bold text-primary leading-tight mb-4">
+                  HOME <span className="font-playfair text-golden">RENOVATIONS</span>
+                </h1>
+                <p className="text-xl text-medium-gray leading-relaxed">
+                  Full project management for extensions, conversions, and complete home makeovers. Transform your property with comprehensive renovation services.
+                </p>
+              </div>
+              
+              <div className="flex flex-wrap gap-4">
+                <Badge variant="outline" className="px-4 py-2 text-primary border-primary">
+                  Full Project Management
+                </Badge>
+                <Badge variant="outline" className="px-4 py-2 text-primary border-primary">
+                  All Trades Coordinated
+                </Badge>
+                <Badge variant="outline" className="px-4 py-2 text-primary border-primary">
+                  Quality Guarantee
+                </Badge>
+              </div>
+
+              <div className="flex flex-wrap gap-6 pt-4">
+                <div>
+                  <span className="text-sm text-medium-gray">Typical Cost:</span>
+                  <div className="text-2xl font-bold text-primary">£25k - £150k</div>
+                </div>
+                <div>
+                  <span className="text-sm text-medium-gray">Duration:</span>
+                  <div className="text-2xl font-bold text-primary">8-24 weeks</div>
+                </div>
+              </div>
+
+              <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3">
+                Get Renovation Quote
+              </Button>
+            </div>
+            
+            <div className="relative">
+              <img
+                src={customFurniture}
+                alt="Home Renovations - JPW Carpentry & Building"
+                className="w-full h-96 object-cover rounded-lg"
+              />
+              <div className="absolute bottom-6 right-6 w-16 h-16 bg-golden rounded-full flex items-center justify-center">
+                <div className="w-4 h-4 border-t-2 border-r-2 border-dark-bg rotate-45 -ml-0.5 -mb-0.5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Renovation Types */}
+      <section className="w-full py-20 bg-light-gray">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-primary mb-6">Renovation Specialties</h2>
+            <p className="text-lg text-medium-gray max-w-3xl mx-auto">
+              We specialize in different types of home renovations, each tailored to your property's unique requirements.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {renovationTypes.map((type, index) => (
+              <div key={index} className="bg-background p-8 rounded-lg">
+                <h3 className="text-xl font-bold text-primary mb-4">{type.title}</h3>
+                <p className="text-medium-gray mb-6 leading-relaxed">{type.description}</p>
+                <ul className="space-y-3">
+                  {type.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-golden rounded-full"></div>
+                      <span className="text-medium-gray">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="w-full py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h2 className="text-4xl font-bold text-primary">Complete Renovation Service</h2>
+              <p className="text-lg text-medium-gray leading-relaxed">
+                Our comprehensive home renovation service handles every aspect of your project, from initial planning to final decoration.
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {features.map((feature, index) => (
+                  <div key={index} className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-golden rounded-full flex-shrink-0"></div>
+                    <span className="text-medium-gray">{feature}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            <div className="relative">
+              <img
+                src={modernBuilding}
+                alt="Complete Home Renovation - JPW Carpentry & Building"
+                className="w-full h-96 object-cover rounded-lg"
+              />
+              <div className="absolute bottom-6 right-6 w-16 h-16 bg-golden rounded-full flex items-center justify-center">
+                <div className="w-4 h-4 border-t-2 border-r-2 border-dark-bg rotate-45 -ml-0.5 -mb-0.5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="w-full py-20 bg-dark-bg">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-6">Renovation Process</h2>
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+              Our structured approach ensures your home renovation is completed on time, on budget, and to the highest standards.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+            {processSteps.map((step, index) => (
+              <div key={index} className="text-center">
+                <div className="w-16 h-16 bg-golden rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-dark-bg font-bold text-lg">{String(index + 1).padStart(2, '0')}</span>
+                </div>
+                <h3 className="text-lg font-bold text-white mb-3">{step.title}</h3>
+                <p className="text-gray-300 text-sm leading-relaxed mb-2">{step.description}</p>
+                <p className="text-golden text-xs font-medium">{step.duration}</p>
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center mt-16">
+            <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3">
+              Start Your Renovation
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default HomeRenovations;
