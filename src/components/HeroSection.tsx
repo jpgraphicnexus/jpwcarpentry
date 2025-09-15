@@ -25,6 +25,8 @@ const HeroSection = () => {
             <div className="relative">
               <img
                 src="/lovable-uploads/7dea47aa-c406-454a-b1a3-b51c461b6d3b.png"
+                srcSet="/lovable-uploads/7dea47aa-c406-454a-b1a3-b51c461b6d3b.png 576w"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 576px"
                 alt="Professional carpentry tools and craftsmanship in action"
                 className="w-full h-96 object-cover rounded-lg"
                 width="576"
@@ -80,15 +82,17 @@ const HeroSection = () => {
 
             {/* Building Image */}
             <div className="relative">
-              <img
-                src={customFurniture}
-                alt="Beautiful custom furniture and woodwork craftsmanship"
-                className="w-full h-96 object-cover rounded-lg"
-                width="576"
-                height="384"
-                loading="lazy"
-                decoding="async"
-              />
+          <img
+            src={customFurniture}
+            srcSet={`${customFurniture} 576w`}
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 576px"
+            alt="Beautiful custom furniture and woodwork craftsmanship"
+            className="w-full h-96 object-cover rounded-lg"
+            width="576"
+            height="384"
+            loading="lazy"
+            decoding="async"
+          />
               <div className="absolute bottom-6 right-6 w-16 h-16 bg-golden rounded-full flex items-center justify-center">
                 <div className="w-4 h-4 border-t-2 border-r-2 border-dark-bg rotate-45 -ml-0.5 -mb-0.5"></div>
               </div>

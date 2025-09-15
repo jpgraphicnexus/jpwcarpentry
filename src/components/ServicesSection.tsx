@@ -55,6 +55,8 @@ const ServicesSection = () => {
                 <div className="relative">
                   <img
                     src={service.image}
+                    srcSet={`${service.image} 256w`}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 25vw, 256px"
                     alt={service.title}
                     className="w-full h-48 object-cover rounded-lg"
                     width="256"
