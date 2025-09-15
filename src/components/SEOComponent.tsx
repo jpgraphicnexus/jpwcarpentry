@@ -66,6 +66,39 @@ const SEOComponent = ({
       {/* Additional SEO Tags */}
       <meta name="robots" content="index, follow" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+      {/* JSON-LD Schema for Articles */}
+      {article && (
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": title,
+            "description": description,
+            "image": ogImage || defaultImage,
+            "author": {
+              "@type": "Person",
+              "name": article.author
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "JPW Carpentry",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://jpwcarpentry.lovable.app/assets/carpenter-working.jpg"
+              }
+            },
+            "datePublished": article.publishedTime,
+            "dateModified": article.modifiedTime,
+            "articleSection": article.section,
+            "keywords": article.tags.join(", "),
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": fullUrl
+            }
+          })}
+        </script>
+      )}
     </Helmet>
   );
 };
