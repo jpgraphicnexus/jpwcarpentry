@@ -30,6 +30,7 @@ const HeroSection = () => {
                 width="576"
                 height="384"
                 loading="eager"
+                fetchPriority="high"
                 decoding="async"
               />
               <div className="absolute bottom-6 left-6 bg-light-gray px-6 py-4 rounded-lg shadow-lg">
