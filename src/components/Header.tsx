@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Menu, Search } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -16,6 +16,32 @@ const Header = () => {
 
         {/* Navigation */}
         <div className="flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-6">
+            <Link 
+              to="/services" 
+              className="text-primary hover:text-golden transition-colors font-medium"
+            >
+              Services
+            </Link>
+            <Link 
+              to="/past-works" 
+              className="text-primary hover:text-golden transition-colors font-medium"
+            >
+              Past Works
+            </Link>
+            <Link 
+              to="/blog" 
+              className="text-primary hover:text-golden transition-colors font-medium"
+            >
+              Blog
+            </Link>
+            <Link 
+              to="/about" 
+              className="text-primary hover:text-golden transition-colors font-medium"
+            >
+              About
+            </Link>
+          </nav>
           <Button 
             variant="ghost" 
             className="text-primary hover:text-golden"
@@ -27,10 +53,7 @@ const Header = () => {
           >
             Contact
           </Button>
-          <Button variant="ghost" size="icon">
-            <Search className="h-5 w-5" />
-          </Button>
-          <Button variant="ghost" size="icon">
+          <Button variant="ghost" size="icon" className="md:hidden">
             <Menu className="h-5 w-5" />
           </Button>
         </div>
