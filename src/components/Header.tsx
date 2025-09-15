@@ -18,33 +18,15 @@ const Header = () => {
         <div className="flex items-center gap-6">
           <nav className="hidden md:flex items-center gap-6">
             <Link 
-              to="/services" 
-              className="text-primary hover:text-golden transition-colors font-medium"
-            >
-              Services
-            </Link>
-            <Link 
-              to="/past-works" 
-              className="text-primary hover:text-golden transition-colors font-medium"
-            >
-              Past Works
-            </Link>
-            <Link 
               to="/blog" 
               className="text-primary hover:text-golden transition-colors font-medium"
             >
               Blog
             </Link>
-            <Link 
-              to="/about" 
-              className="text-primary hover:text-golden transition-colors font-medium"
-            >
-              About
-            </Link>
           </nav>
           <Button 
             variant="ghost" 
-            className="text-primary hover:text-golden"
+            className="text-primary hover:text-golden font-medium"
             onClick={() => {
               document.getElementById('contact-section')?.scrollIntoView({ 
                 behavior: 'smooth' 

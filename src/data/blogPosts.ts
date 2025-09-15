@@ -45,14 +45,14 @@ export const blogCategories: BlogCategory[] = [
     name: "Industry Insights",
     slug: "industry-insights",
     description: "Latest trends and regulations in construction",
-    color: "bg-medium-gray"
+    color: "bg-muted"
   },
   {
     id: "company-news",
     name: "Company News",
     slug: "company-news",
     description: "Updates from the JPW Carpentry team",
-    color: "bg-dark-bg"
+    color: "bg-secondary"
   }
 ];
 
@@ -279,7 +279,7 @@ Contact JPW Carpentry today for your free loft conversion consultation. We'll as
     lastModified: "2024-12-15", 
     category: "how-to-guides",
     tags: ["loft conversion", "chichester", "building regulations", "planning permission", "home improvement"],
-    featuredImage: "/assets/modern-building.jpg",
+    featuredImage: "/src/assets/modern-building.jpg",
     imageAlt: "Modern loft conversion in Chichester showing dormer windows and quality finishes",
     readTime: 8,
     metaDescription: "Complete guide to loft conversions in Chichester 2024. Costs, planning permission, building regulations, and local contractor advice for West Sussex homeowners.",
@@ -376,7 +376,7 @@ Ready to start your kitchen extension project? Contact JPW Carpentry for expert 
     lastModified: "2024-12-10",
     category: "how-to-guides", 
     tags: ["kitchen extension", "west sussex", "planning permission", "building regulations"],
-    featuredImage: "/assets/office-interior.jpg",
+    featuredImage: "/src/assets/office-interior.jpg",
     imageAlt: "Modern kitchen extension in West Sussex with bi-fold doors",
     readTime: 6,
     metaDescription: "Kitchen extension planning guide for West Sussex 2024. Costs, planning permission requirements, and expert advice for homeowners.",
@@ -475,7 +475,7 @@ Interested in your own garden summer house? Contact JPW Carpentry for a free con
     lastModified: "2024-12-05",
     category: "local-projects",
     tags: ["summer house", "bognor regis", "garden buildings", "home office"],
-    featuredImage: "/assets/custom-furniture.jpg",
+    featuredImage: "/src/assets/custom-furniture.jpg",
     imageAlt: "Completed summer house construction in Bognor Regis garden",
     readTime: 4,
     metaDescription: "Summer house construction project in Bognor Regis. See our craftsmanship, design process, and client results for garden buildings in West Sussex.",

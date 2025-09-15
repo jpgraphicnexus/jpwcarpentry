@@ -54,14 +54,14 @@ const BlogPost = () => {
       <Header />
       
       {/* Breadcrumb */}
-      <section className="w-full py-4 bg-accent border-b">
+      <section className="w-full py-4 bg-primary/5 border-b">
         <div className="max-w-7xl mx-auto px-8">
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+          <div className="flex items-center gap-2 text-sm text-primary/70">
             <Link to="/" className="hover:text-primary">Home</Link>
             <span>/</span>
             <Link to="/blog" className="hover:text-primary">Blog</Link>
             <span>/</span>
-            <span className="text-primary">{post.title}</span>
+            <span className="text-primary font-medium">{post.title}</span>
           </div>
         </div>
       </section>
@@ -176,17 +176,17 @@ const BlogPost = () => {
               </div>
 
               {/* CTA Section */}
-              <div className="mt-12 p-8 bg-accent rounded-lg">
-                <h3 className="text-2xl font-bold text-primary mb-4">Ready to Start Your Project?</h3>
-                <p className="text-muted-foreground mb-6">
+              <div className="mt-12 p-8 bg-gradient-to-r from-golden to-golden/90 rounded-lg text-white">
+                <h3 className="text-2xl font-bold mb-4">Ready to Start Your Project?</h3>
+                <p className="text-white/90 mb-6">
                   Get expert advice and a free quote for your home improvement project. 
                   Our experienced team is ready to help bring your vision to life.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <Button size="lg" className="bg-golden hover:bg-golden/90">
+                  <Button size="lg" variant="secondary" className="bg-white text-golden hover:bg-white/90">
                     Get Free Quote
                   </Button>
-                  <Button variant="outline" size="lg">
+                  <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
                     View Our Services
                   </Button>
                 </div>

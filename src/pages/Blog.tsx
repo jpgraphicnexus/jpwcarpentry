@@ -29,13 +29,13 @@ const Blog = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="w-full py-16 bg-accent">
+      <section className="w-full py-20 bg-gradient-to-br from-primary to-primary/80">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
+            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               Building & Carpentry <span className="font-playfair text-golden">Insights</span>
             </h1>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg text-white/90 max-w-3xl mx-auto">
               Expert advice, project showcases, and industry insights from our experienced team. 
               Get the knowledge you need for your next home improvement project.
             </p>
