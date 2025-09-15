@@ -145,7 +145,7 @@ const Services = () => {
               Project Management
             </Badge>
             <Badge variant="outline" className="px-6 py-2 text-primary border-primary">
-              20+ Years Experience
+              Quality Guaranteed
             </Badge>
           </div>
         </div>

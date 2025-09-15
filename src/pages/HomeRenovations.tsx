@@ -8,13 +8,13 @@ import modernBuilding from "@/assets/modern-building.jpg";
 const HomeRenovations = () => {
   const features = [
     "Complete property assessment",
+    "Extensions and conversions",
+    "Loft conversions", 
+    "Kitchen renovations",
     "Structural alterations",
-    "Electrical and plumbing upgrades", 
-    "Kitchen and bathroom renovation",
-    "Flooring and decoration",
-    "Energy efficiency improvements",
-    "Garden and outdoor spaces",
-    "Project management"
+    "Timber frame construction",
+    "External carpentry work",
+    "Full project management"
   ];
 
   const renovationTypes = [
@@ -77,7 +77,7 @@ const HomeRenovations = () => {
                   HOME <span className="font-playfair text-golden">RENOVATIONS</span>
                 </h1>
                 <p className="text-xl text-medium-gray leading-relaxed">
-                  Full project management for extensions, conversions, and complete home makeovers. Transform your property with comprehensive renovation services.
+                  Full project management for renovations, extensions, loft conversions, and timber frame construction. Transform your property with comprehensive building services.
                 </p>
               </div>
               

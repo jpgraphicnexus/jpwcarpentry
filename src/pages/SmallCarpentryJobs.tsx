@@ -7,14 +7,14 @@ import woodworkingProject from "@/assets/woodworking-project.jpg";
 
 const SmallCarpentryJobs = () => {
   const services = [
-    "Custom shelving and storage",
-    "Built-in wardrobes",
-    "Floating shelves installation", 
-    "Skirting and architrave fitting",
     "Door hanging and repairs",
-    "Window repairs and upgrades",
-    "Bespoke furniture creation",
-    "Staircases and handrails"
+    "Built-in wardrobes",
+    "Custom shelving and storage", 
+    "Skirting and architrave fitting",
+    "Flooring installation",
+    "Media walls and built-ins",
+    "Garden gates and fencing",
+    "Decking and external carpentry"
   ];
 
   const processSteps = [
@@ -59,7 +59,7 @@ const SmallCarpentryJobs = () => {
                   SMALL <span className="font-playfair text-golden">CARPENTRY</span> JOBS
                 </h1>
                 <p className="text-xl text-medium-gray leading-relaxed">
-                  Expert carpentry services for shelving, repairs, and bespoke woodwork projects. Quality craftsmanship for all your smaller carpentry needs.
+                  Professional carpentry services for doors, built-in wardrobes, flooring, and all your smaller carpentry needs. Quality craftsmanship for every project.
                 </p>
               </div>
               

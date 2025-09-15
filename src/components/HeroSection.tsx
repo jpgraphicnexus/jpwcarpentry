@@ -29,8 +29,8 @@ const HeroSection = () => {
                 className="w-full h-96 object-cover rounded-lg"
               />
               <div className="absolute bottom-6 left-6 bg-light-gray px-6 py-4 rounded-lg shadow-lg">
-                <div className="text-3xl font-bold text-primary">20+</div>
-                <div className="text-sm text-medium-gray">Years of Experience</div>
+                <div className="text-3xl font-bold text-primary">JPW</div>
+                <div className="text-sm text-medium-gray">Quality Carpentry</div>
               </div>
             </div>
 

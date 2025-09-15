@@ -10,19 +10,16 @@ const AboutUs = () => {
     {
       name: "James Wilson",
       role: "Managing Director & Site Manager",
-      experience: "15+ years in construction and project management",
       description: "Leading major renovations and extensions across the region"
     },
     {
       name: "Paul Mitchell", 
       role: "Senior Builder & Foreman",
-      experience: "12+ years in residential construction",
       description: "Specializing in structural work and complex builds"
     },
     {
       name: "Our Trusted Network",
-      role: "Subcontractors & Specialists", 
-      experience: "Vetted professionals across all trades",
+      role: "Subcontractors & Specialists",
       description: "Electricians, plumbers, roofers, and specialist contractors"
     }
   ];
@@ -62,7 +59,7 @@ const AboutUs = () => {
                   & BUILDING
                 </h1>
                 <p className="text-lg text-medium-gray leading-relaxed">
-                  With over 20 years of combined experience, JPW Carpentry & Building has established itself as a trusted name in major residential construction projects. We specialize in transforming homes through comprehensive renovations, extensions, and conversions.
+                  JPW Carpentry & Building has established itself as a trusted name in major residential construction projects. We specialize in transforming homes through comprehensive renovations, extensions, and conversions.
                 </p>
               </div>
               
@@ -137,7 +134,7 @@ const AboutUs = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-6">Meet Our Team</h2>
             <p className="text-lg text-medium-gray max-w-3xl mx-auto">
-              Our experienced team combines decades of construction expertise with a commitment to delivering exceptional results on every project.
+              Our skilled team combines construction expertise with a commitment to delivering exceptional results on every project.
             </p>
           </div>
           
@@ -149,7 +146,6 @@ const AboutUs = () => {
                   <CardDescription className="text-golden font-medium">{member.role}</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-sm text-medium-gray font-medium">{member.experience}</p>
                   <p className="text-sm text-medium-gray leading-relaxed">{member.description}</p>
                 </CardContent>
               </Card>

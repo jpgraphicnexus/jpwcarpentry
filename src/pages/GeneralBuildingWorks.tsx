@@ -7,14 +7,14 @@ import constructionWorkers from "@/assets/construction-workers.jpg";
 
 const GeneralBuildingWorks = () => {
   const services = [
+    "Timber frame structures",
+    "Extensions and outbuildings",
+    "Structural alterations", 
     "Foundation work and groundwork",
-    "Brickwork and blockwork",
-    "Roofing and guttering", 
-    "Plastering and rendering",
-    "Concrete work and driveways",
-    "Structural repairs",
-    "Drainage and utilities",
-    "Landscaping and paving"
+    "Roofing and timber structures",
+    "External carpentry and decking",
+    "Garden buildings and fencing",
+    "General building maintenance"
   ];
 
   const projectTypes = [
@@ -82,7 +82,7 @@ const GeneralBuildingWorks = () => {
                   GENERAL <span className="font-playfair text-golden">BUILDING</span> WORKS
                 </h1>
                 <p className="text-xl text-medium-gray leading-relaxed">
-                  Comprehensive building services from structural work to finishing touches. Professional construction for residential and commercial projects.
+                  Comprehensive building services including timber frame structures, extensions, and outbuildings. Professional construction for all your building needs.
                 </p>
               </div>
               
@@ -197,10 +197,10 @@ const GeneralBuildingWorks = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="space-y-4">
               <div className="w-16 h-16 bg-golden rounded-full flex items-center justify-center mx-auto">
-                <span className="text-dark-bg font-bold text-2xl">20+</span>
+                <span className="text-dark-bg font-bold text-2xl">JPW</span>
               </div>
-              <h3 className="text-xl font-bold text-primary">Years Experience</h3>
-              <p className="text-medium-gray">Two decades of building expertise across all project types</p>
+              <h3 className="text-xl font-bold text-primary">Trusted Partner</h3>
+              <p className="text-medium-gray">Reliable building expertise across all project types</p>
             </div>
             
             <div className="space-y-4">
