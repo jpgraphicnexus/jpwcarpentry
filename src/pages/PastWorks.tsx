@@ -128,6 +128,10 @@ const PastWorks = () => {
                     src={project.image}
                     alt={`${project.title} - ${project.type} project in ${project.location}`}
                     className="w-full h-64 object-cover rounded-t-lg"
+                    width="576"
+                    height="256"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute top-4 left-4">
                     <Badge variant="secondary" className="bg-golden text-dark-bg font-medium">

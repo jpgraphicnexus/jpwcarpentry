@@ -57,6 +57,10 @@ const ServicesSection = () => {
                     src={service.image}
                     alt={service.title}
                     className="w-full h-48 object-cover rounded-lg"
+                    width="256"
+                    height="192"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute bottom-4 right-4 w-12 h-12 bg-golden rounded-full flex items-center justify-center">
                     <div className="w-3 h-3 border-t-2 border-r-2 border-dark-bg rotate-45 -ml-0.5 -mb-0.5"></div>

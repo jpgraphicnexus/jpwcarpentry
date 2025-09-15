@@ -84,6 +84,10 @@ const AboutUs = () => {
                 src={modernBuilding}
                 alt="Modern home extension and renovation project by JPW Carpentry & Building"
                 className="w-full h-96 object-cover rounded-lg"
+                width="576"
+                height="384"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute bottom-6 right-6 w-16 h-16 bg-golden rounded-full flex items-center justify-center">
                 <div className="w-4 h-4 border-t-2 border-r-2 border-dark-bg rotate-45 -ml-0.5 -mb-0.5"></div>
@@ -122,6 +126,10 @@ const AboutUs = () => {
                 src={carpenterPortrait}
                 alt="Professional builder from JPW Carpentry & Building team"
                 className="w-full h-80 object-cover rounded-lg"
+                width="576"
+                height="320"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>

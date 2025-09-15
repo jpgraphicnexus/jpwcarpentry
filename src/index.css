@@ -137,4 +137,14 @@ All colors MUST be HSL.
       background-position: 200% 0;
     }
   }
+  
+  /* Image optimization utilities */
+  img {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 384px;
+  }
+  
+  .image-container {
+    contain: layout style paint;
+  }
 }
