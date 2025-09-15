@@ -267,7 +267,7 @@ With over 20 years of experience in Chichester and West Sussex, we understand th
 
 Contact JPW Carpentry today for your free loft conversion consultation. We'll assess your property's potential, discuss your requirements, and provide a detailed quotation with no obligation.
 
-**Call us on [PHONE] or email [EMAIL] to book your free survey.**
+**Call us on 07399594658 or email joewhitfield@jpwcarpentrybuilding.com to book your free survey.**
 
 *Serving Chichester, Bognor Regis, Littlehampton, and surrounding West Sussex villages.*
 
@@ -370,7 +370,7 @@ Select contractors with:
 - First fix services
 - Second fix and finishes
 
-Ready to start your kitchen extension project? Contact JPW Carpentry for expert guidance and a free consultation.`,
+Ready to start your kitchen extension project? Contact JPW Carpentry for expert guidance and a free consultation. Call us on 07399594658 or email joewhitfield@jpwcarpentrybuilding.com.`,
     author: "James Wilson",
     publishDate: "2024-12-10",
     lastModified: "2024-12-10",
@@ -469,7 +469,7 @@ Benefits include:
 - Year-round outdoor connection
 - Flexible usage options
 
-Interested in your own garden summer house? Contact JPW Carpentry for a free consultation and quotation.`,
+Interested in your own garden summer house? Contact JPW Carpentry for a free consultation and quotation. Call us on 07399594658 or email joewhitfield@jpwcarpentrybuilding.com.`,
     author: "James Wilson", 
     publishDate: "2024-12-05",
     lastModified: "2024-12-05",

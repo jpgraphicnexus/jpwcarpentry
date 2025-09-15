@@ -186,7 +186,7 @@ const BlogPost = () => {
                   <Button size="lg" variant="secondary" className="bg-white text-golden hover:bg-white/90">
                     Get Free Quote
                   </Button>
-                  <Button variant="outline" size="lg" className="border-white/80 text-white hover:bg-white/10 hover:border-white">
+                  <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10 hover:border-white">
                     View Our Services
                   </Button>
                 </div>
