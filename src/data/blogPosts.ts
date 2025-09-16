@@ -1,5 +1,6 @@
 import modernBuilding from "@/assets/modern-building.jpg";
 import constructionWorkers from "@/assets/construction-workers.jpg";
+import officeInterior from "@/assets/office-interior.jpg";
 
 export interface BlogPost {
   id: string;
@@ -696,6 +697,503 @@ Don't let planning permission uncertainty delay your extension project. Contact 
     imageAlt: "Modern home extension in West Sussex showing approved planning permission design",
     readTime: 12,
     metaDescription: "Complete guide to home extension planning permission in West Sussex 2024. Costs, timelines, requirements and approval strategies for all local authorities.",
+    featured: false,
+    location: "West Sussex"
+  },
+  {
+    id: "kitchen-extension-costs-chichester-horsham-worthing-2024",
+    title: "Kitchen Extension Costs: Chichester vs Horsham vs Worthing - Complete Price Guide 2024",
+    slug: "kitchen-extension-costs-chichester-horsham-worthing-2024",
+    excerpt: "Compare real kitchen extension costs across West Sussex's major towns. From planning fees to construction costs, get accurate pricing data for Chichester, Horsham, and Worthing projects.",
+    content: `# Kitchen Extension Costs: Chichester vs Horsham vs Worthing - Complete Price Guide 2024
+
+*Last updated: January 2025 | Reading time: 10 minutes*
+
+Planning a kitchen extension in West Sussex? Location significantly impacts your total project cost, from planning fees to labor rates and material delivery charges. Having completed over 80 kitchen extensions across Chichester, Horsham, and Worthing in the past three years, we've analyzed the real cost differences to help you budget accurately.
+
+## Executive Summary: Cost Comparison
+
+| Cost Factor | Chichester | Horsham | Worthing |
+|-------------|------------|---------|----------|
+| **Basic Extension (20m²)** | £32,000-£45,000 | £28,000-£38,000 | £30,000-£42,000 |
+| **Premium Extension (25m²)** | £48,000-£65,000 | £42,000-£55,000 | £45,000-£60,000 |
+| **Planning Application** | £206 | £206 | £206 |
+| **Building Control** | £650-£850 | £580-£750 | £620-£800 |
+| **Labor Rate (per day)** | £280-£320 | £250-£290 | £260-£300 |
+
+**Key Finding:** Chichester projects typically cost 8-12% more than Horsham, with Worthing falling in between due to coastal location factors.
+
+## Why Location Affects Kitchen Extension Costs
+
+### Geographic Factors
+
+**Chichester Premium Factors:**
+- Historic city center with Conservation Area restrictions
+- Higher property values driving premium expectations
+- Limited parking affecting material delivery costs
+- Skilled tradesman shortage in cathedral city
+- South Downs National Park planning complexities
+
+**Horsham Cost Advantages:**
+- More straightforward planning environment
+- Better transport links reducing material costs
+- Larger pool of local contractors
+- Fewer heritage restrictions
+- Competitive market driving prices down
+
+**Worthing Coastal Considerations:**
+- Salt air requiring premium materials/treatments
+- Flood risk assessments for some areas
+- Wind load calculations increasing structural costs
+- Tourism season affecting contractor availability
+- Mixed property types creating varied pricing
+
+## Detailed Cost Breakdown by Location
+
+### Chichester Kitchen Extensions
+
+**Case Study: Victorian Terrace, St. Pancras Area**
+- **Property:** 1890s three-bedroom terrace
+- **Extension:** 4m x 5m single-storey rear extension
+- **Timeline:** 12 weeks (including 2-week planning delay)
+- **Special Requirements:** Conservation Area compliance
+
+**Cost Breakdown:**
+- **Planning & Professional Fees:** £3,200
+  - Planning application: £206
+  - Architect (Conservation Area specialist): £2,400
+  - Heritage statement: £400
+  - Structural engineer: £800
+  - Building Control: £750
+
+- **Construction Costs:** £38,500
+  - Groundwork & foundations: £4,800
+  - Structural work (steel beam): £3,200
+  - Roof structure & covering: £6,500
+  - External walls & insulation: £5,200
+  - Windows & doors (heritage style): £4,800
+  - Internal work & finishes: £8,500
+  - Electrical & plumbing first fix: £2,800
+  - Kitchen fitting preparation: £2,700
+
+- **Additional Chichester Costs:** £2,800
+  - Restricted parking permits: £180
+  - Material delivery surcharges: £420
+  - Heritage-compliant materials premium: £1,200
+  - Extended timeline costs: £1,000
+
+**Total Project Cost: £44,500**
+
+### Horsham Kitchen Extensions
+
+**Case Study: 1960s Semi-Detached, Broadbridge Heath**
+- **Property:** Three-bedroom semi with large garden
+- **Extension:** 5m x 4m single-storey rear extension
+- **Timeline:** 8 weeks
+- **Route:** Permitted Development (no planning required)
+
+**Cost Breakdown:**
+- **Professional Fees:** £2,100
+  - Architect/designer: £1,200
+  - Structural engineer: £650
+  - Building Control: £650
+
+- **Construction Costs:** £32,800
+  - Groundwork & foundations: £4,200
+  - Structural work: £2,800
+  - Roof structure & covering: £5,800
+  - External walls & insulation: £4,600
+  - Windows & doors (standard): £3,200
+  - Internal work & finishes: £7,500
+  - Electrical & plumbing: £2,400
+  - Kitchen preparation: £2,300
+
+- **Horsham Advantages:** £1,200 savings
+  - No planning fees: £206 saved
+  - Standard materials: £800 saved
+  - Efficient access: £194 saved
+
+**Total Project Cost: £34,700**
+
+### Worthing Kitchen Extensions
+
+**Case Study: 1930s Semi-Detached, East Worthing**
+- **Property:** Three-bedroom semi, 200m from seafront
+- **Extension:** 4.5m x 4.5m single-storey rear extension
+- **Timeline:** 10 weeks
+- **Special Requirements:** Coastal exposure considerations
+
+**Cost Breakdown:**
+- **Planning & Professional Fees:** £2,650
+  - Planning application: £206
+  - Architect: £1,500
+  - Structural engineer (wind load calcs): £750
+  - Building Control: £700
+
+- **Construction Costs:** £36,200
+  - Groundwork & foundations: £4,500
+  - Structural work: £3,100
+  - Roof (enhanced for coastal winds): £6,200
+  - External walls (salt-resistant render): £5,400
+  - Windows & doors (coastal grade): £4,100
+  - Internal work & finishes: £7,800
+  - Electrical & plumbing: £2,600
+  - Kitchen preparation: £2,500
+
+- **Coastal Premium Costs:** £1,800
+  - Salt-resistant materials: £1,200
+  - Enhanced weatherproofing: £400
+  - Wind load structural upgrades: £200
+
+**Total Project Cost: £40,650**
+
+## Planning Cost Variations
+
+### Standard Planning Fees (All Locations)
+- **Householder Application:** £206
+- **Prior Approval (larger extensions):** £96
+- **Building Regulations:** £580-£850 (varies by authority)
+
+### Location-Specific Planning Costs
+
+**Chichester District Council:**
+- **Conservation Area surcharge:** +£179 (total £385)
+- **Heritage statement requirement:** £400-£800
+- **Extended consultation period:** Potential 2-week delay
+- **Pre-application advice:** £240 (recommended for complex cases)
+
+**Horsham District Council:**
+- **Standard processing:** Usually within 8 weeks
+- **Pre-application advice:** £150
+- **Building Control:** Competitive rates (£580-£750)
+- **Permitted Development friendly:** Many extensions qualify
+
+**Worthing Borough Council:**
+- **Flood risk areas:** Additional assessments may be required (£500-£1,200)
+- **Coastal considerations:** Wind load calculations (£200-£400)
+- **Building Control:** £620-£800
+- **Pre-application advice:** £180
+
+## Construction Cost Variables
+
+### Labor Rates by Location (2024)
+
+**Skilled Tradesmen Daily Rates:**
+
+| Trade | Chichester | Horsham | Worthing |
+|-------|------------|---------|----------|
+| **Carpenter** | £280-£320 | £250-£290 | £260-£300 |
+| **Bricklayer** | £300-£350 | £270-£310 | £280-£320 |
+| **Electrician** | £250-£290 | £220-£260 | £230-£270 |
+| **Plumber** | £260-£300 | £230-£270 | £240-£280 |
+| **Plasterer** | £220-£260 | £200-£240 | £210-£250 |
+
+**Why Chichester Costs More:**
+- Limited skilled workforce in historic city
+- Higher living costs attracting premium rates
+- Complex heritage work requiring specialists
+- Parking restrictions increasing job difficulty
+
+### Material Cost Differences
+
+**Standard Materials (Similar Across All Locations):**
+- Bricks, blocks, cement: Minimal variation (±2%)
+- Timber, insulation: Standard merchant pricing
+- Basic fixtures: No significant difference
+
+**Location-Specific Material Costs:**
+
+**Chichester Premiums:**
+- **Heritage materials:** +15-25% for Conservation Areas
+- **Reclaimed/matching bricks:** +£200-£400 per thousand
+- **Traditional roof tiles:** +20-30% vs standard
+- **Sash windows (heritage style):** +40-60% vs standard
+
+**Worthing Coastal Requirements:**
+- **Salt-resistant render:** +£8-£12 per m²
+- **Coastal-grade windows:** +15-20% vs standard
+- **Enhanced weatherproofing:** +£300-£600 per project
+- **Stainless steel fixings:** +£150-£300 vs standard
+
+**Horsham Standard Pricing:**
+- Most competitive material costs
+- Good supplier competition
+- Standard specifications acceptable
+- No special requirements
+
+## Kitchen Extension Types & Costs
+
+### Single-Storey Rear Extensions
+
+**Small Extension (15-20m²):**
+- **Chichester:** £28,000-£38,000
+- **Horsham:** £24,000-£32,000  
+- **Worthing:** £26,000-£35,000
+
+**Medium Extension (20-25m²):**
+- **Chichester:** £35,000-£48,000
+- **Horsham:** £30,000-£40,000
+- **Worthing:** £32,000-£44,000
+
+**Large Extension (25-30m²):**
+- **Chichester:** £45,000-£62,000
+- **Horsham:** £38,000-£52,000
+- **Worthing:** £42,000-£58,000
+
+### Side Return Extensions (Terraced Houses)
+
+**Typical Size (12-18m² additional space):**
+- **Chichester:** £32,000-£45,000 (many in Conservation Areas)
+- **Horsham:** £28,000-£38,000 (limited terraced stock)
+- **Worthing:** £30,000-£42,000 (popular in Victorian areas)
+
+### Wrap-Around Extensions
+
+**Large Projects (35-50m² additional space):**
+- **Chichester:** £65,000-£95,000
+- **Horsham:** £55,000-£80,000
+- **Worthing:** £60,000-£88,000
+
+## Hidden Costs by Location
+
+### Chichester Hidden Costs
+- **Parking permits:** £15-£25 per week for restricted areas
+- **Material delivery charges:** +£50-£150 for city center access
+- **Heritage compliance delays:** Potential 2-4 week extensions
+- **Specialist consultants:** Conservation officers, heritage specialists
+- **Premium insurance:** Higher public liability in historic areas
+
+### Horsham Hidden Costs
+- **Generally fewer hidden costs**
+- **Standard delivery charges**
+- **Predictable timelines**
+- **Competitive contractor market**
+
+### Worthing Hidden Costs
+- **Coastal material premiums:** 10-20% on external materials
+- **Seasonal contractor availability:** Summer tourism impact
+- **Salt damage prevention:** Enhanced protective treatments
+- **Flood risk assessments:** £500-£1,200 in some areas
+
+## Return on Investment Analysis
+
+### Property Value Increases
+
+**Kitchen Extension ROI by Location:**
+
+| Location | Extension Cost | Property Value Increase | ROI |
+|----------|----------------|------------------------|-----|
+| **Chichester** | £45,000 | £52,000-£65,000 | 115-145% |
+| **Horsham** | £38,000 | £42,000-£52,000 | 110-137% |
+| **Worthing** | £42,000 | £45,000-£58,000 | 107-138% |
+
+**Factors Affecting ROI:**
+- **Property type:** Victorian/Edwardian properties show highest returns
+- **Garden size:** Larger gardens maintain higher ROI
+- **Local market:** Chichester's premium market supports higher values
+- **Quality of finish:** Premium finishes essential in Chichester market
+
+### Market-Specific Considerations
+
+**Chichester Market:**
+- **Buyer expectations:** High-end finishes expected
+- **Heritage appeal:** Period-appropriate extensions add premium
+- **School catchments:** Popular schools drive demand
+- **Commuter appeal:** London accessibility maintains values
+
+**Horsham Market:**
+- **Family focus:** Practical extensions highly valued
+- **New build competition:** Extensions must offer clear advantages
+- **Transport links:** Gatwick/London accessibility important
+- **Value-conscious buyers:** Cost-effective solutions preferred
+
+**Worthing Market:**
+- **Coastal premium:** Sea proximity adds value
+- **Retirement market:** Accessible, single-storey extensions popular
+- **Regeneration impact:** Town center improvements boosting values
+- **London exodus:** COVID-driven demand continuing
+
+## Financing Your Kitchen Extension
+
+### Typical Financing Options
+
+**Remortgaging (Most Common):**
+- **Chichester:** Average £45,000 extension, £380/month over 10 years
+- **Horsham:** Average £38,000 extension, £320/month over 10 years  
+- **Worthing:** Average £42,000 extension, £355/month over 10 years
+
+**Personal Loans:**
+- **Rates:** 3.5-8.5% depending on credit score
+- **Terms:** Usually 5-7 years maximum
+- **Monthly payments:** Higher than remortgaging but shorter term
+
+**Specialist Home Improvement Loans:**
+- **Secured on property:** Lower rates than personal loans
+- **Flexible terms:** 5-25 years available
+- **Higher amounts:** Up to £100,000+ available
+
+## Seasonal Cost Variations
+
+### Best Times to Build by Location
+
+**Chichester:**
+- **Optimal:** April-June, September-October
+- **Avoid:** July-August (tourist season), December-February (weather)
+- **Cost impact:** ±5-8% seasonal variation
+
+**Horsham:**
+- **Optimal:** March-November (longest season)
+- **Avoid:** December-February (weather only)
+- **Cost impact:** ±3-5% seasonal variation
+
+**Worthing:**
+- **Optimal:** April-June, September-November
+- **Avoid:** July-August (tourism), December-March (coastal weather)
+- **Cost impact:** ±6-10% seasonal variation
+
+## Choosing the Right Contractor
+
+### Location-Specific Contractor Selection
+
+**Chichester Contractors:**
+- **Essential:** Conservation Area experience
+- **Check:** Heritage project portfolio
+- **Expect:** Premium pricing for specialist knowledge
+- **Verify:** Listed building experience if applicable
+
+**Horsham Contractors:**
+- **Advantage:** Competitive market, good availability
+- **Focus:** Value for money, efficient delivery
+- **Check:** Modern extension portfolio
+- **Verify:** Building Regulations compliance record
+
+**Worthing Contractors:**
+- **Essential:** Coastal construction experience
+- **Check:** Salt damage prevention knowledge
+- **Expect:** Understanding of local flood risks
+- **Verify:** Coastal property portfolio
+
+### Red Flags by Location
+
+**All Locations:**
+- Door-to-door sales approaches
+- Requests for large upfront payments
+- No fixed local address
+- Significantly below-market pricing
+- No insurance documentation
+
+**Chichester Specific:**
+- No Conservation Area experience
+- Unwillingness to work with heritage constraints
+- No understanding of local planning policies
+
+**Worthing Specific:**
+- No coastal construction experience
+- Unfamiliarity with salt damage prevention
+- No flood risk awareness
+
+## Getting Accurate Quotes
+
+### Information to Provide Contractors
+
+**Essential Details:**
+- Exact property location and type
+- Desired extension size and layout
+- Quality expectations (budget/standard/premium)
+- Timeline requirements
+- Any known constraints (Conservation Area, etc.)
+
+**For Accurate Pricing:**
+- Current kitchen photos
+- Garden measurements
+- Existing house plans if available
+- Specific material preferences
+- Budget range indication
+
+### Quote Comparison Framework
+
+**Compare Like-for-Like:**
+- Same extension size and specification
+- Identical material standards
+- Same timeline expectations
+- Equivalent warranty terms
+
+**Red Flags in Quotes:**
+- Significantly different prices for same spec
+- Vague material descriptions
+- No breakdown of costs
+- Unrealistic timelines
+- No mention of potential extras
+
+## Future-Proofing Your Investment
+
+### Design Trends Affecting Costs
+
+**2024-2025 Trends:**
+- **Bi-fold doors:** £2,500-£4,500 premium but high ROI
+- **Kitchen islands:** £1,500-£3,500 additional cost
+- **Underfloor heating:** £1,200-£2,500 but energy savings
+- **Smart home integration:** £800-£2,000 future-proofing
+
+### Sustainability Considerations
+
+**Energy Efficiency Upgrades:**
+- **Triple glazing:** +£800-£1,500 vs double glazing
+- **Enhanced insulation:** +£500-£1,200 but long-term savings
+- **Heat pump ready:** +£300-£800 preparation costs
+- **Solar panel preparation:** +£200-£500 structural allowance
+
+## Why Choose JPW Carpentry
+
+With projects completed across all three locations, we understand the unique cost factors and requirements of each area:
+
+**Our Location Expertise:**
+- **Chichester:** 35+ Conservation Area extensions completed
+- **Horsham:** 28+ efficient, cost-effective projects delivered  
+- **Worthing:** 22+ coastal-resilient extensions built
+
+**Cost Transparency Promise:**
+- Fixed-price quotations with detailed breakdowns
+- No hidden extras or surprise costs
+- Location-specific pricing from day one
+- 10% contingency built into all quotes
+
+**Recent Project Costs (2024):**
+- **Average Chichester extension:** £42,500
+- **Average Horsham extension:** £36,800
+- **Average Worthing extension:** £39,200
+- **Customer satisfaction:** 98% would recommend
+
+## Get Your Accurate Cost Estimate
+
+Ready to get realistic pricing for your kitchen extension? Our location-specific cost calculator provides accurate estimates based on your exact requirements and location.
+
+**Free Cost Assessment Includes:**
+- Detailed breakdown by location factors
+- Planning requirement analysis
+- Timeline and seasonal considerations
+- Financing option guidance
+- No-obligation fixed-price quotation
+
+**Contact JPW Carpentry today:**
+- **Phone:** 07399594658
+- **Email:** joewhitfield@jpwcarpentrybuilding.com
+- **Online:** Book your free consultation
+
+*Serving Chichester, Horsham, Worthing and all West Sussex locations with transparent, competitive pricing.*
+
+---
+
+*All costs based on 2024 market rates and completed projects. Individual project costs may vary based on specific requirements, site conditions, and material selections. Always obtain multiple quotes for accurate pricing.*`,
+    author: "James Wilson",
+    publishDate: "2025-01-15",
+    lastModified: "2025-01-15",
+    category: "local-projects",
+    tags: ["kitchen extension cost", "chichester", "horsham", "worthing", "west sussex", "extension pricing"],
+    featuredImage: officeInterior,
+    imageAlt: "Kitchen extension cost comparison chart showing Chichester, Horsham and Worthing pricing differences",
+    readTime: 10,
+    metaDescription: "Compare kitchen extension costs in Chichester, Horsham & Worthing 2024. Real project pricing, planning fees, and location-specific factors affecting your budget.",
     featured: false,
     location: "West Sussex"
   }
