@@ -183,9 +183,11 @@ const BlogPost = () => {
                   Our experienced team is ready to help bring your vision to life.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <Button size="lg" variant="secondary" className="bg-white text-golden hover:bg-white/90">
-                    Get Free Quote
-                  </Button>
+                  <Link to="/#contact-section">
+                    <Button size="lg" variant="secondary" className="bg-white text-golden hover:bg-white/90">
+                      Get Free Quote
+                    </Button>
+                  </Link>
                   <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10 hover:border-white">
                     View Our Services
                   </Button>

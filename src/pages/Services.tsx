@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import modernBuilding from "@/assets/modern-building.jpg";
 import officeInterior from "@/assets/office-interior.jpg";
 import customFurniture from "@/assets/custom-furniture.jpg";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const mainServices = [
@@ -192,9 +193,11 @@ const Services = () => {
                     </div>
                   </div>
                   
-                  <Button className="bg-golden hover:bg-golden/90 text-dark-bg font-medium">
-                    Get Free Quote
-                  </Button>
+                  <Link to="/#contact-section">
+                    <Button className="bg-golden hover:bg-golden/90 text-dark-bg font-medium">
+                      Get Free Quote
+                    </Button>
+                  </Link>
                 </div>
                 
                 <div className={`relative ${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>

@@ -114,9 +114,11 @@ const BlogSidebar = () => {
           <p className="text-sm mb-4">
             Get professional guidance for your home improvement project.
           </p>
-          <Button variant="secondary" className="w-full">
-            Get Free Quote
-          </Button>
+          <Link to="/#contact-section">
+            <Button variant="secondary" className="w-full">
+              Get Free Quote
+            </Button>
+          </Link>
         </CardContent>
       </Card>
     </div>
