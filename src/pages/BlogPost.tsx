@@ -188,9 +188,11 @@ const BlogPost = () => {
                       Get Free Quote
                     </Button>
                   </Link>
-                  <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10 hover:border-white">
-                    View Our Services
-                  </Button>
+                  <Link to="/services">
+                    <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10 hover:border-white">
+                      View Our Services
+                    </Button>
+                  </Link>
                 </div>
               </div>
 
