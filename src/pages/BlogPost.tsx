@@ -185,7 +185,15 @@ const BlogPost = () => {
                 <div className="flex flex-wrap gap-4">
                   <Link to="/#contact-section">
                     <Button size="lg" variant="secondary" className="bg-white text-golden hover:bg-white/90" asChild>
-                      <a href="/#contact-section">Get Free Quote</a>
+                      <a href="/#contact-section" onClick={(e) => {
+                        e.preventDefault();
+                        const contactSection = document.getElementById('contact-section');
+                        if (contactSection) {
+                          contactSection.scrollIntoView({ behavior: 'smooth' });
+                        } else {
+                          window.location.href = '/#contact-section';
+                        }
+                      }}>Get Free Quote</a>
                     </Button>
                   </Link>
                   <Link to="/services">

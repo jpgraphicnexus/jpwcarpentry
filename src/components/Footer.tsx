@@ -48,20 +48,20 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-6">SUPPORT</h4>
+            <h4 className="text-white font-bold mb-6">CONTACT</h4>
             <div className="space-y-4">
-              <a href="#" className="block text-gray-300 hover:text-golden transition-colors">
-                Phone Number
-              </a>
-              <a href="#" className="block text-gray-300 hover:text-golden transition-colors">
-                Email Address
-              </a>
-              <a href="#" className="block text-gray-300 hover:text-golden transition-colors">
-                Company Location
-              </a>
-              <a href="#" className="block text-gray-300 hover:text-golden transition-colors">
-                Customer Support
-              </a>
+              <div className="text-gray-300">
+                <div className="font-medium text-white mb-1">Phone</div>
+                <div>+44 7399 594658</div>
+              </div>
+              <div className="text-gray-300">
+                <div className="font-medium text-white mb-1">Email</div>
+                <div>joewhitfield@jpwcarpentrybuilding.com</div>
+              </div>
+              <div className="text-gray-300">
+                <div className="font-medium text-white mb-1">Location</div>
+                <div>West Sussex and surrounding areas</div>
+              </div>
             </div>
           </div>
 

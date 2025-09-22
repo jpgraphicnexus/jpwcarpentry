@@ -134,7 +134,7 @@ const ContactSection = () => {
               </div>
               <div className="flex justify-between items-center py-2">
                 <span className="text-sm font-medium text-primary">LOCATION</span>
-                <span className="text-right text-primary font-medium">123 Anywhere Street, Any State</span>
+                <span className="text-right text-primary font-medium">West Sussex and surrounding areas</span>
               </div>
             </div>
           </div>

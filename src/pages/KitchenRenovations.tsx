@@ -72,7 +72,15 @@ const KitchenRenovations = () => {
 
               <div className="pt-4">
                 <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3" asChild>
-                  <a href="/#contact-section">Get Free Kitchen Quote</a>
+                  <a href="/#contact-section" onClick={(e) => {
+                    e.preventDefault();
+                    const contactSection = document.getElementById('contact-section');
+                    if (contactSection) {
+                      contactSection.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                      window.location.href = '/#contact-section';
+                    }
+                  }}>Get Free Kitchen Quote</a>
                 </Button>
               </div>
             </div>
@@ -141,7 +149,15 @@ const KitchenRenovations = () => {
           
           <div className="text-center mt-16">
             <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3" asChild>
-              <a href="/#contact-section">Start Your Kitchen Project</a>
+              <a href="/#contact-section" onClick={(e) => {
+                e.preventDefault();
+                const contactSection = document.getElementById('contact-section');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.href = '/#contact-section';
+                }
+              }}>Start Your Kitchen Project</a>
             </Button>
           </div>
         </div>

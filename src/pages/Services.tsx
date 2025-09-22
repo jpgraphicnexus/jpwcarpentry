@@ -190,7 +190,15 @@ const Services = () => {
                   
                   <Link to="/#contact-section">
                     <Button className="bg-golden hover:bg-golden/90 text-dark-bg font-medium" asChild>
-                      <a href="/#contact-section">Get Free Quote</a>
+                      <a href="/#contact-section" onClick={(e) => {
+                        e.preventDefault();
+                        const contactSection = document.getElementById('contact-section');
+                        if (contactSection) {
+                          contactSection.scrollIntoView({ behavior: 'smooth' });
+                        } else {
+                          window.location.href = '/#contact-section';
+                        }
+                      }}>Get Free Quote</a>
                     </Button>
                   </Link>
                 </div>

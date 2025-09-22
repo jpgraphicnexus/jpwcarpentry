@@ -114,11 +114,17 @@ const BlogSidebar = () => {
           <p className="text-sm mb-4">
             Get professional guidance for your home improvement project.
           </p>
-          <Link to="/#contact-section">
-            <Button variant="secondary" className="w-full" asChild>
-              <a href="/#contact-section">Get Free Quote</a>
+            <Button variant="secondary" className="w-full" onClick={(e) => {
+              e.preventDefault();
+              const contactSection = document.getElementById('contact-section');
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+              } else {
+                window.location.href = '/#contact-section';
+              }
+            }}>
+              Get Free Quote
             </Button>
-          </Link>
         </CardContent>
       </Card>
     </div>
