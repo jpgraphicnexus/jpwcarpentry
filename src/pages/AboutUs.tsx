@@ -82,7 +82,7 @@ const AboutUs = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-6">Our Story</h2>
             <p className="text-lg text-medium-gray max-w-3xl mx-auto">
-              JPW carpentry&building was born after Joe (the founder) wanted to take the leap and set up a business in what he loves, carpentry & building, but more importantly working alongside customers to carry out their visions and ideas. We have a real passion for excellence and look forward to every project we take on to deliver the best results.
+              JPW Carpentry & Building was born after Joe (the founder) wanted to take the leap and set up a business in what he loves, carpentry & building, but more importantly working alongside customers to carry out their visions and ideas. We have a real passion for excellence and look forward to every project we take on to deliver the best results.
             </p>
           </div>
           
