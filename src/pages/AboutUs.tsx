@@ -95,8 +95,8 @@ const AboutUs = () => {
               <p className="text-medium-gray leading-relaxed">
                 We bring the same level of care and passion for each project. We work closely with a great team of sub contractors which enables us to project manage projects too to help your build be as stress free as possible by making it run smoothly.
               </p>
-              <Button variant="outline" className="mt-6">
-                View Our Projects
+              <Button variant="outline" className="mt-6" asChild>
+                <a href="/past-works">View Our Projects</a>
               </Button>
             </div>
             

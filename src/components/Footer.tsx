@@ -68,16 +68,16 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-bold mb-6">SERVICES</h4>
             <div className="space-y-4">
-              <a href="#" className="block text-gray-300 hover:text-golden transition-colors">
+              <a href="/services/kitchen-renovations" className="block text-gray-300 hover:text-golden transition-colors">
                 Kitchen Renovations
               </a>
-              <a href="#" className="block text-gray-300 hover:text-golden transition-colors">
+              <a href="/services/small-carpentry-jobs" className="block text-gray-300 hover:text-golden transition-colors">
                 Small Carpentry Jobs
               </a>
-              <a href="#" className="block text-gray-300 hover:text-golden transition-colors">
+              <a href="/services/home-renovations" className="block text-gray-300 hover:text-golden transition-colors">
                 Home Renovations
               </a>
-              <a href="#" className="block text-gray-300 hover:text-golden transition-colors">
+              <a href="/services/general-building-works" className="block text-gray-300 hover:text-golden transition-colors">
                 General Building Works
               </a>
             </div>
