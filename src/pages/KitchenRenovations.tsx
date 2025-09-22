@@ -57,14 +57,11 @@ const KitchenRenovations = () => {
                   KITCHEN <span className="font-playfair text-golden">RENOVATIONS</span>
                 </h1>
                 <p className="text-xl text-medium-gray leading-relaxed">
-                  Complete kitchen transformations with custom carpentry and professional fitting. From design to installation, we create beautiful, functional kitchens.
+                  Complete kitchen transformations, we can work alongside you to plan a kitchen with a chosen manufacturer. From which we can carry out the project start to finish to achieve your desired results.
                 </p>
               </div>
               
               <div className="flex flex-wrap gap-4">
-                <Badge variant="outline" className="px-4 py-2 text-primary border-primary">
-                  Custom Design
-                </Badge>
                 <Badge variant="outline" className="px-4 py-2 text-primary border-primary">
                   Quality Fitting
                 </Badge>
@@ -73,20 +70,11 @@ const KitchenRenovations = () => {
                 </Badge>
               </div>
 
-              <div className="flex flex-wrap gap-6 pt-4">
-                <div>
-                  <span className="text-sm text-medium-gray">Typical Cost:</span>
-                  <div className="text-2xl font-bold text-primary">£8k - £25k</div>
-                </div>
-                <div>
-                  <span className="text-sm text-medium-gray">Duration:</span>
-                  <div className="text-2xl font-bold text-primary">1-2 weeks</div>
-                </div>
+              <div className="pt-4">
+                <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3">
+                  Get Free Kitchen Quote
+                </Button>
               </div>
-
-              <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3">
-                Get Free Kitchen Quote
-              </Button>
             </div>
             
             <div className="relative">

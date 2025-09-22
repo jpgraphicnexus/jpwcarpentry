@@ -77,9 +77,14 @@ const Services = () => {
       icon: "🏗️"
     },
     {
-      title: "Basement Conversions",
-      description: "Transform basements into usable space with proper damp-proofing and insulation.",
-      icon: "⬇️"
+      title: "Small Carpentry Jobs",
+      description: "From doors to built in furniture - quality carpentry work for all your smaller projects.",
+      icon: "🔨"
+    },
+    {
+      title: "Landscaping Garden Projects",
+      description: "Transform your outdoor space with professional landscaping and garden design services.",
+      icon: "🌿"
     },
     {
       title: "Structural Work",
@@ -132,7 +137,7 @@ const Services = () => {
             OUR <span className="font-playfair text-golden">SERVICES</span>
           </h1>
           <p className="text-lg text-medium-gray max-w-3xl mx-auto leading-relaxed mb-12">
-            Comprehensive building services for major home improvements. From extensions and conversions to full renovations, we bring your vision to life with expert craftsmanship and project management.
+            Here at JPW carpentry and building we take on a range of projects. From extensions and conversions to fully renovations. We also carry out smaller jobs which can efficiently transform areas of your home. We also carry out project management for projects to ensure minimal stress as possible for the client.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">
@@ -182,16 +187,6 @@ const Services = () => {
                     ))}
                   </div>
                   
-                  <div className="flex flex-wrap gap-6 pt-4">
-                    <div>
-                      <span className="text-sm text-medium-gray">Typical Cost:</span>
-                      <div className="text-xl font-bold text-primary">{service.priceRange}</div>
-                    </div>
-                    <div>
-                      <span className="text-sm text-medium-gray">Duration:</span>
-                      <div className="text-xl font-bold text-primary">{service.duration}</div>
-                    </div>
-                  </div>
                   
                   <Link to="/#contact-section">
                     <Button className="bg-golden hover:bg-golden/90 text-dark-bg font-medium">
@@ -266,7 +261,6 @@ const Services = () => {
                 </div>
                 <h3 className="text-lg font-bold text-white mb-3">{step.title}</h3>
                 <p className="text-gray-300 text-sm leading-relaxed mb-2">{step.description}</p>
-                <p className="text-golden text-xs font-medium">{step.duration}</p>
               </div>
             ))}
           </div>

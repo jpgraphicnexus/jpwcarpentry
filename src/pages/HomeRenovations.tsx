@@ -19,19 +19,14 @@ const HomeRenovations = () => {
 
   const renovationTypes = [
     {
-      title: "Period Property Restoration",
-      description: "Sympathetic restoration of Victorian and Edwardian homes preserving character features",
-      features: ["Original feature restoration", "Modern amenities integration", "Heritage compliance"]
-    },
-    {
-      title: "Modern Home Makeover", 
-      description: "Contemporary updates for properties requiring complete modernization",
+      title: "Modern Home Makeovers",
+      description: "Moved into a new build but want to personalise it abit? No problem, here at JPW we can help you add areas of your home to personalise it to your specifications. These renovations are often cheaper as they often don't require as much major works instead minor changes with big effects.",
       features: ["Open plan living", "Smart home integration", "Sustainable materials"]
     },
     {
-      title: "Family Home Transformation",
-      description: "Practical improvements for growing families needing more space and functionality",
-      features: ["Space optimization", "Child-safe features", "Storage solutions"]
+      title: "Older Properties Refreshed", 
+      description: "We enjoy taking on projects whereby we can bring back to life a dated property. Great results can be achieved whether it's by adding extra space through an extension or loft conversion or minor changes to spruce up the interior, we look forward to carrying out these projects as they can be very satisfying!!",
+      features: ["Period feature restoration", "Modern amenities integration", "Heritage compliance"]
     }
   ];
 
@@ -77,7 +72,7 @@ const HomeRenovations = () => {
                   HOME <span className="font-playfair text-golden">RENOVATIONS</span>
                 </h1>
                 <p className="text-xl text-medium-gray leading-relaxed">
-                  Full project management for renovations, extensions, loft conversions, and timber frame construction. Transform your property with comprehensive building services.
+                  Carrying out renovations from start to finish to transform your property.
                 </p>
               </div>
               
@@ -93,20 +88,11 @@ const HomeRenovations = () => {
                 </Badge>
               </div>
 
-              <div className="flex flex-wrap gap-6 pt-4">
-                <div>
-                  <span className="text-sm text-medium-gray">Typical Cost:</span>
-                  <div className="text-2xl font-bold text-primary">£25k - £150k</div>
-                </div>
-                <div>
-                  <span className="text-sm text-medium-gray">Duration:</span>
-                  <div className="text-2xl font-bold text-primary">8-24 weeks</div>
-                </div>
+              <div className="pt-4">
+                <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3">
+                  Get Renovation Quote
+                </Button>
               </div>
-
-              <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3">
-                Get Renovation Quote
-              </Button>
             </div>
             
             <div className="relative">
@@ -130,29 +116,29 @@ const HomeRenovations = () => {
       {/* Renovation Types */}
       <section className="w-full py-20 bg-light-gray">
         <div className="max-w-7xl mx-auto px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-6">Renovation Specialties</h2>
-            <p className="text-lg text-medium-gray max-w-3xl mx-auto">
-              We specialize in different types of home renovations, each tailored to your property's unique requirements.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {renovationTypes.map((type, index) => (
-              <div key={index} className="bg-background p-8 rounded-lg">
-                <h3 className="text-xl font-bold text-primary mb-4">{type.title}</h3>
-                <p className="text-medium-gray mb-6 leading-relaxed">{type.description}</p>
-                <ul className="space-y-3">
-                  {type.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-golden rounded-full"></div>
-                      <span className="text-medium-gray">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-primary mb-6">Renovation Specialties</h2>
+              <p className="text-lg text-medium-gray max-w-3xl mx-auto">
+                We specialize in different types of home renovations, each tailored to your property's unique requirements.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {renovationTypes.map((type, index) => (
+                <div key={index} className="bg-background p-8 rounded-lg">
+                  <h3 className="text-xl font-bold text-primary mb-4">{type.title}</h3>
+                  <p className="text-medium-gray mb-6 leading-relaxed">{type.description}</p>
+                  <ul className="space-y-3">
+                    {type.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-center gap-3">
+                        <div className="w-2 h-2 bg-golden rounded-full"></div>
+                        <span className="text-medium-gray">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
         </div>
       </section>
 
@@ -163,7 +149,7 @@ const HomeRenovations = () => {
             <div className="space-y-6">
               <h2 className="text-4xl font-bold text-primary">Complete Renovation Service</h2>
               <p className="text-lg text-medium-gray leading-relaxed">
-                Our comprehensive home renovation service handles every aspect of your project, from initial planning to final decoration.
+                Our complete renovation services can handle every area of your project, from initial planing to the final decorations maintaining a high quality and efficient process throughout.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -212,7 +198,6 @@ const HomeRenovations = () => {
                 </div>
                 <h3 className="text-lg font-bold text-white mb-3">{step.title}</h3>
                 <p className="text-gray-300 text-sm leading-relaxed mb-2">{step.description}</p>
-                <p className="text-golden text-xs font-medium">{step.duration}</p>
               </div>
             ))}
           </div>
