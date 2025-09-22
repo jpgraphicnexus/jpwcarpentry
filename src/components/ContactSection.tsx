@@ -126,11 +126,11 @@ const ContactSection = () => {
             <div className="space-y-4 pt-6 border-t border-border">
               <div className="flex justify-between items-center py-2">
                 <span className="text-sm font-medium text-primary">PHONE</span>
-                <span className="text-right text-primary font-medium">(+12) 345 678 90</span>
+                <span className="text-right text-primary font-medium">+44 7399 594658</span>
               </div>
               <div className="flex justify-between items-center py-2">
                 <span className="text-sm font-medium text-primary">EMAIL</span>
-                <span className="text-right text-primary font-medium">support@jpwcarpentry.co</span>
+                <span className="text-right text-primary font-medium">joewhitfield@jpwcarpentrybuilding.com</span>
               </div>
               <div className="flex justify-between items-center py-2">
                 <span className="text-sm font-medium text-primary">LOCATION</span>

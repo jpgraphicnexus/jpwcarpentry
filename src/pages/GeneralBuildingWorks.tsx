@@ -91,8 +91,8 @@ const GeneralBuildingWorks = () => {
               </div>
 
               <div className="pt-4">
-                <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3">
-                  Get Building Quote
+                <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3" asChild>
+                  <a href="/#contact-section">Get Building Quote</a>
                 </Button>
               </div>
             </div>

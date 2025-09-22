@@ -189,8 +189,8 @@ const Services = () => {
                   
                   
                   <Link to="/#contact-section">
-                    <Button className="bg-golden hover:bg-golden/90 text-dark-bg font-medium">
-                      Get Free Quote
+                    <Button className="bg-golden hover:bg-golden/90 text-dark-bg font-medium" asChild>
+                      <a href="/#contact-section">Get Free Quote</a>
                     </Button>
                   </Link>
                 </div>

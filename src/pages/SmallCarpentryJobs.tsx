@@ -76,8 +76,8 @@ const SmallCarpentryJobs = () => {
               </div>
 
               <div className="pt-4">
-                <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3">
-                  Get Carpentry Quote
+                <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3" asChild>
+                  <a href="/#contact-section">Get Carpentry Quote</a>
                 </Button>
               </div>
             </div>

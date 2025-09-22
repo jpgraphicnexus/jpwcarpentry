@@ -89,8 +89,8 @@ const HomeRenovations = () => {
               </div>
 
               <div className="pt-4">
-                <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3">
-                  Get Renovation Quote
+                <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3" asChild>
+                  <a href="/#contact-section">Get Renovation Quote</a>
                 </Button>
               </div>
             </div>

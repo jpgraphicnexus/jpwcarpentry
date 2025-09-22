@@ -115,8 +115,8 @@ const BlogSidebar = () => {
             Get professional guidance for your home improvement project.
           </p>
           <Link to="/#contact-section">
-            <Button variant="secondary" className="w-full">
-              Get Free Quote
+            <Button variant="secondary" className="w-full" asChild>
+              <a href="/#contact-section">Get Free Quote</a>
             </Button>
           </Link>
         </CardContent>

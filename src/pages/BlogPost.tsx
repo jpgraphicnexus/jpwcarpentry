@@ -184,8 +184,8 @@ const BlogPost = () => {
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Link to="/#contact-section">
-                    <Button size="lg" variant="secondary" className="bg-white text-golden hover:bg-white/90">
-                      Get Free Quote
+                    <Button size="lg" variant="secondary" className="bg-white text-golden hover:bg-white/90" asChild>
+                      <a href="/#contact-section">Get Free Quote</a>
                     </Button>
                   </Link>
                   <Link to="/services">
