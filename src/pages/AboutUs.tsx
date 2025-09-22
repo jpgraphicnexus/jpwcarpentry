@@ -6,23 +6,6 @@ import carpenterPortrait from "@/assets/carpenter-portrait.jpg";
 import modernBuilding from "@/assets/modern-building.jpg";
 
 const AboutUs = () => {
-  const teamMembers = [
-    {
-      name: "James Wilson",
-      role: "Managing Director & Site Manager",
-      description: "Leading major renovations and extensions across the region"
-    },
-    {
-      name: "Paul Mitchell", 
-      role: "Senior Builder & Foreman",
-      description: "Specializing in structural work and complex builds"
-    },
-    {
-      name: "Our Trusted Network",
-      role: "Subcontractors & Specialists",
-      description: "Electricians, plumbers, roofers, and specialist contractors"
-    }
-  ];
 
   const values = [
     {
@@ -59,18 +42,14 @@ const AboutUs = () => {
                   & BUILDING
                 </h1>
                 <p className="text-lg text-medium-gray leading-relaxed">
-                  JPW Carpentry & Building has established itself as a trusted name in major residential construction projects. We specialize in transforming homes through comprehensive renovations, extensions, and conversions.
+                  JPW carpentry and building operates in West Sussex and surrounding areas and takes on a range of construction projects big or small and carries out each project with the care and attention it deserves to get the best results.
                 </p>
               </div>
               
               <div className="space-y-4">
                 <div className="flex items-center gap-4">
                   <div className="w-2 h-2 bg-golden rounded-full"></div>
-                  <span className="text-medium-gray">Founded in 2015</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-2 h-2 bg-golden rounded-full"></div>
-                  <span className="text-medium-gray">100+ Major Projects Completed</span>
+                  <span className="text-medium-gray">Founded in 2022</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-2 h-2 bg-golden rounded-full"></div>
@@ -103,7 +82,7 @@ const AboutUs = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-6">Our Story</h2>
             <p className="text-lg text-medium-gray max-w-3xl mx-auto">
-              JPW Carpentry & Building was born from a passion for transforming homes and a commitment to excellence in every build. What started as a small carpentry business has evolved into a comprehensive construction company specializing in major residential projects.
+              JPW carpentry&building was born after Joe (the founder) wanted to take the leap and set up a business in what he loves, carpentry & building, but more importantly working alongside customers to carry out their visions and ideas. We have a real passion for excellence and look forward to every project we take on to deliver the best results.
             </p>
           </div>
           
@@ -111,10 +90,10 @@ const AboutUs = () => {
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-primary">From Vision to Reality</h3>
               <p className="text-medium-gray leading-relaxed">
-                We understand that your home is more than just a building - it's where life happens. Whether you're planning a complete renovation, adding an extension, or converting your loft, we bring the expertise and attention to detail needed to make your vision a reality.
+                We understand the importance of your home and take pride in helping transform it to the vision you have. Whether you already have the ideas or if you want JPW to assist in the planning and design we are happy to help. From planning a big loft conversion, extension, kitchen or if it's a smaller job such as hanging some doors or a nice outdoor decking.
               </p>
               <p className="text-medium-gray leading-relaxed">
-                Our approach combines traditional building skills with modern project management techniques. We handle everything from initial planning and permits to the final finishing touches, working with our network of trusted subcontractors to deliver exceptional results.
+                We bring the same level of care and passion for each project. We work closely with a great team of sub contractors which enables us to project manage projects too to help your build be as stress free as possible by making it run smoothly.
               </p>
               <Button variant="outline" className="mt-6">
                 View Our Projects
@@ -136,31 +115,6 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="w-full py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-6">Meet Our Team</h2>
-            <p className="text-lg text-medium-gray max-w-3xl mx-auto">
-              Our skilled team combines construction expertise with a commitment to delivering exceptional results on every project.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
-              <Card key={index} className="bg-light-gray border-light-gray hover:shadow-lg transition-all duration-300">
-                <CardHeader>
-                  <CardTitle className="text-xl text-primary">{member.name}</CardTitle>
-                  <CardDescription className="text-golden font-medium">{member.role}</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-sm text-medium-gray leading-relaxed">{member.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Values Section */}
       <section className="w-full py-20 bg-dark-bg">

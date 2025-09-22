@@ -10,77 +10,44 @@ import customFurniture from "@/assets/custom-furniture.jpg";
 const PastWorks = () => {
   const projects = [
     {
-      title: "Victorian Home Extension",
-      location: "Cambridge",
-      year: "2024",
-      type: "Two-Storey Extension",
-      description: "Complete two-storey rear extension including kitchen renovation, new bathrooms, and structural alterations. Project included planning permission, building regulations, and full project management.",
-      features: ["Structural steelwork", "Kitchen renovation", "New electrical systems", "Underfloor heating"],
-      duration: "16 weeks",
-      value: "£85,000",
+      title: "Kitchen Renovation",
+      type: "Kitchen Renovation",
+      description: "This kitchen renovation included a removal of a wall to create a big open plan space for the customer to enjoy the great new space, JPW and the team really enjoyed working alongside the client to achieve these great results.",
       image: modernBuilding
     },
     {
-      title: "Loft Conversion & Renovation",
-      location: "St Albans", 
-      year: "2024",
-      type: "Loft Conversion",
-      description: "Full loft conversion creating master bedroom with en-suite, plus ground floor renovation including new kitchen and living spaces. Complete rewire and central heating upgrade.",
-      features: ["Dormer windows", "En-suite bathroom", "Velux windows", "Full house rewire"],
-      duration: "12 weeks",
-      value: "£65,000",
+      title: "Bungalow Renovation", 
+      type: "Full Renovation",
+      description: "JPW and the team enjoyed transforming this dated bungalow to a new fresh look to the clients specifications.",
       image: officeInterior
     },
     {
-      title: "Period Property Restoration",
-      location: "Hertford",
-      year: "2023", 
-      type: "Full Renovation",
-      description: "Comprehensive restoration of 1930s semi-detached property. Complete strip-out and rebuild including new roof, windows, kitchen, bathrooms, and landscaping.",
-      features: ["New roof installation", "Window replacement", "Full rewire & plumbing", "Garden landscaping"],
-      duration: "20 weeks",
-      value: "£120,000",
+      title: "Loft Conversion",
+      type: "Loft Conversion",
+      description: "This loft space was taken from an unusable space to a new space creating an extra bedroom and toilet for the client. Really enjoyed transforming this loft to create this new space.",
       image: customFurniture
     },
     {
-      title: "Open Plan Living Extension",
-      location: "Watford",
-      year: "2023",
-      type: "Single-Storey Extension", 
-      description: "Modern single-storey extension creating open plan kitchen-dining-living space. Included bi-fold doors, underfloor heating, and complete interior redesign.",
-      features: ["Bi-fold doors", "Underfloor heating", "Open plan design", "New boiler system"],
-      duration: "10 weeks", 
-      value: "£55,000",
+      title: "Decking",
+      type: "Outdoor Decking",
+      description: "This decking was transformed from a dangerous rotten decking to a new refreshed look, all built to last.",
       image: modernBuilding
     },
     {
-      title: "Garage Conversion & Extension",
-      location: "Stevenage",
-      year: "2023",
-      type: "Conversion & Extension",
-      description: "Converted existing garage into living space and added small extension for utility room. Included damp-proofing, insulation, and complete electrical installation.",
-      features: ["Garage conversion", "Utility extension", "Damp-proofing", "New heating zone"],
-      duration: "8 weeks",
-      value: "£45,000", 
+      title: "Oak Staircase",
+      type: "Staircase Installation",
+      description: "This transformation really changed the clients downstairs space creating a lovely oak effect to match their interior. Really enjoyed this project.",
       image: officeInterior
     },
     {
-      title: "Edwardian House Renovation",
-      location: "Hitchin",
-      year: "2022",
-      type: "Full Renovation",
-      description: "Complete renovation of Edwardian terrace including new kitchen, bathrooms, flooring throughout, and rear garden landscaping. Preserved original features while modernizing.",
-      features: ["Period feature restoration", "New bathrooms", "Hardwood flooring", "Garden design"],
-      duration: "14 weeks",
-      value: "£75,000",
+      title: "Oak Doors",
+      type: "Door Installation",
+      description: "Sourced and fitted to customers specifications. This project showcases we're happy to take on small projects too. A quick turnaround but a lasting effect for the customer. Doors can really make a major difference to your property.",
       image: customFurniture
     }
   ];
 
   const stats = [
-    { number: "100+", label: "Projects Completed" },
-    { number: "£2M+", label: "Total Project Value" },
-    { number: "98%", label: "Client Satisfaction" },
     { number: "5★", label: "Average Rating" }
   ];
 
@@ -95,17 +62,15 @@ const PastWorks = () => {
             OUR <span className="font-playfair text-golden">PAST WORKS</span>
           </h1>
           <p className="text-lg text-medium-gray max-w-3xl mx-auto leading-relaxed mb-12">
-            Explore our portfolio of successful home renovations, extensions, and conversions. Each project showcases our commitment to quality craftsmanship and attention to detail.
+            Here's a portfolio of some of our recent and favourite projects.
           </p>
           
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl lg:text-5xl font-bold text-golden mb-2">{stat.number}</div>
-                <div className="text-medium-gray font-medium">{stat.label}</div>
-              </div>
-            ))}
+          <div className="flex justify-center mt-16">
+            <div className="text-center">
+              <div className="text-4xl lg:text-5xl font-bold text-golden mb-2">5★</div>
+              <div className="text-medium-gray font-medium">Average Rating</div>
+            </div>
           </div>
         </div>
       </section>
@@ -120,24 +85,19 @@ const PastWorks = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <Card key={index} className="bg-background border-background hover:shadow-xl transition-all duration-300">
                 <div className="relative">
                   <img
                     src={project.image}
-                    alt={`${project.title} - ${project.type} project in ${project.location}`}
+                    alt={`${project.title} - ${project.type} project by JPW Carpentry & Building`}
                     className="w-full h-64 object-cover rounded-t-lg"
-                    width="576"
+                    width="384"
                     height="256"
                     loading="lazy"
                     decoding="async"
                   />
-                  <div className="absolute top-4 left-4">
-                    <Badge variant="secondary" className="bg-golden text-dark-bg font-medium">
-                      {project.year}
-                    </Badge>
-                  </div>
                   <div className="absolute top-4 right-4">
                     <Badge variant="outline" className="bg-white/90 text-primary border-primary">
                       {project.type}
@@ -145,37 +105,12 @@ const PastWorks = () => {
                   </div>
                 </div>
                 
-                <CardHeader className="space-y-4">
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <CardTitle className="text-xl text-primary">{project.title}</CardTitle>
-                      <CardDescription className="text-golden font-medium">{project.location}</CardDescription>
-                    </div>
-                    <div className="text-right">
-                      <div className="text-sm text-medium-gray">{project.duration}</div>
-                      <div className="text-lg font-bold text-primary">{project.value}</div>
-                    </div>
-                  </div>
+                <CardHeader>
+                  <CardTitle className="text-xl text-primary">{project.title}</CardTitle>
                 </CardHeader>
                 
-                <CardContent className="space-y-6">
+                <CardContent>
                   <p className="text-medium-gray leading-relaxed">{project.description}</p>
-                  
-                  <div>
-                    <h4 className="text-sm font-bold text-primary mb-3">Key Features:</h4>
-                    <div className="grid grid-cols-2 gap-2">
-                      {project.features.map((feature, featureIndex) => (
-                        <div key={featureIndex} className="flex items-center gap-2">
-                          <div className="w-1.5 h-1.5 bg-golden rounded-full"></div>
-                          <span className="text-sm text-medium-gray">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  <Button variant="link" className="p-0 text-primary font-medium">
-                    View Project Details
-                  </Button>
                 </CardContent>
               </Card>
             ))}
