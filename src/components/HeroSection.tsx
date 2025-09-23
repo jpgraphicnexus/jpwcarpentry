@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import carpenterWorking from "@/assets/carpenter-working.jpg";
 import customFurniture from "@/assets/custom-furniture.jpg";
 import officeInterior from "@/assets/office-interior.jpg";
-import jpwCompanyVan from "@/assets/jpw-company-van.webp";
+import woodenFencingProject from "@/assets/wooden-fencing-project.jpg";
 
 const HeroSection = () => {
   return (
@@ -25,11 +25,11 @@ const HeroSection = () => {
             {/* Workers Image with Experience Badge */}
             <div className="relative">
               <img
-                src={jpwCompanyVan}
-                srcSet={`${jpwCompanyVan} 576w`}
+                src={woodenFencingProject}
+                srcSet={`${woodenFencingProject} 576w`}
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 576px"
-                alt="JPW Carpentry & Building company van showcasing professional services"
-                className="w-full h-[500px] object-cover rounded-lg"
+                alt="Professional wooden fencing installation by JPW Carpentry & Building"
+                className="w-full h-[450px] object-cover object-bottom rounded-lg"
                 width="576"
                 height="384"
                 loading="eager"
