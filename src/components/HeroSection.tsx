@@ -29,7 +29,7 @@ const HeroSection = () => {
                 srcSet={`${jpwCompanyVan} 576w`}
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 576px"
                 alt="JPW Carpentry & Building company van showcasing professional services"
-                className="w-full h-96 object-cover rounded-lg"
+                className="w-full h-[450px] object-cover rounded-lg"
                 width="576"
                 height="384"
                 loading="eager"
