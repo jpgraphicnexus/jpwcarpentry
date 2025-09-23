@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import carpenterWorking from "@/assets/carpenter-working.jpg";
-import customFurniture from "@/assets/custom-furniture.jpg";
+import drivewayProject from "@/assets/driveway-project.webp";
 import officeInterior from "@/assets/office-interior.jpg";
 import woodenFencingProject from "@/assets/wooden-fencing-project.jpg";
 
@@ -84,10 +84,10 @@ const HeroSection = () => {
             {/* Building Image */}
             <div className="relative">
           <img
-            src={customFurniture}
-            srcSet={`${customFurniture} 576w`}
+            src={drivewayProject}
+            srcSet={`${drivewayProject} 576w`}
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 576px"
-            alt="Beautiful custom furniture and woodwork craftsmanship"
+            alt="Professional driveway construction and landscaping by JPW Carpentry & Building"
             className="w-full h-96 object-cover rounded-lg"
             width="576"
             height="384"
