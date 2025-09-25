@@ -1,6 +1,8 @@
-import modernBuilding from "@/assets/modern-building.jpg";
-import constructionWorkers from "@/assets/construction-workers.jpg";
-import officeInterior from "@/assets/office-interior.jpg";
+import oakStaircase from "@/assets/oak-staircase.webp";
+import kitchenRenovationProject from "@/assets/kitchen-renovation-project.webp";
+import bungalowRenovation from "@/assets/bungalow-renovation.webp";
+import deckingProject from "@/assets/decking-project.webp";
+import drivewayProject from "@/assets/driveway-project.webp";
 
 export interface BlogPost {
   id: string;
@@ -283,8 +285,8 @@ Contact JPW Carpentry today for your free loft conversion consultation. We'll as
     lastModified: "2024-12-15", 
     category: "how-to-guides",
     tags: ["loft conversion", "chichester", "building regulations", "planning permission", "home improvement"],
-    featuredImage: modernBuilding,
-    imageAlt: "Modern loft conversion in Chichester showing dormer windows and quality finishes",
+    featuredImage: oakStaircase,
+    imageAlt: "Oak staircase installation as part of loft conversion project in Chichester",
     readTime: 8,
     metaDescription: "Complete guide to loft conversions in Chichester 2024. Costs, planning permission, building regulations, and local contractor advice for West Sussex homeowners.",
     featured: true,
@@ -693,7 +695,7 @@ Don't let planning permission uncertainty delay your extension project. Contact 
     lastModified: "2024-12-20",
     category: "how-to-guides",
     tags: ["planning permission", "home extension", "west sussex", "building regulations", "permitted development"],
-    featuredImage: constructionWorkers,
+    featuredImage: bungalowRenovation,
     imageAlt: "Modern home extension in West Sussex showing approved planning permission design",
     readTime: 12,
     metaDescription: "Complete guide to home extension planning permission in West Sussex 2024. Costs, timelines, requirements and approval strategies for all local authorities.",
@@ -1190,7 +1192,7 @@ Ready to get realistic pricing for your kitchen extension? Our location-specific
     lastModified: "2025-01-15",
     category: "local-projects",
     tags: ["kitchen extension cost", "chichester", "horsham", "worthing", "west sussex", "extension pricing"],
-    featuredImage: officeInterior,
+    featuredImage: kitchenRenovationProject,
     imageAlt: "Kitchen extension cost comparison chart showing Chichester, Horsham and Worthing pricing differences",
     readTime: 10,
     metaDescription: "Compare kitchen extension costs in Chichester, Horsham & Worthing 2024. Real project pricing, planning fees, and location-specific factors affecting your budget.",
@@ -1560,7 +1562,7 @@ Don't let Building Regulations changes derail your project. Contact JPW Carpentr
     lastModified: "2025-03-01",
     category: "industry-insights",
     tags: ["building regulations 2024", "building compliance", "energy efficiency", "fire safety", "accessibility", "west sussex"],
-    featuredImage: modernBuilding,
+    featuredImage: drivewayProject,
     imageAlt: "Building Regulations 2024 compliance checklist showing new energy efficiency and safety requirements",
     readTime: 11,
     metaDescription: "Complete guide to Building Regulations changes 2024 for West Sussex homeowners. New energy efficiency, fire safety, and accessibility requirements for extensions and renovations.",
@@ -2035,7 +2037,7 @@ Small carpentry improvements offer an excellent way to enhance your home's funct
     lastModified: "2025-03-15",
     category: "how-to-guides",
     tags: ["small carpentry jobs", "home improvements", "property value", "built-in storage", "home office", "ROI"],
-    featuredImage: modernBuilding,
+    featuredImage: deckingProject,
     imageAlt: "Before and after photos showing small carpentry improvements that add significant value to homes",
     readTime: 8,
     metaDescription: "Discover 10 small carpentry jobs that add big value to your home in 2024. From built-in storage to custom shelving, maximize ROI with strategic improvements.",

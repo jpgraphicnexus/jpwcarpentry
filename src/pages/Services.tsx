@@ -3,9 +3,9 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import modernBuilding from "@/assets/modern-building.jpg";
-import officeInterior from "@/assets/office-interior.jpg";
-import customFurniture from "@/assets/custom-furniture.jpg";
+import bungalowRenovation from "@/assets/bungalow-renovation.webp";
+import oakStaircase from "@/assets/oak-staircase.webp";
+import kitchenRenovationProject from "@/assets/kitchen-renovation-project.webp";
 import { Link } from "react-router-dom";
 
 const Services = () => {
@@ -24,7 +24,7 @@ const Services = () => {
       ],
       priceRange: "£45k - £120k",
       duration: "10-20 weeks",
-      image: modernBuilding
+      image: bungalowRenovation
     },
     {
       title: "Loft Conversions", 
@@ -40,7 +40,7 @@ const Services = () => {
       ],
       priceRange: "£35k - £75k", 
       duration: "8-14 weeks",
-      image: officeInterior
+      image: oakStaircase
     },
     {
       title: "Full Home Renovations",
@@ -56,7 +56,7 @@ const Services = () => {
       ],
       priceRange: "£60k - £200k+",
       duration: "12-24 weeks", 
-      image: customFurniture
+      image: kitchenRenovationProject
     }
   ];
 
