@@ -28,9 +28,12 @@ const Header = () => {
             variant="ghost" 
             className="text-primary hover:text-golden font-medium"
             onClick={() => {
-              document.getElementById('contact-section')?.scrollIntoView({ 
-                behavior: 'smooth' 
-              });
+              const contactSection = document.getElementById('contact-section');
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+              } else {
+                window.location.href = '/#contact-section';
+              }
             }}
           >
             Contact
