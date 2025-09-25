@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import woodworkingProject from "@/assets/woodworking-project.jpg";
+import keepInTouch from "@/assets/keep-in-touch.webp";
 
 const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -18,8 +18,8 @@ const ContactSection = () => {
           {/* Left Content - Image */}
           <div className="relative">
             <img
-              src={woodworkingProject}
-              alt="High-quality woodworking and carpentry project showcase"
+              src={keepInTouch}
+              alt="Professional timber construction work in progress by JPW Carpentry & Building"
               className="w-full h-96 object-cover rounded-lg"
             />
             <div className="absolute bottom-6 left-6 w-16 h-16 bg-golden rounded-full flex items-center justify-center">

@@ -2,8 +2,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import carpenterPortrait from "@/assets/carpenter-portrait.jpg";
-import modernBuilding from "@/assets/modern-building.jpg";
+import aboutUsPatio from "@/assets/about-us-patio.jpg";
+import aboutUsBathroom from "@/assets/about-us-bathroom.webp";
 
 const AboutUs = () => {
 
@@ -60,8 +60,8 @@ const AboutUs = () => {
             
             <div className="relative">
               <img
-                src={modernBuilding}
-                alt="Modern home extension and renovation project by JPW Carpentry & Building"
+                src={aboutUsBathroom}
+                alt="Professional bathroom renovation with premium tiling by JPW Carpentry & Building"
                 className="w-full h-96 object-cover rounded-lg"
                 width="576"
                 height="384"
@@ -102,8 +102,8 @@ const AboutUs = () => {
             
             <div className="relative">
               <img
-                src={carpenterPortrait}
-                alt="Professional builder from JPW Carpentry & Building team"
+                src={aboutUsPatio}
+                alt="Patio cleaning and maintenance services by JPW Carpentry & Building"
                 className="w-full h-80 object-cover rounded-lg"
                 width="576"
                 height="320"
