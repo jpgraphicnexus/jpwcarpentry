@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import officeInterior from "@/assets/office-interior.jpg";
+import kitchenRenovation from "@/assets/kitchen-renovation.webp";
 import carpenterWorking from "@/assets/carpenter-working.jpg";
 
 const KitchenRenovations = () => {
@@ -87,8 +87,8 @@ const KitchenRenovations = () => {
             
             <div className="relative">
               <img
-                src={officeInterior}
-                alt="Kitchen Renovation - JPW Carpentry & Building"
+                src={kitchenRenovation}
+                alt="Beautiful modern kitchen renovation by JPW Carpentry & Building"
                 className="w-full h-96 object-cover rounded-lg"
                 width="576"
                 height="384"

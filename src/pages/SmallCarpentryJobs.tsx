@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import carpenterWorking from "@/assets/carpenter-working.jpg";
+import smallCarpentry from "@/assets/small-carpentry.webp";
 import woodworkingProject from "@/assets/woodworking-project.jpg";
 
 const SmallCarpentryJobs = () => {
@@ -92,8 +92,8 @@ const SmallCarpentryJobs = () => {
             
             <div className="relative">
               <img
-                src={carpenterWorking}
-                alt="Small Carpentry Jobs - JPW Carpentry & Building"
+                src={smallCarpentry}
+                alt="Custom wooden staircase construction by JPW Carpentry & Building"
                 className="w-full h-96 object-cover rounded-lg"
                 width="576"
                 height="384"

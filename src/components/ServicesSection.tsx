@@ -1,35 +1,35 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import officeInterior from "@/assets/office-interior.jpg";
-import customFurniture from "@/assets/custom-furniture.jpg";
-import carpenterWorking from "@/assets/carpenter-working.jpg";
-import modernBuilding from "@/assets/modern-building.jpg";
+import kitchenRenovation from "@/assets/kitchen-renovation.webp";
+import smallCarpentry from "@/assets/small-carpentry.webp";
+import homeRenovation from "@/assets/home-renovation.webp";
+import generalBuilding from "@/assets/general-building.webp";
 
 const ServicesSection = () => {
   const services = [
     {
       title: "Kitchen Renovations",
       description: "Complete kitchen transformations with custom carpentry and professional fitting.",
-      image: officeInterior,
+      image: kitchenRenovation,
       link: "/services/kitchen-renovations",
     },
     {
       title: "Small Carpentry Jobs",
       description: "Expert carpentry services for shelving, repairs, and bespoke woodwork projects.",
-      image: carpenterWorking,
+      image: smallCarpentry,
       link: "/services/small-carpentry-jobs",
     },
     {
       title: "Home Renovations",
       description: "Full project management for extensions, conversions, and complete home makeovers.",
-      image: customFurniture,
+      image: homeRenovation,
       link: "/services/home-renovations",
     },
     {
       title: "General Building Works",
       description: "Comprehensive building services from structural work to finishing touches.",
-      image: modernBuilding,
+      image: generalBuilding,
       link: "/services/general-building-works",
     },
   ];

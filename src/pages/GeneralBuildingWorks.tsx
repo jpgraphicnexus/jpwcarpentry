@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import modernBuilding from "@/assets/modern-building.jpg";
+import generalBuilding from "@/assets/general-building.webp";
 import constructionWorkers from "@/assets/construction-workers.jpg";
 
 const GeneralBuildingWorks = () => {
@@ -107,8 +107,8 @@ const GeneralBuildingWorks = () => {
             
             <div className="relative">
               <img
-                src={modernBuilding}
-                alt="General Building Works - JPW Carpentry & Building"
+                src={generalBuilding}
+                alt="Professional building and construction work by JPW Carpentry & Building"
                 className="w-full h-96 object-cover rounded-lg"
                 width="576"
                 height="384"
