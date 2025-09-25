@@ -4,8 +4,22 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import homeRenovation from "@/assets/home-renovation.webp";
 import modernBuilding from "@/assets/modern-building.jpg";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const HomeRenovations = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleContactClick = () => {
+    if (location.pathname === '/') {
+      const section = document.getElementById('contact-section');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate('/#contact-section');
+    }
+  };
   const features = [
     "Complete property assessment",
     "Extensions and conversions",
@@ -89,25 +103,11 @@ const HomeRenovations = () => {
               </div>
 
               <div className="pt-4">
-                <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3"
-                  onClick={() => {
-                    const contactSection = document.getElementById('contact-section');
-                    if (contactSection) {
-                      contactSection.scrollIntoView({ behavior: 'smooth' });
-                    } else {
-                      // Navigate to home page and scroll after load
-                      window.location.href = '/';
-                      setTimeout(() => {
-                        const section = document.getElementById('contact-section');
-                        if (section) {
-                          section.scrollIntoView({ behavior: 'smooth' });
-                        }
-                      }, 100);
-                    }
-                  }}
-                >
-                  Get Renovation Quote
-                </Button>
+                 <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3"
+                   onClick={handleContactClick}
+                 >
+                   Get Renovation Quote
+                 </Button>
               </div>
             </div>
             

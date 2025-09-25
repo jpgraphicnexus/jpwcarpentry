@@ -4,8 +4,22 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import kitchenRenovation from "@/assets/kitchen-renovation.webp";
 import carpenterWorking from "@/assets/carpenter-working.jpg";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const KitchenRenovations = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleContactClick = () => {
+    if (location.pathname === '/') {
+      const section = document.getElementById('contact-section');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate('/#contact-section');
+    }
+  };
   const features = [
     "Custom kitchen design",
     "Quality worktop installation", 
@@ -71,23 +85,9 @@ const KitchenRenovations = () => {
               </div>
 
               <div className="pt-4">
-                <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3"
-                  onClick={() => {
-                    const contactSection = document.getElementById('contact-section');
-                    if (contactSection) {
-                      contactSection.scrollIntoView({ behavior: 'smooth' });
-                    } else {
-                      // Navigate to home page and scroll after load
-                      window.location.href = '/';
-                      setTimeout(() => {
-                        const section = document.getElementById('contact-section');
-                        if (section) {
-                          section.scrollIntoView({ behavior: 'smooth' });
-                        }
-                      }, 100);
-                    }
-                  }}
-                >
+                 <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3"
+                   onClick={handleContactClick}
+                 >
                   Get Free Kitchen Quote
                 </Button>
               </div>
@@ -156,23 +156,9 @@ const KitchenRenovations = () => {
           </div>
           
           <div className="text-center mt-16">
-            <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3"
-              onClick={() => {
-                const contactSection = document.getElementById('contact-section');
-                if (contactSection) {
-                  contactSection.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                  // Navigate to home page and scroll after load
-                  window.location.href = '/';
-                  setTimeout(() => {
-                    const section = document.getElementById('contact-section');
-                    if (section) {
-                      section.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }, 100);
-                }
-              }}
-            >
+             <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3"
+               onClick={handleContactClick}
+             >
               Start Your Kitchen Project
             </Button>
           </div>

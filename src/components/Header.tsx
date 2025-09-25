@@ -1,8 +1,24 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleContactClick = () => {
+    if (location.pathname === '/') {
+      // Already on homepage, just scroll
+      const section = document.getElementById('contact-section');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Navigate to homepage with hash
+      navigate('/#contact-section');
+    }
+  };
+
   return (
     <header className="w-full bg-background py-6 px-8">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -27,21 +43,7 @@ const Header = () => {
           <Button 
             variant="ghost" 
             className="text-primary hover:text-golden font-medium"
-            onClick={() => {
-              const contactSection = document.getElementById('contact-section');
-              if (contactSection) {
-                contactSection.scrollIntoView({ behavior: 'smooth' });
-              } else {
-                // Navigate to home page and scroll after load
-                window.location.href = '/';
-                setTimeout(() => {
-                  const section = document.getElementById('contact-section');
-                  if (section) {
-                    section.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }, 100);
-              }
-            }}
+            onClick={handleContactClick}
           >
             Contact
           </Button>

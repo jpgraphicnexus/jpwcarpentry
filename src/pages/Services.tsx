@@ -6,9 +6,22 @@ import { Badge } from "@/components/ui/badge";
 import bungalowRenovation from "@/assets/bungalow-renovation.webp";
 import oakStaircase from "@/assets/oak-staircase.webp";
 import kitchenRenovationProject from "@/assets/kitchen-renovation-project.webp";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const Services = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleContactClick = () => {
+    if (location.pathname === '/') {
+      const section = document.getElementById('contact-section');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate('/#contact-section');
+    }
+  };
   const mainServices = [
     {
       title: "Home Extensions",
@@ -188,24 +201,10 @@ const Services = () => {
                   </div>
                   
                   
-                  <Link to="/#contact-section">
-                    <Button className="bg-golden hover:bg-golden/90 text-dark-bg font-medium"
-                      onClick={() => {
-                        const contactSection = document.getElementById('contact-section');
-                        if (contactSection) {
-                          contactSection.scrollIntoView({ behavior: 'smooth' });
-                        } else {
-                          // Navigate to home page and scroll after load
-                          window.location.href = '/';
-                          setTimeout(() => {
-                            const section = document.getElementById('contact-section');
-                            if (section) {
-                              section.scrollIntoView({ behavior: 'smooth' });
-                            }
-                          }, 100);
-                        }
-                      }}
-                    >
+                   <Link to="/#contact-section">
+                     <Button className="bg-golden hover:bg-golden/90 text-dark-bg font-medium"
+                       onClick={handleContactClick}
+                     >
                       Get Free Quote
                     </Button>
                   </Link>
@@ -282,23 +281,9 @@ const Services = () => {
           </div>
           
           <div className="text-center mt-16">
-            <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3"
-              onClick={() => {
-                const contactSection = document.getElementById('contact-section');
-                if (contactSection) {
-                  contactSection.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                  // Navigate to home page and scroll after load
-                  window.location.href = '/';
-                  setTimeout(() => {
-                    const section = document.getElementById('contact-section');
-                    if (section) {
-                      section.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }, 100);
-                }
-              }}
-            >
+             <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3"
+               onClick={handleContactClick}
+             >
               Start Your Project Today
             </Button>
           </div>

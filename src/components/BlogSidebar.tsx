@@ -3,9 +3,22 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { blogCategories, blogPosts } from "@/data/blogPosts";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const BlogSidebar = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleContactClick = () => {
+    if (location.pathname === '/') {
+      const section = document.getElementById('contact-section');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate('/#contact-section');
+    }
+  };
   const recentPosts = blogPosts.slice(0, 5);
   const popularTags = ["loft conversion", "home extension", "planning permission", "building regulations", "chichester"];
 
@@ -114,23 +127,9 @@ const BlogSidebar = () => {
           <p className="text-sm mb-4">
             Get professional guidance for your home improvement project.
           </p>
-            <Button variant="secondary" className="w-full"
-              onClick={() => {
-                const contactSection = document.getElementById('contact-section');
-                if (contactSection) {
-                  contactSection.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                  // Navigate to home page and scroll after load
-                  window.location.href = '/';
-                  setTimeout(() => {
-                    const section = document.getElementById('contact-section');
-                    if (section) {
-                      section.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }, 100);
-                }
-              }}
-            >
+             <Button variant="secondary" className="w-full"
+               onClick={handleContactClick}
+             >
               Get Free Quote
             </Button>
         </CardContent>
