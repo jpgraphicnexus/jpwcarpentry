@@ -3,9 +3,12 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import modernBuilding from "@/assets/modern-building.jpg";
-import officeInterior from "@/assets/office-interior.jpg";
-import customFurniture from "@/assets/custom-furniture.jpg";
+import kitchenRenovationProject from "@/assets/kitchen-renovation-project.webp";
+import bungalowRenovation from "@/assets/bungalow-renovation.webp";
+import oakStaircase from "@/assets/oak-staircase.webp";
+import drivewayProject from "@/assets/driveway-project.webp";
+import oakDoors from "@/assets/oak-doors.webp";
+import deckingProject from "@/assets/decking-project.webp";
 
 const PastWorks = () => {
   const projects = [
@@ -13,37 +16,37 @@ const PastWorks = () => {
       title: "Kitchen Renovation",
       type: "Kitchen Renovation",
       description: "This kitchen renovation included a removal of a wall to create a big open plan space for the customer to enjoy the great new space, JPW and the team really enjoyed working alongside the client to achieve these great results.",
-      image: modernBuilding
+      image: kitchenRenovationProject
     },
     {
       title: "Bungalow Renovation", 
       type: "Full Renovation",
       description: "JPW and the team enjoyed transforming this dated bungalow to a new fresh look to the clients specifications.",
-      image: officeInterior
+      image: bungalowRenovation
     },
     {
-      title: "Loft Conversion",
-      type: "Loft Conversion",
-      description: "This loft space was taken from an unusable space to a new space creating an extra bedroom and toilet for the client. Really enjoyed transforming this loft to create this new space.",
-      image: customFurniture
+      title: "Driveway Project",
+      type: "Driveway & Landscaping",
+      description: "This beautiful curved driveway project transformed the property's entrance, creating an elegant and practical access route with professional landscaping and quality materials.",
+      image: drivewayProject
     },
     {
       title: "Decking",
       type: "Outdoor Decking",
       description: "This decking was transformed from a dangerous rotten decking to a new refreshed look, all built to last.",
-      image: modernBuilding
+      image: deckingProject
     },
     {
       title: "Oak Staircase",
       type: "Staircase Installation",
       description: "This transformation really changed the clients downstairs space creating a lovely oak effect to match their interior. Really enjoyed this project.",
-      image: officeInterior
+      image: oakStaircase
     },
     {
       title: "Oak Doors",
       type: "Door Installation",
       description: "Sourced and fitted to customers specifications. This project showcases we're happy to take on small projects too. A quick turnaround but a lasting effect for the customer. Doors can really make a major difference to your property.",
-      image: customFurniture
+      image: oakDoors
     }
   ];
 
