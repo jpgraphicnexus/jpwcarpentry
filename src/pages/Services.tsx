@@ -189,16 +189,24 @@ const Services = () => {
                   
                   
                   <Link to="/#contact-section">
-                    <Button className="bg-golden hover:bg-golden/90 text-dark-bg font-medium" asChild>
-                      <a href="/#contact-section" onClick={(e) => {
-                        e.preventDefault();
+                    <Button className="bg-golden hover:bg-golden/90 text-dark-bg font-medium"
+                      onClick={() => {
                         const contactSection = document.getElementById('contact-section');
                         if (contactSection) {
                           contactSection.scrollIntoView({ behavior: 'smooth' });
                         } else {
-                          window.location.href = '/#contact-section';
+                          // Navigate to home page and scroll after load
+                          window.location.href = '/';
+                          setTimeout(() => {
+                            const section = document.getElementById('contact-section');
+                            if (section) {
+                              section.scrollIntoView({ behavior: 'smooth' });
+                            }
+                          }, 100);
                         }
-                      }}>Get Free Quote</a>
+                      }}
+                    >
+                      Get Free Quote
                     </Button>
                   </Link>
                 </div>
@@ -274,7 +282,23 @@ const Services = () => {
           </div>
           
           <div className="text-center mt-16">
-            <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3">
+            <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3"
+              onClick={() => {
+                const contactSection = document.getElementById('contact-section');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  // Navigate to home page and scroll after load
+                  window.location.href = '/';
+                  setTimeout(() => {
+                    const section = document.getElementById('contact-section');
+                    if (section) {
+                      section.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }, 100);
+                }
+              }}
+            >
               Start Your Project Today
             </Button>
           </div>

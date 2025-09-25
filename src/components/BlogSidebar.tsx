@@ -114,15 +114,23 @@ const BlogSidebar = () => {
           <p className="text-sm mb-4">
             Get professional guidance for your home improvement project.
           </p>
-            <Button variant="secondary" className="w-full" onClick={(e) => {
-              e.preventDefault();
-              const contactSection = document.getElementById('contact-section');
-              if (contactSection) {
-                contactSection.scrollIntoView({ behavior: 'smooth' });
-              } else {
-                window.location.href = '/#contact-section';
-              }
-            }}>
+            <Button variant="secondary" className="w-full"
+              onClick={() => {
+                const contactSection = document.getElementById('contact-section');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  // Navigate to home page and scroll after load
+                  window.location.href = '/';
+                  setTimeout(() => {
+                    const section = document.getElementById('contact-section');
+                    if (section) {
+                      section.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }, 100);
+                }
+              }}
+            >
               Get Free Quote
             </Button>
         </CardContent>

@@ -32,7 +32,14 @@ const Header = () => {
               if (contactSection) {
                 contactSection.scrollIntoView({ behavior: 'smooth' });
               } else {
-                window.location.href = '/#contact-section';
+                // Navigate to home page and scroll after load
+                window.location.href = '/';
+                setTimeout(() => {
+                  const section = document.getElementById('contact-section');
+                  if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }, 100);
               }
             }}
           >

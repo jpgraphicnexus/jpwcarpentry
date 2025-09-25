@@ -71,16 +71,24 @@ const KitchenRenovations = () => {
               </div>
 
               <div className="pt-4">
-                <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3" asChild>
-                  <a href="/#contact-section" onClick={(e) => {
-                    e.preventDefault();
+                <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3"
+                  onClick={() => {
                     const contactSection = document.getElementById('contact-section');
                     if (contactSection) {
                       contactSection.scrollIntoView({ behavior: 'smooth' });
                     } else {
-                      window.location.href = '/#contact-section';
+                      // Navigate to home page and scroll after load
+                      window.location.href = '/';
+                      setTimeout(() => {
+                        const section = document.getElementById('contact-section');
+                        if (section) {
+                          section.scrollIntoView({ behavior: 'smooth' });
+                        }
+                      }, 100);
                     }
-                  }}>Get Free Kitchen Quote</a>
+                  }}
+                >
+                  Get Free Kitchen Quote
                 </Button>
               </div>
             </div>
@@ -148,16 +156,24 @@ const KitchenRenovations = () => {
           </div>
           
           <div className="text-center mt-16">
-            <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3" asChild>
-              <a href="/#contact-section" onClick={(e) => {
-                e.preventDefault();
+            <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3"
+              onClick={() => {
                 const contactSection = document.getElementById('contact-section');
                 if (contactSection) {
                   contactSection.scrollIntoView({ behavior: 'smooth' });
                 } else {
-                  window.location.href = '/#contact-section';
+                  // Navigate to home page and scroll after load
+                  window.location.href = '/';
+                  setTimeout(() => {
+                    const section = document.getElementById('contact-section');
+                    if (section) {
+                      section.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }, 100);
                 }
-              }}>Start Your Kitchen Project</a>
+              }}
+            >
+              Start Your Kitchen Project
             </Button>
           </div>
         </div>

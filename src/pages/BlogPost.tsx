@@ -184,17 +184,25 @@ const BlogPost = () => {
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Link to="/#contact-section">
-                    <Button size="lg" variant="secondary" className="bg-white text-golden hover:bg-white/90" asChild>
-                      <a href="/#contact-section" onClick={(e) => {
-                        e.preventDefault();
-                        const contactSection = document.getElementById('contact-section');
-                        if (contactSection) {
-                          contactSection.scrollIntoView({ behavior: 'smooth' });
-                        } else {
-                          window.location.href = '/#contact-section';
-                        }
-                      }}>Get Free Quote</a>
-                    </Button>
+                   <Button size="lg" variant="secondary" className="bg-white text-golden hover:bg-white/90"
+                     onClick={() => {
+                       const contactSection = document.getElementById('contact-section');
+                       if (contactSection) {
+                         contactSection.scrollIntoView({ behavior: 'smooth' });
+                       } else {
+                         // Navigate to home page and scroll after load
+                         window.location.href = '/';
+                         setTimeout(() => {
+                           const section = document.getElementById('contact-section');
+                           if (section) {
+                             section.scrollIntoView({ behavior: 'smooth' });
+                           }
+                         }, 100);
+                       }
+                     }}
+                   >
+                     Get Free Quote
+                   </Button>
                   </Link>
                   <Link to="/services">
                     <Button variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white/10 hover:border-white">
