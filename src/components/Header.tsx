@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import jpwLogo from "@/assets/jpw-logo.png";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -24,9 +25,11 @@ const Header = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-golden rounded-full flex items-center justify-center">
-            <div className="w-3 h-3 border-t-2 border-r-2 border-dark-bg rotate-45 -ml-0.5 -mb-0.5"></div>
-          </div>
+          <img 
+            src={jpwLogo} 
+            alt="JPW Carpentry & Building Logo" 
+            className="w-12 h-12 object-contain"
+          />
           <h1 className="text-2xl font-bold text-primary">JPW Carpentry & Building</h1>
         </Link>
 
