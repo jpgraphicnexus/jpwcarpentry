@@ -75,6 +75,12 @@ const Services = () => {
 
   const additionalServices = [
     {
+      title: "Portsmouth Carpentry Services",
+      description: "Dedicated carpentry services across Portsmouth, Southsea, and surrounding Hampshire areas.",
+      icon: "📍",
+      link: "/portsmouth-carpentry-services"
+    },
+    {
       title: "Kitchen Renovations",
       description: "Complete kitchen transformations including design, fitting, and all associated trades.",
       icon: "🏠"
@@ -248,9 +254,18 @@ const Services = () => {
                   <CardTitle className="text-xl text-primary">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-medium-gray leading-relaxed text-center">
+                  <CardDescription className="text-medium-gray leading-relaxed text-center mb-4">
                     {service.description}
                   </CardDescription>
+                  {service.link && (
+                    <div className="text-center">
+                      <Link to={service.link}>
+                        <Button variant="outline" size="sm" className="text-primary hover:bg-primary hover:text-white">
+                          Learn More
+                        </Button>
+                      </Link>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             ))}

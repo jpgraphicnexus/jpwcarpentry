@@ -1,0 +1,752 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import SEOComponent from "@/components/SEOComponent";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { Phone, Mail, MapPin, Clock, Star, Shield, Award, CheckCircle } from "lucide-react";
+import carpenterWorking from "@/assets/carpenter-working.jpg";
+import kitchenRenovation from "@/assets/kitchen-renovation.webp";
+import homeRenovation from "@/assets/home-renovation.webp";
+import customFurniture from "@/assets/custom-furniture.jpg";
+
+const PortsmouthCarpentry = () => {
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Form submission logic here
+  };
+
+  const services = [
+    {
+      title: "Kitchen Fitting & Renovation",
+      description: "Transform your Portsmouth kitchen with bespoke fitted units",
+      price: "From £8,000",
+      popular: "Southsea, Old Portsmouth, North End",
+      image: kitchenRenovation
+    },
+    {
+      title: "Built-in Storage Solutions", 
+      description: "Maximize space in Portsmouth homes with custom storage",
+      price: "From £800",
+      popular: "Victorian terraces, modern developments",
+      image: customFurniture
+    },
+    {
+      title: "Home Extensions & Conversions",
+      description: "Add value to your Portsmouth property with expert extensions", 
+      price: "From £15,000",
+      popular: "Planning permission support included",
+      image: homeRenovation
+    },
+    {
+      title: "Bespoke Joinery & Furniture",
+      description: "Handcrafted furniture designed for Portsmouth homes",
+      price: "From £500", 
+      popular: "Traditional and contemporary styles",
+      image: customFurniture
+    },
+    {
+      title: "Flooring Installation",
+      description: "Professional flooring for Portsmouth properties",
+      price: "From £25/m²",
+      popular: "Hardwood, laminate, engineered",
+      image: carpenterWorking
+    },
+    {
+      title: "Internal Doors & Windows", 
+      description: "Quality door and window installation across Portsmouth",
+      price: "From £200 per door",
+      popular: "Period property expertise", 
+      image: carpenterWorking
+    }
+  ];
+
+  const areas = [
+    { name: "Central Portsmouth", details: "Commercial Road, Guildhall, Historic Dockyard area" },
+    { name: "Southsea", details: "Palmerston Road, Albert Road, seafront properties" },
+    { name: "Old Portsmouth", details: "Historic quarter, cathedral area, waterfront homes" },
+    { name: "North End", details: "Copnor, Hilsea, residential developments" },
+    { name: "Fratton", details: "Victorian terraces, family homes, renovation projects" },
+    { name: "Baffins", details: "Modern estates, family properties" },
+    { name: "Milton", details: "Lakeside developments, contemporary homes" }
+  ];
+
+  const testimonials = [
+    {
+      name: "Sarah M.",
+      location: "Southsea (PO4)",
+      review: "JPW transformed our cramped Victorian kitchen into a modern family space. Professional, clean, and finished exactly on time. Highly recommend to any Portsmouth homeowner.",
+      rating: 5
+    },
+    {
+      name: "David R.", 
+      location: "Old Portsmouth (PO1)",
+      review: "Excellent work on our period property extension. They understood the planning requirements and delivered quality work that respects the building's character.",
+      rating: 5
+    },
+    {
+      name: "Lisa T.",
+      location: "Fratton (PO1)", 
+      review: "Built-in wardrobes and storage throughout our house. Fantastic attention to detail and great value for money. Will definitely use again.",
+      rating: 5
+    }
+  ];
+
+  const projects = [
+    {
+      title: "Southsea Kitchen Renovation",
+      subtitle: "Victorian terrace kitchen transformation",
+      challenge: "Limited space, period features to preserve",
+      solution: "Bespoke units, integrated appliances, original features retained",
+      timeline: "3 weeks",
+      feedback: "Exceeded expectations"
+    },
+    {
+      title: "Old Portsmouth Loft Conversion", 
+      subtitle: "Historic property loft conversion with planning permission",
+      challenge: "Conservation area restrictions",
+      solution: "Sympathetic design, traditional materials",
+      timeline: "8 weeks",
+      feedback: "Added value: £35,000"
+    },
+    {
+      title: "North End Extension",
+      subtitle: "Single-storey rear extension with bi-fold doors", 
+      challenge: "Narrow access, neighbor considerations",
+      solution: "Careful planning, quality materials",
+      timeline: "12 weeks",
+      feedback: "Open-plan family living"
+    }
+  ];
+
+  return (
+    <>
+      <SEOComponent
+        title="Portsmouth Carpentry Services | Expert Carpenters | JPW Carpentry"
+        description="Professional carpentry services in Portsmouth, Hampshire. Kitchen fitting, built-in storage, home extensions, and bespoke joinery. Free quotes. Call 07399594658."
+        keywords="Portsmouth carpentry, carpenter Portsmouth, kitchen fitting Portsmouth, home extensions Portsmouth, built-in storage Portsmouth, joinery Portsmouth"
+        canonicalUrl="/portsmouth-carpentry-services"
+      />
+      <div className="min-h-screen bg-background">
+        <Header />
+        
+        {/* Breadcrumb Navigation */}
+        <div className="container mx-auto px-4 py-4">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/">Home</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/services">Services</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbPage>Portsmouth Carpentry Services</BreadcrumbPage>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
+
+        {/* Hero Section */}
+        <section className="relative py-20 bg-gradient-to-br from-primary to-secondary">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="text-white">
+                <Badge className="mb-4 bg-golden text-dark-bg">Portsmouth's #1 Carpentry Service</Badge>
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 font-playfair">
+                  Portsmouth's Premier Carpentry Services
+                </h1>
+                <p className="text-xl mb-8 text-white/90">
+                  Expert carpenters serving Portsmouth, Southsea, and surrounding Hampshire areas with 20+ years of experience
+                </p>
+                
+                {/* Trust Signals */}
+                <div className="flex flex-wrap gap-6 mb-8">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-golden" />
+                    <span>Serving 500+ Portsmouth homes</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Award className="w-5 h-5 text-golden" />
+                    <span>20+ Years Experience</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Shield className="w-5 h-5 text-golden" />
+                    <span>Fully Insured</span>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button size="lg" className="bg-golden text-dark-bg hover:bg-golden-hover font-semibold">
+                    <Phone className="w-5 h-5 mr-2" />
+                    Get Your Free Portsmouth Quote Today
+                  </Button>
+                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+                    View Our Work
+                  </Button>
+                </div>
+              </div>
+              
+              <div className="relative">
+                <img
+                  src={carpenterWorking}
+                  alt="Professional carpenter working on Portsmouth home renovation project"
+                  className="w-full h-[500px] object-cover rounded-lg shadow-2xl"
+                />
+                <div className="absolute -bottom-6 -left-6 bg-golden text-dark-bg p-4 rounded-lg shadow-lg">
+                  <div className="text-2xl font-bold">Free Quotes</div>
+                  <div className="text-sm">Within 24 Hours</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Services Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair text-primary">
+                Complete Carpentry Services Across Portsmouth
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                From Victorian terraces in Southsea to modern developments in North End, 
+                we provide expert carpentry services throughout Portsmouth and Hampshire.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {services.map((service, index) => (
+                <Card key={index} className="hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                  <div className="relative h-48 overflow-hidden rounded-t-lg">
+                    <img 
+                      src={service.image} 
+                      alt={`${service.title} in Portsmouth`}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute top-4 right-4">
+                      <Badge className="bg-golden text-dark-bg">{service.price}</Badge>
+                    </div>
+                  </div>
+                  <CardHeader>
+                    <CardTitle className="text-xl text-primary">{service.title}</CardTitle>
+                    <CardDescription className="text-base">{service.description}</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      <strong>Popular in:</strong> {service.popular}
+                    </p>
+                    <Button className="w-full bg-primary hover:bg-primary/90">
+                      Get Quote for This Service
+                    </Button>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Local Area Coverage */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair text-primary">
+                Serving All Portsmouth Areas
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Local knowledge and expertise across every Portsmouth district
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {areas.map((area, index) => (
+                <Card key={index} className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-primary flex items-center gap-2">
+                      <MapPin className="w-5 h-5 text-golden" />
+                      {area.name}
+                    </CardTitle>
+                    <CardDescription>{area.details}</CardDescription>
+                  </CardHeader>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose JPW */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair text-primary">
+                Why Portsmouth Homeowners Choose JPW Carpentry
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-golden rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MapPin className="w-8 h-8 text-dark-bg" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4 text-primary">Local Expertise</h3>
+                <ul className="text-muted-foreground space-y-2">
+                  <li>Born and raised in Hampshire</li>
+                  <li>Understand Portsmouth properties</li>
+                  <li>Planning permission experience with Portsmouth City Council</li>
+                  <li>Specialist knowledge of Victorian terraces</li>
+                </ul>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-golden rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-8 h-8 text-dark-bg" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4 text-primary">Transparent Pricing</h3>
+                <ul className="text-muted-foreground space-y-2">
+                  <li>Fixed-price quotes with no hidden extras</li>
+                  <li>Detailed breakdowns before work begins</li>
+                  <li>10% contingency included in estimates</li>
+                  <li>Multiple payment options available</li>
+                </ul>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-golden rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-8 h-8 text-dark-bg" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4 text-primary">Quality Guarantee</h3>
+                <ul className="text-muted-foreground space-y-2">
+                  <li>2-year warranty on all workmanship</li>
+                  <li>Fully insured with £2M public liability</li>
+                  <li>Only qualified, time-served carpenters</li>
+                  <li>Premium materials and finishes</li>
+                </ul>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-golden rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="w-8 h-8 text-dark-bg" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4 text-primary">Customer Service</h3>
+                <ul className="text-muted-foreground space-y-2">
+                  <li>Direct contact with project manager</li>
+                  <li>Flexible scheduling around your life</li>
+                  <li>Clean, tidy work practices</li>
+                  <li>Respect for your home and neighbors</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Project Showcase */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair text-primary">
+                Recent Portsmouth Carpentry Projects
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                See how we've transformed Portsmouth homes across the city
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              {projects.map((project, index) => (
+                <Card key={index} className="hover:shadow-xl transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-xl text-primary">{project.title}</CardTitle>
+                    <CardDescription className="text-base font-medium">{project.subtitle}</CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div>
+                      <h4 className="font-semibold text-primary mb-1">Challenge:</h4>
+                      <p className="text-muted-foreground">{project.challenge}</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary mb-1">Solution:</h4>
+                      <p className="text-muted-foreground">{project.solution}</p>
+                    </div>
+                    <div className="flex justify-between items-center pt-4 border-t">
+                      <div>
+                        <span className="text-sm font-medium text-primary">Timeline:</span>
+                        <span className="text-sm text-muted-foreground ml-2">{project.timeline}</span>
+                      </div>
+                      <Badge variant="secondary">{project.feedback}</Badge>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair text-primary">
+                What Portsmouth Customers Say
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              {testimonials.map((testimonial, index) => (
+                <Card key={index} className="hover:shadow-lg transition-shadow">
+                  <CardContent className="pt-6">
+                    <div className="flex mb-4">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="w-5 h-5 fill-golden text-golden" />
+                      ))}
+                    </div>
+                    <p className="text-muted-foreground mb-6 italic">"{testimonial.review}"</p>
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                        <span className="text-white font-semibold">{testimonial.name[0]}</span>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary">{testimonial.name}</p>
+                        <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            <div className="text-center mt-12">
+              <Button size="lg" className="bg-golden text-dark-bg hover:bg-golden-hover">
+                Join Happy Portsmouth Customers
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Planning & Regulations */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 font-playfair text-primary">
+                  Portsmouth Building Regulations & Planning Expertise
+                </h2>
+                <p className="text-xl text-muted-foreground mb-8">
+                  Navigate Portsmouth's planning requirements with confidence. Our local expertise ensures your project complies with all regulations.
+                </p>
+                
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-golden mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold text-primary">Portsmouth City Council Applications</h3>
+                      <p className="text-muted-foreground">Expert support through the planning application process</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-golden mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold text-primary">Conservation Areas</h3>
+                      <p className="text-muted-foreground">Specialist knowledge of Old Portsmouth and Southsea restrictions</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-golden mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold text-primary">Building Regulations</h3>
+                      <p className="text-muted-foreground">Guaranteed compliance with all current building standards</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-golden mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold text-primary">Party Wall Agreements</h3>
+                      <p className="text-muted-foreground">Essential for Portsmouth's many terraced properties</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <Card className="bg-primary text-white">
+                <CardContent className="p-8 text-center">
+                  <Award className="w-16 h-16 text-golden mx-auto mb-4" />
+                  <h3 className="text-2xl font-bold mb-4">Planning Success Rate</h3>
+                  <div className="text-4xl font-bold text-golden mb-2">95%</div>
+                  <p className="text-white/90">Approval rate for Portsmouth applications</p>
+                  <Button size="lg" className="mt-6 bg-golden text-dark-bg hover:bg-golden-hover">
+                    Discuss Your Project
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section className="py-20 bg-primary text-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair">
+                Get Your Free Portsmouth Carpentry Quote
+              </h2>
+              <p className="text-xl text-white/90">
+                Ready to transform your Portsmouth home? Contact us today for a free, no-obligation quote.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {/* Contact Information */}
+              <div>
+                <h3 className="text-2xl font-semibold mb-8">Contact Information</h3>
+                
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-golden rounded-full flex items-center justify-center">
+                      <Phone className="w-6 h-6 text-dark-bg" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold">Call Direct</h4>
+                      <a href="tel:07399594658" className="text-golden hover:text-golden-hover">
+                        07399594658
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-golden rounded-full flex items-center justify-center">
+                      <Mail className="w-6 h-6 text-dark-bg" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold">Email Us</h4>
+                      <a href="mailto:joewhitfield@jpwcarpentrybuilding.com" className="text-golden hover:text-golden-hover">
+                        joewhitfield@jpwcarpentrybuilding.com
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-golden rounded-full flex items-center justify-center">
+                      <MapPin className="w-6 h-6 text-dark-bg" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold">Service Area</h4>
+                      <p className="text-white/90">Portsmouth, Southsea, Gosport, Fareham, and surrounding Hampshire areas</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-golden rounded-full flex items-center justify-center">
+                      <Clock className="w-6 h-6 text-dark-bg" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold">Response Time</h4>
+                      <p className="text-white/90">Free quotes within 24 hours</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Contact Form */}
+              <Card className="bg-white text-dark-bg">
+                <CardHeader>
+                  <CardTitle className="text-2xl text-primary">Request Your Free Quote</CardTitle>
+                  <CardDescription>Tell us about your Portsmouth carpentry project</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <form onSubmit={handleSubmit} className="space-y-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <Label htmlFor="name">Name *</Label>
+                        <Input id="name" required />
+                      </div>
+                      <div>
+                        <Label htmlFor="phone">Phone *</Label>
+                        <Input id="phone" type="tel" required />
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <Label htmlFor="email">Email *</Label>
+                      <Input id="email" type="email" required />
+                    </div>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <Label htmlFor="area">Portsmouth Area</Label>
+                        <Select>
+                          <SelectTrigger>
+                            <SelectValue placeholder="Select area" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="central">Central Portsmouth</SelectItem>
+                            <SelectItem value="southsea">Southsea</SelectItem>
+                            <SelectItem value="old-portsmouth">Old Portsmouth</SelectItem>
+                            <SelectItem value="north-end">North End</SelectItem>
+                            <SelectItem value="fratton">Fratton</SelectItem>
+                            <SelectItem value="other">Other</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
+                      <div>
+                        <Label htmlFor="service">Service Required</Label>
+                        <Select>
+                          <SelectTrigger>
+                            <SelectValue placeholder="Select service" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="kitchen">Kitchen Renovation</SelectItem>
+                            <SelectItem value="extension">Home Extension</SelectItem>
+                            <SelectItem value="storage">Built-in Storage</SelectItem>
+                            <SelectItem value="joinery">Bespoke Joinery</SelectItem>
+                            <SelectItem value="other">Other</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <Label htmlFor="description">Project Description *</Label>
+                      <Textarea 
+                        id="description" 
+                        placeholder="Tell us about your Portsmouth carpentry project..."
+                        className="min-h-[100px]"
+                        required 
+                      />
+                    </div>
+                    
+                    <div>
+                      <Label htmlFor="contact-method">Preferred Contact Method</Label>
+                      <Select>
+                        <SelectTrigger>
+                          <SelectValue placeholder="How should we contact you?" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="phone">Phone Call</SelectItem>
+                          <SelectItem value="email">Email</SelectItem>
+                          <SelectItem value="either">Either</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    </div>
+                    
+                    <Button type="submit" size="lg" className="w-full bg-golden text-dark-bg hover:bg-golden-hover">
+                      Send My Quote Request
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Final CTA */}
+        <section className="py-12 bg-golden text-dark-bg">
+          <div className="container mx-auto px-4 text-center">
+            <h3 className="text-2xl font-bold mb-4">Ready to Start Your Portsmouth Carpentry Project?</h3>
+            <p className="text-lg mb-6">Call now for immediate response and free consultation</p>
+            <Button size="lg" variant="outline" className="border-dark-bg text-dark-bg hover:bg-dark-bg hover:text-golden">
+              <Phone className="w-5 h-5 mr-2" />
+              Call Now: 07399594658
+            </Button>
+          </div>
+        </section>
+
+        <Footer />
+      </div>
+
+      {/* JSON-LD Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "JPW Carpentry & Building",
+          "description": "Professional carpentry services in Portsmouth, Hampshire. Kitchen fitting, built-in storage, home extensions, and bespoke joinery.",
+          "url": "https://jpwcarpentry.lovable.app/portsmouth-carpentry-services",
+          "telephone": "07399594658",
+          "email": "joewhitfield@jpwcarpentrybuilding.com",
+          "areaServed": [
+            "Portsmouth",
+            "Southsea", 
+            "Old Portsmouth",
+            "North End",
+            "Fratton",
+            "Baffins",
+            "Milton",
+            "Gosport",
+            "Fareham",
+            "Hampshire"
+          ],
+          "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+              "@type": "GeoCoordinates",
+              "latitude": 50.8198,
+              "longitude": -1.0880
+            },
+            "geoRadius": "20000"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Carpentry Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Kitchen Fitting & Renovation Portsmouth",
+                  "description": "Transform your Portsmouth kitchen with bespoke fitted units"
+                }
+              },
+              {
+                "@type": "Offer", 
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Home Extensions Portsmouth",
+                  "description": "Add value to your Portsmouth property with expert extensions"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service", 
+                  "name": "Built-in Storage Portsmouth",
+                  "description": "Maximize space in Portsmouth homes with custom storage"
+                }
+              }
+            ]
+          },
+          "review": testimonials.map(testimonial => ({
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": testimonial.name
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": testimonial.rating,
+              "bestRating": "5"
+            },
+            "reviewBody": testimonial.review
+          })),
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": testimonials.length,
+            "bestRating": "5"
+          }
+        })}
+      </script>
+    </>
+  );
+};
+
+export default PortsmouthCarpentry;
