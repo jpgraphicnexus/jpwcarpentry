@@ -1,3 +1,5 @@
+import SEO from "@/components/SEO";
+import { useSEO } from "@/hooks/useSEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -12,6 +14,7 @@ import SEOComponent from "@/components/SEOComponent";
 import { Helmet } from "react-helmet-async";
 
 const HomeRenovations = () => {
+  const seoData = useSEO('/services/home-renovations');
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -79,12 +82,7 @@ const HomeRenovations = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEOComponent
-        title="Home Renovations Hampshire | Complete House Refurbishment | JPW Carpentry"
-        description="Complete home renovation services across Hampshire. From single rooms to whole house refurbishments. Expert project management and quality craftsmanship guaranteed."
-        keywords="home renovation Hampshire, house refurbishment Portsmouth, complete renovation, property renovation, home improvement Hampshire"
-        canonicalUrl="/services/home-renovations"
-      />
+      <SEO {...seoData} />
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify({

@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
+import { useSEO } from "@/hooks/useSEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import SEOComponent from "@/components/SEOComponent";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -14,6 +15,8 @@ import { Phone, Mail, MapPin, Clock, Star, Shield, Heart, Users, Home, CheckCirc
 import homeRenovation from "@/assets/home-renovation.webp";
 
 const HavantCarpentry = () => {
+  const seoData = useSEO('/havant-carpentry-services');
+  
   const services = [
     {
       title: "Family Kitchen Renovations",
@@ -133,12 +136,7 @@ const HavantCarpentry = () => {
 
   return (
     <>
-      <SEOComponent
-        title="Havant Carpentry Services | Family Home Specialists | JPW Carpentry"
-        description="Professional carpentry services in Havant, Hampshire. Kitchen renovations, loft conversions, built-in storage for family homes. Competitive prices, reliable service. Free quotes."
-        keywords="Havant carpentry, carpenter Havant, kitchen renovation Havant, loft conversion Havant, family home improvements Havant, built-in storage Havant"
-        canonicalUrl="/havant-carpentry-services"
-      />
+      <SEO {...seoData} />
       
       <div className="min-h-screen bg-background">
         <Header />

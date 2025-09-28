@@ -1,3 +1,5 @@
+import SEO from "@/components/SEO";
+import { useSEO } from "@/hooks/useSEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -12,6 +14,7 @@ import SEOComponent from "@/components/SEOComponent";
 import { Helmet } from "react-helmet-async";
 
 const KitchenRenovations = () => {
+  const seoData = useSEO('/services/kitchen-renovations');
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -64,12 +67,7 @@ const KitchenRenovations = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEOComponent
-        title="Kitchen Renovations Hampshire | Custom Kitchen Design | JPW Carpentry"
-        description="Transform your kitchen with JPW Carpentry's expert renovation services in Hampshire. Custom design, quality installation, and complete project management for stunning results."
-        keywords="kitchen renovation Hampshire, kitchen design Portsmouth, custom kitchens, kitchen installation, Hampshire kitchen specialists"
-        canonicalUrl="/services/kitchen-renovations"
-      />
+      <SEO {...seoData} />
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify({

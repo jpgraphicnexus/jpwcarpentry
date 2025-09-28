@@ -1,3 +1,5 @@
+import SEO from "@/components/SEO";
+import { useSEO } from "@/hooks/useSEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -11,6 +13,8 @@ import oakDoors from "@/assets/oak-doors.webp";
 import deckingProject from "@/assets/decking-project.webp";
 
 const PastWorks = () => {
+  const seoData = useSEO('/past-works');
+  
   const projects = [
     {
       title: "Kitchen Renovation",
@@ -56,6 +60,7 @@ const PastWorks = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO {...seoData} />
       <Header />
       
       {/* Hero Section */}

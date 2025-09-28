@@ -1,3 +1,5 @@
+import SEO from "@/components/SEO";
+import { useSEO } from "@/hooks/useSEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -9,6 +11,7 @@ import kitchenRenovationProject from "@/assets/kitchen-renovation-project.webp";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const Services = () => {
+  const seoData = useSEO('/services');
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -171,6 +174,7 @@ const Services = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO {...seoData} />
       <Header />
       
       {/* Hero Section */}

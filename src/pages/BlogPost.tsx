@@ -3,7 +3,8 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BlogSidebar from "@/components/BlogSidebar";
-import SEOComponent from "@/components/SEOComponent";
+import SEO from "@/components/SEO";
+import { useSEO } from "@/hooks/useSEO";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, MapPin, ArrowLeft, Share2 } from "lucide-react";
@@ -12,6 +13,7 @@ import ReactMarkdown from 'react-markdown';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
+  const seoData = useSEO(`/blog/${slug}`);
   const navigate = useNavigate();
   const location = useLocation();
   const post = blogPosts.find(p => p.slug === slug);
@@ -50,20 +52,7 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEOComponent
-        title={`${post.title} | JPW Carpentry Blog`}
-        description={post.metaDescription}
-        keywords={post.tags.join(", ")}
-        canonicalUrl={`/blog/${post.slug}`}
-        ogImage={post.featuredImage}
-        article={{
-          publishedTime: post.publishDate,
-          modifiedTime: post.lastModified,
-          author: post.author,
-          section: category?.name || "Building & Carpentry",
-          tags: post.tags
-        }}
-      />
+      <SEO {...seoData} ogType="article" />
       
       <Header />
       

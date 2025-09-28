@@ -1,3 +1,5 @@
+import SEO from "@/components/SEO";
+import { useSEO } from "@/hooks/useSEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -12,6 +14,7 @@ import SEOComponent from "@/components/SEOComponent";
 import { Helmet } from "react-helmet-async";
 
 const SmallCarpentryJobs = () => {
+  const seoData = useSEO('/services/small-carpentry-jobs');
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -66,12 +69,7 @@ const SmallCarpentryJobs = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEOComponent
-        title="Small Carpentry Jobs Hampshire | Minor Repairs & Installations | JPW"
-        description="Professional small carpentry jobs and minor repairs across Hampshire. Shelving, door fitting, repairs, and custom carpentry solutions. No job too small."
-        keywords="small carpentry jobs Hampshire, minor repairs Portsmouth, shelf installation, door fitting, handyman carpentry, small repairs Hampshire"
-        canonicalUrl="/services/small-carpentry-jobs"
-      />
+      <SEO {...seoData} />
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify({

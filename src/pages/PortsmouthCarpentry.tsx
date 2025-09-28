@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
+import { useSEO } from "@/hooks/useSEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import SEOComponent from "@/components/SEOComponent";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -19,6 +20,8 @@ import customFurniture from "@/assets/custom-furniture.jpg";
 import oakStaircase from "@/assets/oak-staircase.webp";
 
 const PortsmouthCarpentry = () => {
+  const seoData = useSEO('/portsmouth-carpentry-services');
+  
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Form submission logic here
@@ -129,12 +132,7 @@ const PortsmouthCarpentry = () => {
 
   return (
     <>
-      <SEOComponent
-        title="Portsmouth Carpentry Services | Expert Carpenters | JPW Carpentry"
-        description="Professional carpentry services in Portsmouth, Hampshire. Kitchen fitting, built-in storage, home extensions, and bespoke joinery. Free quotes. Call 07399594658."
-        keywords="Portsmouth carpentry, carpenter Portsmouth, kitchen fitting Portsmouth, home extensions Portsmouth, built-in storage Portsmouth, joinery Portsmouth"
-        canonicalUrl="/portsmouth-carpentry-services"
-      />
+      <SEO {...seoData} />
       <div className="min-h-screen bg-background">
         <Header />
         

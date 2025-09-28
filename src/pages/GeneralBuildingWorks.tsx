@@ -1,3 +1,5 @@
+import SEO from "@/components/SEO";
+import { useSEO } from "@/hooks/useSEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -12,6 +14,7 @@ import SEOComponent from "@/components/SEOComponent";
 import { Helmet } from "react-helmet-async";
 
 const GeneralBuildingWorks = () => {
+  const seoData = useSEO('/services/general-building-works');
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -84,12 +87,7 @@ const GeneralBuildingWorks = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEOComponent
-        title="General Building Works Hampshire | Construction Services | JPW Carpentry"
-        description="Comprehensive general building works across Hampshire. Extensions, structural work, roofing, and construction services. Professional builders with 20+ years experience."
-        keywords="general building works Hampshire, construction services Portsmouth, building contractor, extensions Hampshire, structural work, professional builders"
-        canonicalUrl="/services/general-building-works"
-      />
+      <SEO {...seoData} />
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify({

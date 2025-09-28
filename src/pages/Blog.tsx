@@ -1,13 +1,15 @@
 import { useState } from "react";
+import SEO from "@/components/SEO";
+import { useSEO } from "@/hooks/useSEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BlogCard from "@/components/BlogCard";
 import BlogSidebar from "@/components/BlogSidebar";
-import SEOComponent from "@/components/SEOComponent";
 import { Button } from "@/components/ui/button";
 import { blogPosts, blogCategories } from "@/data/blogPosts";
 
 const Blog = () => {
+  const seoData = useSEO('/blog');
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   
   const filteredPosts = selectedCategory === "all" 
@@ -19,12 +21,7 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEOComponent
-        title="Expert Building & Carpentry Advice Blog | JPW Carpentry"
-        description="Professional insights on home improvements, building regulations, and carpentry projects. Expert advice from experienced builders serving Chichester and West Sussex."
-        keywords="building advice, carpentry tips, home improvement, loft conversion, extension planning, building regulations"
-        canonicalUrl="/blog"
-      />
+      <SEO {...seoData} />
       
       <Header />
       

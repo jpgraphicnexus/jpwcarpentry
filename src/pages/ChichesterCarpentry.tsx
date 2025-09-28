@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
+import { useSEO } from "@/hooks/useSEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import SEOComponent from "@/components/SEOComponent";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -11,6 +12,8 @@ import carpenterWorking from "@/assets/carpenter-working.jpg";
 import oakDoors from "@/assets/oak-doors.webp";
 
 const ChichesterCarpentry = () => {
+  const seoData = useSEO('/chichester-carpentry-services');
+  
   const services = [
     {
       title: "Conservation Area Carpentry",
@@ -117,12 +120,7 @@ const ChichesterCarpentry = () => {
 
   return (
     <>
-      <SEOComponent
-        title="Chichester Carpentry Services | Heritage Property Specialists | JPW Carpentry"
-        description="Expert carpentry services in Chichester, West Sussex. Conservation Area specialists, period property renovations, bespoke joinery. Cathedral city expertise since 2004."
-        keywords="Chichester carpentry, carpenter Chichester, Conservation Area Chichester, period property renovation, heritage carpentry Chichester, South Downs carpentry"
-        canonicalUrl="/chichester-carpentry-services"
-      />
+      <SEO {...seoData} />
       
       <div className="min-h-screen bg-background">
         <Header />

@@ -1,3 +1,5 @@
+import SEO from "@/components/SEO";
+import { useSEO } from "@/hooks/useSEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -6,6 +8,7 @@ import aboutUsPatio from "@/assets/about-us-patio.jpg";
 import aboutUsBathroom from "@/assets/about-us-bathroom.webp";
 
 const AboutUs = () => {
+  const seoData = useSEO('/about');
 
   const values = [
     {
@@ -28,6 +31,7 @@ const AboutUs = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO {...seoData} />
       <Header />
       
       {/* Hero Section */}

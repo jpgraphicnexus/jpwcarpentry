@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import SEO from "@/components/SEO";
+import { useSEO } from "@/hooks/useSEO";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
@@ -7,6 +9,8 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  const seoData = useSEO('/');
+  
   useEffect(() => {
     // Handle hash navigation on page load
     if (window.location.hash === '#contact-section') {
@@ -21,6 +25,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO {...seoData} />
       <Header />
       <HeroSection />
       <ServicesSection />
