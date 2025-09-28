@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
 import { useSEO } from "@/hooks/useSEO";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
-import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
