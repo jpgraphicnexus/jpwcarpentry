@@ -1,4 +1,5 @@
 import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BlogSidebar from "@/components/BlogSidebar";
@@ -66,16 +67,30 @@ const BlogPost = () => {
       
       <Header />
       
-      {/* Breadcrumb */}
-      <section className="w-full py-4 bg-primary/5 border-b">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="flex items-center gap-2 text-sm text-primary/70">
-            <Link to="/" className="hover:text-primary">Home</Link>
-            <span>/</span>
-            <Link to="/blog" className="hover:text-primary">Blog</Link>
-            <span>/</span>
-            <span className="text-primary font-medium">{post.title}</span>
-          </div>
+      {/* Breadcrumb Navigation */}
+      <section className="bg-muted/30 py-4">
+        <div className="container mx-auto px-4">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild><Link to="/">Home</Link></BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild><Link to="/blog">Blog</Link></BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to={`/blog?category=${post.category}`}>
+                    {category?.name}
+                  </Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbPage>{post.title}</BreadcrumbPage>
+            </BreadcrumbList>
+          </Breadcrumb>
         </div>
       </section>
 
