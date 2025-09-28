@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Phone, Mail, Star, Clock, Shield, Award, CheckCircle, Building, Home, Wrench } from "lucide-react";
+import { MapPin, Phone, Mail, Star, Clock, Shield, Award, CircleCheck as CheckCircle, Building, Chrome as Home, Wrench } from "lucide-react";
 import carpenterWorking from "@/assets/carpenter-working.jpg";
 import oakDoors from "@/assets/oak-doors.webp";
 
@@ -295,7 +295,7 @@ const ChichesterCarpentry = () => {
 
             <div className="text-center mt-8">
               <p className="text-muted-foreground mb-4">
-                Our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">heritage kitchen services</Link> are specially designed for Chichester's Conservation Areas, while our <Link to="/services/home-renovations" className="text-golden hover:underline">period extension expertise</Link> ensures compliance with historic building requirements.
+                Our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">heritage kitchen services</Link> are specially designed for Chichester's Conservation Areas, while our <Link to="/services/home-renovations" className=\"text-golden hover:underline">period extension expertise</Link> ensures compliance with historic building requirements.
               </p>
               <Button variant="outline" asChild>
                 <Link to="/services">View All Services</Link>

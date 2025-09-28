@@ -11,7 +11,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Phone, Mail, MapPin, Clock, Star, Shield, Heart, Users, Home, CheckCircle, Calendar, PoundSterling, Building } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Star, Shield, Heart, Users, Chrome as Home, CircleCheck as CheckCircle, Calendar, PoundSterling, Building } from "lucide-react";
 import homeRenovation from "@/assets/home-renovation.webp";
 
 const HavantCarpentry = () => {
@@ -433,7 +433,7 @@ const HavantCarpentry = () => {
 
             <div className="text-center mt-8">
               <p className="text-muted-foreground mb-4">
-                Many Havant families choose our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">family kitchen renovations</Link> to create the heart of their home, while our <Link to="/services/home-renovations" className="text-golden hover:underline">loft conversion services</Link> help growing families add space without the disruption of moving.
+                Many Havant families choose our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">family kitchen renovations</Link> to create the heart of their home, while our <Link to="/services/home-renovations" className=\"text-golden hover:underline">loft conversion services</Link> help growing families add space without the disruption of moving.
               </p>
               <Button variant="outline" asChild>
                 <Link to="/services">View All Services</Link>

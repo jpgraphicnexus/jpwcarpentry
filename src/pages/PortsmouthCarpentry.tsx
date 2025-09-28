@@ -12,7 +12,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { Phone, Mail, MapPin, Clock, Star, Shield, Award, CheckCircle, Building, Home, Wrench } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Star, Shield, Award, CircleCheck as CheckCircle, Building, Chrome as Home, Wrench } from "lucide-react";
 import carpenterWorking from "@/assets/carpenter-working.jpg";
 import kitchenRenovation from "@/assets/kitchen-renovation.webp";
 import homeRenovation from "@/assets/home-renovation.webp";
@@ -324,7 +324,7 @@ const PortsmouthCarpentry = () => {
 
             <div className="text-center mt-8">
               <p className="text-muted-foreground mb-4">
-                Our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">kitchen renovation services</Link> are particularly popular in Portsmouth's Victorian terraces, while many Portsmouth families choose our <Link to="/services/home-renovations" className="text-golden hover:underline">loft conversion expertise</Link> to add space without moving house.
+                Our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">kitchen renovation services</Link> are particularly popular in Portsmouth's Victorian terraces, while many Portsmouth families choose our <Link to="/services/home-renovations" className=\"text-golden hover:underline">loft conversion expertise</Link> to add space without moving house.
               </p>
               <Button variant="outline" asChild>
                 <Link to="/services">View All Services</Link>
