@@ -16,6 +16,7 @@ import carpenterWorking from "@/assets/carpenter-working.jpg";
 import kitchenRenovation from "@/assets/kitchen-renovation.webp";
 import homeRenovation from "@/assets/home-renovation.webp";
 import customFurniture from "@/assets/custom-furniture.jpg";
+import oakStaircase from "@/assets/oak-staircase.webp";
 
 const PortsmouthCarpentry = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -194,7 +195,7 @@ const PortsmouthCarpentry = () => {
                       Get Your Free Portsmouth Quote Today
                     </Link>
                   </Button>
-                  <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white hover:text-dark-bg">
+                  <Button size="lg" variant="outline" asChild className="border-white text-dark-bg bg-white hover:bg-gray-100">
                     <Link to="/past-works">
                       View Our Work
                     </Link>
@@ -204,7 +205,7 @@ const PortsmouthCarpentry = () => {
               
               <div className="relative">
                 <img
-                  src={carpenterWorking}
+                  src={oakStaircase}
                   alt="Professional carpenter working on Portsmouth home renovation project"
                   className="w-full h-[500px] object-cover rounded-lg shadow-2xl"
                 />

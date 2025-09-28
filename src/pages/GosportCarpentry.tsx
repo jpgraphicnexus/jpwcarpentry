@@ -12,6 +12,7 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 import { Phone, Mail, MapPin, Clock, Star, Shield, Anchor, Waves, Ship, CheckCircle, Award, Users, Home, Building } from "lucide-react";
 import { Link } from "react-router-dom";
 import carpenterWorkingImage from "@/assets/carpenter-working.jpg";
+import deckingProject from "@/assets/decking-project.webp";
 
 const GosportCarpentry = () => {
   return (
@@ -78,7 +79,7 @@ const GosportCarpentry = () => {
                   <Button size="lg" variant="secondary" className="text-lg px-8 py-6" asChild>
                     <Link to="/#contact-section">Get Your Coastal-Ready Quote</Link>
                   </Button>
-                  <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-white/30 text-white hover:bg-white/10" asChild>
+                  <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-white text-dark-bg bg-white hover:bg-gray-100" asChild>
                     <Link to="/past-works">View Our Work</Link>
                   </Button>
                 </div>
@@ -86,7 +87,7 @@ const GosportCarpentry = () => {
               
               <div className="relative">
                 <img 
-                  src={carpenterWorkingImage} 
+                  src={deckingProject} 
                   alt="Professional carpenter working on marine-grade carpentry project in Gosport"
                   className="rounded-lg shadow-2xl w-full h-auto"
                   loading="eager"

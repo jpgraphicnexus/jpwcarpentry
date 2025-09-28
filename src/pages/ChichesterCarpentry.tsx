@@ -8,6 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Mail, Star, Clock, Shield, Award, CheckCircle, Building, Home, Wrench } from "lucide-react";
 import carpenterWorking from "@/assets/carpenter-working.jpg";
+import oakDoors from "@/assets/oak-doors.webp";
 
 const ChichesterCarpentry = () => {
   const services = [
@@ -173,7 +174,7 @@ const ChichesterCarpentry = () => {
               
               <div className="relative">
                 <img 
-                  src={carpenterWorking} 
+                  src={oakDoors} 
                   alt="Expert carpenter working on heritage property in Chichester"
                   className="rounded-lg shadow-2xl w-full h-auto"
                 />
