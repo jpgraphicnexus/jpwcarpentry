@@ -8,6 +8,8 @@ import { useNavigate, useLocation, Link } from "react-router-dom";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin } from "lucide-react";
+import SEOComponent from "@/components/SEOComponent";
+import { Helmet } from "react-helmet-async";
 
 const SmallCarpentryJobs = () => {
   const navigate = useNavigate();
@@ -64,6 +66,32 @@ const SmallCarpentryJobs = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOComponent
+        title="Small Carpentry Jobs Hampshire | Minor Repairs & Installations | JPW"
+        description="Professional small carpentry jobs and minor repairs across Hampshire. Shelving, door fitting, repairs, and custom carpentry solutions. No job too small."
+        keywords="small carpentry jobs Hampshire, minor repairs Portsmouth, shelf installation, door fitting, handyman carpentry, small repairs Hampshire"
+        canonicalUrl="/services/small-carpentry-jobs"
+      />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Small Carpentry Jobs Hampshire",
+            "description": "Professional small carpentry jobs and minor repairs including shelving, door fitting, and custom solutions.",
+            "provider": {
+              "@type": "Organization",
+              "name": "JPW Carpentry & Building"
+            },
+            "areaServed": ["Portsmouth", "Chichester", "Havant", "Gosport", "Fareham"],
+            "offers": {
+              "@type": "Offer",
+              "priceRange": "£50 - £2,000",
+              "priceCurrency": "GBP"
+            }
+          })}
+        </script>
+      </Helmet>
       <Header />
       
       {/* Breadcrumb Navigation */}

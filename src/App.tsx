@@ -4,7 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HelmetProvider } from "react-helmet-async";
+import { HelmetProvider, Helmet } from "react-helmet-async";
 import Index from "./pages/Index";
 
 // Lazy load pages to reduce initial bundle size
@@ -29,6 +29,69 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <HelmetProvider>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "JPW Carpentry & Building",
+            "url": "https://jpwcarpentry.lovable.app",
+            "logo": "https://jpwcarpentry.lovable.app/assets/jpw-logo.png",
+            "description": "Professional carpentry and building services across Hampshire including Portsmouth, Chichester, Havant, Gosport, and Fareham.",
+            "founder": {
+              "@type": "Person",
+              "name": "James Wilson"
+            },
+            "foundingDate": "2004",
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Portsmouth",
+                "@id": "https://en.wikipedia.org/wiki/Portsmouth"
+              },
+              {
+                "@type": "City", 
+                "name": "Chichester",
+                "@id": "https://en.wikipedia.org/wiki/Chichester"
+              },
+              {
+                "@type": "City",
+                "name": "Havant", 
+                "@id": "https://en.wikipedia.org/wiki/Havant"
+              },
+              {
+                "@type": "City",
+                "name": "Gosport",
+                "@id": "https://en.wikipedia.org/wiki/Gosport"
+              },
+              {
+                "@type": "City",
+                "name": "Fareham",
+                "@id": "https://en.wikipedia.org/wiki/Fareham"
+              }
+            ],
+            "serviceArea": {
+              "@type": "GeoCircle",
+              "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": 50.8429,
+                "longitude": -1.0761
+              },
+              "geoRadius": "25000"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+44-7399-594658",
+              "contactType": "customer service",
+              "availableLanguage": "English"
+            },
+            "sameAs": [
+              "https://www.facebook.com/jpwcarpentry",
+              "https://www.instagram.com/jpwcarpentry"
+            ]
+          })}
+        </script>
+      </Helmet>
       <TooltipProvider>
         <Toaster />
         <Sonner />

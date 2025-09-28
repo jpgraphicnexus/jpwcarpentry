@@ -8,6 +8,8 @@ import { useNavigate, useLocation, Link } from "react-router-dom";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin } from "lucide-react";
+import SEOComponent from "@/components/SEOComponent";
+import { Helmet } from "react-helmet-async";
 
 const KitchenRenovations = () => {
   const navigate = useNavigate();
@@ -62,6 +64,32 @@ const KitchenRenovations = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOComponent
+        title="Kitchen Renovations Hampshire | Custom Kitchen Design | JPW Carpentry"
+        description="Transform your kitchen with JPW Carpentry's expert renovation services in Hampshire. Custom design, quality installation, and complete project management for stunning results."
+        keywords="kitchen renovation Hampshire, kitchen design Portsmouth, custom kitchens, kitchen installation, Hampshire kitchen specialists"
+        canonicalUrl="/services/kitchen-renovations"
+      />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Kitchen Renovations Hampshire",
+            "description": "Professional kitchen renovation services across Hampshire including design, installation, and project management.",
+            "provider": {
+              "@type": "Organization",
+              "name": "JPW Carpentry & Building"
+            },
+            "areaServed": ["Portsmouth", "Chichester", "Havant", "Gosport", "Fareham"],
+            "offers": {
+              "@type": "Offer",
+              "priceRange": "£6,000 - £25,000",
+              "priceCurrency": "GBP"
+            }
+          })}
+        </script>
+      </Helmet>
       <Header />
       
       {/* Breadcrumb Navigation */}
