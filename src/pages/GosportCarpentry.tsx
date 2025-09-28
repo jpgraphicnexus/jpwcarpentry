@@ -9,7 +9,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { Phone, Mail, MapPin, Clock, Star, Shield, Anchor, Waves, Ship, CheckCircle, Award, Users } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Star, Shield, Anchor, Waves, Ship, CheckCircle, Award, Users, Home, Building } from "lucide-react";
+import { Link } from "react-router-dom";
 import carpenterWorkingImage from "@/assets/carpenter-working.jpg";
 
 const GosportCarpentry = () => {
@@ -400,6 +401,79 @@ const GosportCarpentry = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Cross-Service Links */}
+        <section className="py-16 bg-slate-50">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Marine-Grade Services for Gosport Properties
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Our coastal expertise ensures your Gosport property withstands maritime conditions
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <Link to="/services/kitchen-renovations" className="group">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-primary/50 bg-white">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                      <Home className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2">Coastal Kitchens</h3>
+                    <p className="text-sm text-muted-foreground">Salt-resistant materials and enhanced ventilation</p>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link to="/services/home-renovations" className="group">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-primary/50 bg-white">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                      <Building className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2">Marine Extensions</h3>
+                    <p className="text-sm text-muted-foreground">Waterfront extensions with enhanced weatherproofing</p>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link to="/services/small-carpentry-jobs" className="group">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-primary/50 bg-white">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                      <Users className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2">Naval Storage</h3>
+                    <p className="text-sm text-muted-foreground">Secure storage solutions for naval families</p>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link to="/services/general-building-works" className="group">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-primary/50 bg-white">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                      <Anchor className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2">Boat Workshops</h3>
+                    <p className="text-sm text-muted-foreground">Custom marine workshops and storage facilities</p>
+                  </CardContent>
+                </Card>
+              </Link>
+            </div>
+
+            <div className="text-center mt-8">
+              <p className="text-muted-foreground mb-4">
+                Our <Link to="/services/kitchen-renovations" className="text-primary hover:underline">coastal kitchen renovations</Link> use marine-grade materials perfect for Gosport's seafront properties, while our <Link to="/services/general-building-works" className="text-primary hover:underline">specialized building services</Link> include boat storage and marine workshop solutions.
+              </p>
+              <Button variant="outline" asChild>
+                <Link to="/services">View All Services</Link>
+              </Button>
             </div>
           </div>
         </section>

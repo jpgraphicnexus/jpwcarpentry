@@ -10,6 +10,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Phone, Mail, MapPin, Clock, Star, Shield, Crown, Gem, Award, TrendingUp, CheckCircle, Building, Home, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 import homeRenovationImage from "@/assets/home-renovation.webp";
 
 const FarehamCarpentry = () => {
@@ -409,6 +410,79 @@ const FarehamCarpentry = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Cross-Service Links */}
+        <section className="py-16 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Executive Services for Fareham's Premium Properties
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Our luxury services are designed for Fareham's discerning homeowners who demand the finest craftsmanship
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <Link to="/services/kitchen-renovations" className="group">
+                <Card className="hover:shadow-xl transition-all duration-300 group-hover:border-golden/50 bg-white">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Gem className="h-6 w-6 text-golden" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Designer Kitchens</h3>
+                    <p className="text-sm text-muted-foreground">Luxury kitchen installations with premium materials</p>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link to="/services/home-renovations" className="group">
+                <Card className="hover:shadow-xl transition-all duration-300 group-hover:border-golden/50 bg-white">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Crown className="h-6 w-6 text-golden" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Executive Extensions</h3>
+                    <p className="text-sm text-muted-foreground">Premium extensions that enhance property prestige</p>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link to="/services/small-carpentry-jobs" className="group">
+                <Card className="hover:shadow-xl transition-all duration-300 group-hover:border-golden/50 bg-white">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Award className="h-6 w-6 text-golden" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Bespoke Storage</h3>
+                    <p className="text-sm text-muted-foreground">Custom wardrobes, wine cellars, and library systems</p>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link to="/services/general-building-works" className="group">
+                <Card className="hover:shadow-xl transition-all duration-300 group-hover:border-golden/50 bg-white">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Building className="h-6 w-6 text-golden" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Luxury Home Offices</h3>
+                    <p className="text-sm text-muted-foreground">Executive workspace design and construction</p>
+                  </CardContent>
+                </Card>
+              </Link>
+            </div>
+
+            <div className="text-center mt-8">
+              <p className="text-muted-foreground mb-4">
+                Fareham's executive homeowners particularly value our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">designer kitchen services</Link> featuring German engineering and stone worktops, while our <Link to="/services/home-renovations" className="text-golden hover:underline">luxury extension expertise</Link> adds significant value to Whiteley and Park Gate properties.
+              </p>
+              <Button variant="outline" asChild>
+                <Link to="/services">View All Services</Link>
+              </Button>
             </div>
           </div>
         </section>

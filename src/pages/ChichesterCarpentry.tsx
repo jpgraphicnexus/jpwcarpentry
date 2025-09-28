@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOComponent from "@/components/SEOComponent";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Phone, Mail, Star, Clock, Shield, Award, CheckCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Star, Clock, Shield, Award, CheckCircle, Building, Home, Wrench } from "lucide-react";
 import carpenterWorking from "@/assets/carpenter-working.jpg";
 
 const ChichesterCarpentry = () => {
@@ -223,6 +224,79 @@ const ChichesterCarpentry = () => {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Cross-Service Links */}
+        <section className="py-16 bg-slate-50">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Premium Services for Chichester's Historic Properties
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Our heritage expertise perfectly complements Chichester's Conservation Areas and period properties
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <Link to="/services/kitchen-renovations" className="group">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50 bg-white">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Home className="h-6 w-6 text-golden" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Heritage Kitchens</h3>
+                    <p className="text-sm text-muted-foreground">Sympathetic kitchen design for period properties</p>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link to="/services/home-renovations" className="group">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50 bg-white">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Building className="h-6 w-6 text-golden" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Period Extensions</h3>
+                    <p className="text-sm text-muted-foreground">Conservation Area compliant extensions and conversions</p>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link to="/services/small-carpentry-jobs" className="group">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50 bg-white">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Wrench className="h-6 w-6 text-golden" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Period Joinery</h3>
+                    <p className="text-sm text-muted-foreground">Traditional carpentry techniques for historic properties</p>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link to="/services/general-building-works" className="group">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50 bg-white">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Award className="h-6 w-6 text-golden" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Heritage Restoration</h3>
+                    <p className="text-sm text-muted-foreground">Listed building restoration and conservation work</p>
+                  </CardContent>
+                </Card>
+              </Link>
+            </div>
+
+            <div className="text-center mt-8">
+              <p className="text-muted-foreground mb-4">
+                Our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">heritage kitchen services</Link> are specially designed for Chichester's Conservation Areas, while our <Link to="/services/home-renovations" className="text-golden hover:underline">period extension expertise</Link> ensures compliance with historic building requirements.
+              </p>
+              <Button variant="outline" asChild>
+                <Link to="/services">View All Services</Link>
+              </Button>
             </div>
           </div>
         </section>

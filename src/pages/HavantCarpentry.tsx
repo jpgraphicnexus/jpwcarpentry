@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOComponent from "@/components/SEOComponent";
@@ -9,7 +10,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Phone, Mail, MapPin, Clock, Star, Shield, Heart, Users, Home, CheckCircle, Calendar, PoundSterling } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Star, Shield, Heart, Users, Home, CheckCircle, Calendar, PoundSterling, Building } from "lucide-react";
 import homeRenovation from "@/assets/home-renovation.webp";
 
 const HavantCarpentry = () => {
@@ -362,6 +363,79 @@ const HavantCarpentry = () => {
                   </ul>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Cross-Service Links */}
+        <section className="py-16 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Family-Focused Services for Havant Homes
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Our services are designed around busy family life, perfect for Havant's family-oriented communities
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <Link to="/services/kitchen-renovations" className="group">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Home className="h-6 w-6 text-golden" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Family Kitchens</h3>
+                    <p className="text-sm text-muted-foreground">Practical kitchen designs for busy family life</p>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link to="/services/home-renovations" className="group">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Building className="h-6 w-6 text-golden" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Loft Conversions</h3>
+                    <p className="text-sm text-muted-foreground">Add bedrooms without moving - perfect for growing families</p>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link to="/services/small-carpentry-jobs" className="group">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Users className="h-6 w-6 text-golden" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Children's Storage</h3>
+                    <p className="text-sm text-muted-foreground">Built-in wardrobes and toy storage solutions</p>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link to="/services/general-building-works" className="group">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Home className="h-6 w-6 text-golden" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Home Offices</h3>
+                    <p className="text-sm text-muted-foreground">Create workspace for hybrid working parents</p>
+                  </CardContent>
+                </Card>
+              </Link>
+            </div>
+
+            <div className="text-center mt-8">
+              <p className="text-muted-foreground mb-4">
+                Many Havant families choose our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">family kitchen renovations</Link> to create the heart of their home, while our <Link to="/services/home-renovations" className="text-golden hover:underline">loft conversion services</Link> help growing families add space without the disruption of moving.
+              </p>
+              <Button variant="outline" asChild>
+                <Link to="/services">View All Services</Link>
+              </Button>
             </div>
           </div>
         </section>

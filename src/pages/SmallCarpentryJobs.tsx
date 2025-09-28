@@ -6,6 +6,8 @@ import smallCarpentry from "@/assets/small-carpentry.webp";
 import woodworkingProject from "@/assets/woodworking-project.jpg";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { Card, CardContent } from "@/components/ui/card";
+import { MapPin } from "lucide-react";
 
 const SmallCarpentryJobs = () => {
   const navigate = useNavigate();
@@ -157,6 +159,79 @@ const SmallCarpentryJobs = () => {
         </div>
       </section>
 
+      {/* Location Services Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6">Carpentry Services Across Hampshire</h3>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              From small repairs to bespoke furniture, we provide expert carpentry services throughout Hampshire
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <Link to="/portsmouth-carpentry-services" className="group">
+              <Card className="text-center p-6 bg-white hover:shadow-lg transition-shadow group-hover:border-golden/50">
+                <CardContent className="space-y-3">
+                  <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto group-hover:bg-golden/20 transition-colors">
+                    <MapPin className="h-6 w-6 text-golden" />
+                  </div>
+                  <h4 className="font-semibold text-primary group-hover:text-golden transition-colors">Portsmouth</h4>
+                  <p className="text-sm text-muted-foreground">Built-in Storage & Repairs</p>
+                </CardContent>
+              </Card>
+            </Link>
+            
+            <Link to="/chichester-carpentry-services" className="group">
+              <Card className="text-center p-6 bg-white hover:shadow-lg transition-shadow group-hover:border-golden/50">
+                <CardContent className="space-y-3">
+                  <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto group-hover:bg-golden/20 transition-colors">
+                    <MapPin className="h-6 w-6 text-golden" />
+                  </div>
+                  <h4 className="font-semibold text-primary group-hover:text-golden transition-colors">Chichester</h4>
+                  <p className="text-sm text-muted-foreground">Period Joinery & Restoration</p>
+                </CardContent>
+              </Card>
+            </Link>
+            
+            <Link to="/havant-carpentry-services" className="group">
+              <Card className="text-center p-6 bg-white hover:shadow-lg transition-shadow group-hover:border-golden/50">
+                <CardContent className="space-y-3">
+                  <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto group-hover:bg-golden/20 transition-colors">
+                    <MapPin className="h-6 w-6 text-golden" />
+                  </div>
+                  <h4 className="font-semibold text-primary group-hover:text-golden transition-colors">Havant</h4>
+                  <p className="text-sm text-muted-foreground">Family Storage Solutions</p>
+                </CardContent>
+              </Card>
+            </Link>
+            
+            <Link to="/gosport-carpentry-services" className="group">
+              <Card className="text-center p-6 bg-white hover:shadow-lg transition-shadow group-hover:border-golden/50">
+                <CardContent className="space-y-3">
+                  <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto group-hover:bg-golden/20 transition-colors">
+                    <MapPin className="h-6 w-6 text-golden" />
+                  </div>
+                  <h4 className="font-semibold text-primary group-hover:text-golden transition-colors">Gosport</h4>
+                  <p className="text-sm text-muted-foreground">Marine Storage & Repairs</p>
+                </CardContent>
+              </Card>
+            </Link>
+            
+            <Link to="/fareham-carpentry-services" className="group">
+              <Card className="text-center p-6 bg-white hover:shadow-lg transition-shadow group-hover:border-golden/50">
+                <CardContent className="space-y-3">
+                  <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto group-hover:bg-golden/20 transition-colors">
+                    <MapPin className="h-6 w-6 text-golden" />
+                  </div>
+                  <h4 className="font-semibold text-primary group-hover:text-golden transition-colors">Fareham</h4>
+                  <p className="text-sm text-muted-foreground">Bespoke Executive Carpentry</p>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </div>

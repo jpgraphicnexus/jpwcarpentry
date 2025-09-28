@@ -11,7 +11,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { Phone, Mail, MapPin, Clock, Star, Shield, Award, CheckCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Star, Shield, Award, CheckCircle, Building, Home, Wrench } from "lucide-react";
 import carpenterWorking from "@/assets/carpenter-working.jpg";
 import kitchenRenovation from "@/assets/kitchen-renovation.webp";
 import homeRenovation from "@/assets/home-renovation.webp";
@@ -253,6 +253,79 @@ const PortsmouthCarpentry = () => {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Cross-Service Links */}
+        <section className="py-16 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Popular Services for Portsmouth Properties
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Our specialized services are perfectly suited to Portsmouth's unique mix of Victorian terraces and modern family homes
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <Link to="/services/kitchen-renovations" className="group">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Home className="h-6 w-6 text-golden" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Kitchen Renovations</h3>
+                    <p className="text-sm text-muted-foreground">Perfect for Portsmouth's Victorian terraces and modern homes</p>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link to="/services/home-renovations" className="group">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Building className="h-6 w-6 text-golden" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Home Extensions</h3>
+                    <p className="text-sm text-muted-foreground">Add space without moving - popular in Portsmouth's growing areas</p>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link to="/services/small-carpentry-jobs" className="group">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Wrench className="h-6 w-6 text-golden" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Built-in Storage</h3>
+                    <p className="text-sm text-muted-foreground">Custom storage solutions for Portsmouth's compact homes</p>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link to="/services/general-building-works" className="group">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Award className="h-6 w-6 text-golden" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Loft Conversions</h3>
+                    <p className="text-sm text-muted-foreground">Popular choice for Portsmouth families needing extra space</p>
+                  </CardContent>
+                </Card>
+              </Link>
+            </div>
+
+            <div className="text-center mt-8">
+              <p className="text-muted-foreground mb-4">
+                Our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">kitchen renovation services</Link> are particularly popular in Portsmouth's Victorian terraces, while many Portsmouth families choose our <Link to="/services/home-renovations" className="text-golden hover:underline">loft conversion expertise</Link> to add space without moving house.
+              </p>
+              <Button variant="outline" asChild>
+                <Link to="/services">View All Services</Link>
+              </Button>
             </div>
           </div>
         </section>
