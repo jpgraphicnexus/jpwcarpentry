@@ -87,6 +87,12 @@ const Services = () => {
       link: "/chichester-carpentry-services"
     },
     {
+      title: "Havant Family Carpentry",
+      description: "Family-focused carpentry services across Havant, Waterlooville, and surrounding Hampshire areas.",
+      icon: "👨‍👩‍👧‍👦",
+      link: "/havant-carpentry-services"
+    },
+    {
       title: "Kitchen Renovations",
       description: "Complete kitchen transformations including design, fitting, and all associated trades.",
       icon: "🏠"
