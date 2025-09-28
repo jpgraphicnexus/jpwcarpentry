@@ -76,10 +76,10 @@ const GosportCarpentry = () => {
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button size="lg" variant="secondary" className="text-lg px-8 py-6" asChild>
-                    <a href="tel:07399594658">Get Your Coastal-Ready Quote</a>
+                    <Link to="/#contact-section">Get Your Coastal-Ready Quote</Link>
                   </Button>
                   <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-white/30 text-white hover:bg-white/10" asChild>
-                    <a href="#contact">Naval Family Consultation</a>
+                    <Link to="/past-works">View Our Work</Link>
                   </Button>
                 </div>
               </div>
@@ -877,125 +877,39 @@ const GosportCarpentry = () => {
                 </div>
               </div>
 
-              <div className="bg-muted/30 p-8 rounded-lg">
-                <h3 className="text-2xl font-semibold mb-6">Get Your Marine-Grade Quote</h3>
-                <form className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Name *</Label>
-                      <Input id="name" placeholder="Your full name" required />
+              <div className="bg-gradient-to-br from-golden/5 to-golden/10 p-8 rounded-lg border border-golden/20">
+                <h3 className="text-2xl font-semibold mb-6 text-center text-primary">Ready for Your Coastal Project?</h3>
+                <div className="space-y-6">
+                  <div className="flex items-center justify-center gap-4">
+                    <div className="w-12 h-12 bg-golden rounded-full flex items-center justify-center">
+                      <Phone className="w-6 h-6 text-dark-bg" />
                     </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="phone">Phone *</Label>
-                      <Input id="phone" type="tel" placeholder="Your phone number" required />
+                    <div className="text-left">
+                      <h4 className="font-semibold text-primary">Call Direct</h4>
+                      <a href="tel:07399594658" className="text-golden hover:text-golden-hover text-lg">
+                        07399594658
+                      </a>
                     </div>
                   </div>
                   
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email *</Label>
-                    <Input id="email" type="email" placeholder="Your email address" required />
-                  </div>
-
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="area">Gosport Area</Label>
-                      <Select>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select your area" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="town-centre">Town Centre</SelectItem>
-                          <SelectItem value="alverstoke">Alverstoke</SelectItem>
-                          <SelectItem value="hardway">Hardway</SelectItem>
-                          <SelectItem value="lee-on-solent">Lee-on-the-Solent</SelectItem>
-                          <SelectItem value="bridgemary">Bridgemary</SelectItem>
-                          <SelectItem value="rowner">Rowner</SelectItem>
-                          <SelectItem value="other">Other</SelectItem>
-                        </SelectContent>
-                      </Select>
+                  <div className="flex items-center justify-center gap-4">
+                    <div className="w-12 h-12 bg-golden rounded-full flex items-center justify-center">
+                      <Mail className="w-6 h-6 text-dark-bg" />
                     </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="property-type">Property Type</Label>
-                      <Select>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select property type" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="waterfront">Waterfront</SelectItem>
-                          <SelectItem value="naval-quarter">Naval Quarter</SelectItem>
-                          <SelectItem value="modern-estate">Modern Estate</SelectItem>
-                          <SelectItem value="period-property">Period Property</SelectItem>
-                          <SelectItem value="boat-storage">Boat Storage</SelectItem>
-                          <SelectItem value="other">Other</SelectItem>
-                        </SelectContent>
-                      </Select>
+                    <div className="text-left">
+                      <h4 className="font-semibold text-primary">Email Us</h4>
+                      <a href="mailto:joewhitfield@jpwcarpentrybuilding.com" className="text-golden hover:text-golden-hover">
+                        joewhitfield@jpwcarpentrybuilding.com
+                      </a>
                     </div>
                   </div>
-
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="service">Service Required</Label>
-                      <Select>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select service" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="extension">Extension</SelectItem>
-                          <SelectItem value="kitchen">Kitchen</SelectItem>
-                          <SelectItem value="marine-storage">Marine Storage</SelectItem>
-                          <SelectItem value="coastal-renovation">Coastal Renovation</SelectItem>
-                          <SelectItem value="boat-workshop">Boat Workshop</SelectItem>
-                          <SelectItem value="other">Other</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="naval-family">Naval Family?</Label>
-                      <Select>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select status" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="active-service">Yes - Active Service</SelectItem>
-                          <SelectItem value="veteran">Yes - Veteran</SelectItem>
-                          <SelectItem value="no">No</SelectItem>
-                          <SelectItem value="prefer-not-say">Prefer not to say</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
+                  
+                  <div className="text-center pt-4">
+                    <Button size="lg" asChild className="w-full bg-golden text-dark-bg hover:bg-golden-hover">
+                      <Link to="/#contact-section">Get Your Marine-Grade Quote Online</Link>
+                    </Button>
                   </div>
-
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="timeline">Timeline</Label>
-                      <Select>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select timeline" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="urgent">Urgent</SelectItem>
-                          <SelectItem value="before-deployment">Before Next Deployment</SelectItem>
-                          <SelectItem value="flexible">Flexible</SelectItem>
-                          <SelectItem value="during-leave">During Leave Period</SelectItem>
-                          <SelectItem value="other">Other</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="description">Project Description</Label>
-                    <Textarea 
-                      id="description" 
-                      placeholder="Please describe your project requirements, including any specific coastal or naval considerations..."
-                      rows={4}
-                    />
-                  </div>
-
-                  <Button type="submit" size="lg" className="w-full">
-                    Get Your Coastal-Ready Quote
-                  </Button>
-                </form>
+                </div>
               </div>
             </div>
           </div>

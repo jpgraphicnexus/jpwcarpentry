@@ -38,8 +38,8 @@ All colors MUST be HSL.
     --ring: 220 100% 60%;
 
     /* Custom JPWCarpentry tokens */
-    --golden: 220 100% 60%;
-    --golden-hover: 220 100% 50%;
+    --golden: 45 100% 50%; /* Golden yellow */
+    --golden-hover: 45 100% 40%; /* Darker golden */
     --dark-bg: 220 13% 18%;
     --light-gray: 210 20% 96%;
     --medium-gray: 215 16% 47%;

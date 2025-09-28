@@ -188,12 +188,16 @@ const PortsmouthCarpentry = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" className="bg-golden text-dark-bg hover:bg-golden-hover font-semibold">
-                    <Phone className="w-5 h-5 mr-2" />
-                    Get Your Free Portsmouth Quote Today
+                  <Button size="lg" asChild className="bg-golden text-dark-bg hover:bg-golden-hover font-semibold">
+                    <Link to="/#contact-section">
+                      <Phone className="w-5 h-5 mr-2" />
+                      Get Your Free Portsmouth Quote Today
+                    </Link>
                   </Button>
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
-                    View Our Work
+                  <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white hover:text-dark-bg">
+                    <Link to="/past-works">
+                      View Our Work
+                    </Link>
                   </Button>
                 </div>
               </div>
@@ -247,8 +251,8 @@ const PortsmouthCarpentry = () => {
                     <p className="text-sm text-muted-foreground mb-4">
                       <strong>Popular in:</strong> {service.popular}
                     </p>
-                    <Button className="w-full bg-primary hover:bg-primary/90">
-                      Get Quote for This Service
+                    <Button asChild className="w-full bg-primary hover:bg-primary/90">
+                      <Link to="/#contact-section">Get Quote for This Service</Link>
                     </Button>
                   </CardContent>
                 </Card>
@@ -499,8 +503,8 @@ const PortsmouthCarpentry = () => {
             </div>
 
             <div className="text-center mt-12">
-              <Button size="lg" className="bg-golden text-dark-bg hover:bg-golden-hover">
-                Join Happy Portsmouth Customers
+              <Button size="lg" asChild className="bg-golden text-dark-bg hover:bg-golden-hover">
+                <Link to="/#contact-section">Join Happy Portsmouth Customers</Link>
               </Button>
             </div>
           </div>
@@ -556,8 +560,8 @@ const PortsmouthCarpentry = () => {
                   <h3 className="text-2xl font-bold mb-4">Planning Success Rate</h3>
                   <div className="text-4xl font-bold text-golden mb-2">95%</div>
                   <p className="text-white/90">Approval rate for Portsmouth applications</p>
-                  <Button size="lg" className="mt-6 bg-golden text-dark-bg hover:bg-golden-hover">
-                    Discuss Your Project
+                  <Button size="lg" asChild className="mt-6 bg-golden text-dark-bg hover:bg-golden-hover">
+                    <Link to="/#contact-section">Discuss Your Project</Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -630,7 +634,6 @@ const PortsmouthCarpentry = () => {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Contact Information */}
               <div>
                 <h3 className="text-2xl font-semibold mb-8">Contact Information</h3>
                 
@@ -680,108 +683,13 @@ const PortsmouthCarpentry = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Contact Form */}
-              <Card className="bg-white text-dark-bg">
-                <CardHeader>
-                  <CardTitle className="text-2xl text-primary">Request Your Free Quote</CardTitle>
-                  <CardDescription>Tell us about your Portsmouth carpentry project</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div>
-                        <Label htmlFor="name">Name *</Label>
-                        <Input id="name" required />
-                      </div>
-                      <div>
-                        <Label htmlFor="phone">Phone *</Label>
-                        <Input id="phone" type="tel" required />
-                      </div>
-                    </div>
-                    
-                    <div>
-                      <Label htmlFor="email">Email *</Label>
-                      <Input id="email" type="email" required />
-                    </div>
-                    
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div>
-                        <Label htmlFor="area">Portsmouth Area</Label>
-                        <Select>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select area" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="central">Central Portsmouth</SelectItem>
-                            <SelectItem value="southsea">Southsea</SelectItem>
-                            <SelectItem value="old-portsmouth">Old Portsmouth</SelectItem>
-                            <SelectItem value="north-end">North End</SelectItem>
-                            <SelectItem value="fratton">Fratton</SelectItem>
-                            <SelectItem value="other">Other</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                      <div>
-                        <Label htmlFor="service">Service Required</Label>
-                        <Select>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select service" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="kitchen">Kitchen Renovation</SelectItem>
-                            <SelectItem value="extension">Home Extension</SelectItem>
-                            <SelectItem value="storage">Built-in Storage</SelectItem>
-                            <SelectItem value="joinery">Bespoke Joinery</SelectItem>
-                            <SelectItem value="other">Other</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                    </div>
-                    
-                    <div>
-                      <Label htmlFor="description">Project Description *</Label>
-                      <Textarea 
-                        id="description" 
-                        placeholder="Tell us about your Portsmouth carpentry project..."
-                        className="min-h-[100px]"
-                        required 
-                      />
-                    </div>
-                    
-                    <div>
-                      <Label htmlFor="contact-method">Preferred Contact Method</Label>
-                      <Select>
-                        <SelectTrigger>
-                          <SelectValue placeholder="How should we contact you?" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="phone">Phone Call</SelectItem>
-                          <SelectItem value="email">Email</SelectItem>
-                          <SelectItem value="either">Either</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    
-                    <Button type="submit" size="lg" className="w-full bg-golden text-dark-bg hover:bg-golden-hover">
-                      Send My Quote Request
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
+              
+              <div className="text-center">
+                <Button size="lg" asChild className="bg-golden text-dark-bg hover:bg-golden-hover">
+                  <Link to="/#contact-section">Get Your Free Quote Online</Link>
+                </Button>
+              </div>
             </div>
-          </div>
-        </section>
-
-        {/* Final CTA */}
-        <section className="py-12 bg-golden text-dark-bg">
-          <div className="container mx-auto px-4 text-center">
-            <h3 className="text-2xl font-bold mb-4">Ready to Start Your Portsmouth Carpentry Project?</h3>
-            <p className="text-lg mb-6">Call now for immediate response and free consultation</p>
-            <Button size="lg" variant="outline" className="border-dark-bg text-dark-bg hover:bg-dark-bg hover:text-golden">
-              <Phone className="w-5 h-5 mr-2" />
-              Call Now: 07399594658
-            </Button>
           </div>
         </section>
 

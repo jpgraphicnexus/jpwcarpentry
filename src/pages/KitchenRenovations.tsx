@@ -135,10 +135,8 @@ const KitchenRenovations = () => {
               </div>
 
               <div className="pt-4">
-                 <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3"
-                   onClick={handleContactClick}
-                 >
-                  Get Free Kitchen Quote
+                 <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3" asChild>
+                  <Link to="/#contact-section">Get Free Kitchen Quote</Link>
                 </Button>
               </div>
             </div>
@@ -280,11 +278,9 @@ const KitchenRenovations = () => {
           </div>
           
           <div className="text-center mt-16">
-             <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3"
-               onClick={handleContactClick}
-             >
-              Start Your Kitchen Project
-            </Button>
+             <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3" asChild>
+               <Link to="/#contact-section">Start Your Kitchen Project</Link>
+             </Button>
           </div>
         </div>
       </section>

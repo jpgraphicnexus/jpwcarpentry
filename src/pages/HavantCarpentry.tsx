@@ -173,13 +173,17 @@ const HavantCarpentry = () => {
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" className="bg-gradient-to-r from-golden to-golden-hover text-dark-bg font-semibold px-8">
-                    <Phone className="w-5 h-5 mr-2" />
-                    Get Your Free Havant Quote Today
+                  <Button size="lg" asChild className="bg-gradient-to-r from-golden to-golden-hover text-dark-bg font-semibold px-8">
+                    <Link to="/#contact-section">
+                      <Phone className="w-5 h-5 mr-2" />
+                      Get Your Free Havant Quote Today
+                    </Link>
                   </Button>
-                  <Button variant="outline" size="lg" className="border-golden text-golden hover:bg-golden hover:text-dark-bg px-8">
-                    <Mail className="w-5 h-5 mr-2" />
-                    Family Consultation
+                  <Button variant="outline" size="lg" asChild className="border-golden text-golden hover:bg-golden hover:text-dark-bg px-8">
+                    <Link to="/past-works">
+                      <Mail className="w-5 h-5 mr-2" />
+                      View Our Work
+                    </Link>
                   </Button>
                 </div>
               </div>
@@ -793,121 +797,41 @@ const HavantCarpentry = () => {
                 </div>
               </div>
               
-              <Card className="p-8">
-                <CardHeader className="p-0 mb-6">
-                  <CardTitle className="text-2xl">Get Your Family-Friendly Quote</CardTitle>
-                  <CardDescription>Tell us about your family home project</CardDescription>
+              <Card className="p-8 bg-gradient-to-br from-golden/5 to-golden/10 border-golden/20">
+                <CardHeader className="p-0 mb-6 text-center">
+                  <CardTitle className="text-2xl text-primary">Ready for Your Family-Friendly Project?</CardTitle>
+                  <CardDescription>Get your free quote with family scheduling options</CardDescription>
                 </CardHeader>
-                <CardContent className="p-0 space-y-4">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <Label htmlFor="name">Name *</Label>
-                      <Input id="name" type="text" required />
+                <CardContent className="p-0 space-y-6 text-center">
+                  <div className="flex items-center justify-center gap-4">
+                    <div className="w-12 h-12 bg-golden rounded-full flex items-center justify-center">
+                      <Phone className="w-6 h-6 text-dark-bg" />
                     </div>
-                    <div>
-                      <Label htmlFor="phone">Phone *</Label>
-                      <Input id="phone" type="tel" required />
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <Label htmlFor="email">Email *</Label>
-                    <Input id="email" type="email" required />
-                  </div>
-                  
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <Label htmlFor="area">Havant Area</Label>
-                      <Select>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select area" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="central-havant">Central Havant</SelectItem>
-                          <SelectItem value="waterlooville">Waterlooville</SelectItem>
-                          <SelectItem value="leigh-park">Leigh Park</SelectItem>
-                          <SelectItem value="bedhampton">Bedhampton</SelectItem>
-                          <SelectItem value="emsworth">Emsworth</SelectItem>
-                          <SelectItem value="hayling-island">Hayling Island</SelectItem>
-                          <SelectItem value="other">Other</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    <div>
-                      <Label htmlFor="family-situation">Family Situation</Label>
-                      <Select>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select situation" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="young-children">Young Children</SelectItem>
-                          <SelectItem value="teenagers">Teenagers</SelectItem>
-                          <SelectItem value="multi-generation">Multi-Generation</SelectItem>
-                          <SelectItem value="empty-nesters">Empty Nesters</SelectItem>
-                          <SelectItem value="other">Other</SelectItem>
-                        </SelectContent>
-                      </Select>
+                    <div className="text-left">
+                      <h4 className="font-semibold text-primary">Call Direct</h4>
+                      <a href="tel:07399594658" className="text-golden hover:text-golden-hover text-lg">
+                        07399594658
+                      </a>
                     </div>
                   </div>
                   
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <Label htmlFor="project-type">Project Type</Label>
-                      <Select>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select project" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="kitchen">Kitchen</SelectItem>
-                          <SelectItem value="loft-conversion">Loft Conversion</SelectItem>
-                          <SelectItem value="childrens-rooms">Children's Rooms</SelectItem>
-                          <SelectItem value="home-office">Home Office</SelectItem>
-                          <SelectItem value="storage">Storage</SelectItem>
-                          <SelectItem value="other">Other</SelectItem>
-                        </SelectContent>
-                      </Select>
+                  <div className="flex items-center justify-center gap-4">
+                    <div className="w-12 h-12 bg-golden rounded-full flex items-center justify-center">
+                      <Mail className="w-6 h-6 text-dark-bg" />
                     </div>
-                    <div>
-                      <Label htmlFor="timing">Preferred Timing</Label>
-                      <Select>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select timing" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="asap">ASAP</SelectItem>
-                          <SelectItem value="school-holidays">School Holidays</SelectItem>
-                          <SelectItem value="term-time">Term Time</SelectItem>
-                          <SelectItem value="flexible">Flexible</SelectItem>
-                          <SelectItem value="other">Other</SelectItem>
-                        </SelectContent>
-                      </Select>
+                    <div className="text-left">
+                      <h4 className="font-semibold text-primary">Email Us</h4>
+                      <a href="mailto:joewhitfield@jpwcarpentrybuilding.com" className="text-golden hover:text-golden-hover">
+                        joewhitfield@jpwcarpentrybuilding.com
+                      </a>
                     </div>
                   </div>
                   
-                  <div>
-                    <Label htmlFor="budget">Budget Range</Label>
-                    <Select>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select budget range" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="under-5k">Under £5k</SelectItem>
-                        <SelectItem value="5k-15k">£5k - £15k</SelectItem>
-                        <SelectItem value="15k-30k">£15k - £30k</SelectItem>
-                        <SelectItem value="30k-plus">£30k+</SelectItem>
-                        <SelectItem value="discuss">Let's Discuss</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  
-                  <div>
-                    <Label htmlFor="description">Project Description</Label>
-                    <Textarea id="description" placeholder="Tell us about your family home project..." className="h-24" />
-                  </div>
-                  
-                  <Button className="w-full bg-gradient-to-r from-golden to-golden-hover text-dark-bg font-semibold py-3">
-                    <Heart className="w-5 h-5 mr-2" />
-                    Get Family-Friendly Quote
+                  <Button size="lg" asChild className="w-full bg-gradient-to-r from-golden to-golden-hover text-dark-bg font-semibold py-3">
+                    <Link to="/#contact-section">
+                      <Heart className="w-5 h-5 mr-2" />
+                      Get Your Family-Friendly Quote Online
+                    </Link>
                   </Button>
                 </CardContent>
               </Card>

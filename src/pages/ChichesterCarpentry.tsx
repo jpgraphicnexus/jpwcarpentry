@@ -156,13 +156,17 @@ const ChichesterCarpentry = () => {
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" className="bg-gradient-to-r from-golden to-golden-hover text-dark-bg font-semibold px-8">
-                    <Phone className="w-5 h-5 mr-2" />
-                    Get Your Heritage-Compliant Quote
+                  <Button size="lg" asChild className="bg-gradient-to-r from-golden to-golden-hover text-dark-bg font-semibold px-8">
+                    <Link to="/#contact-section">
+                      <Phone className="w-5 h-5 mr-2" />
+                      Get Your Heritage-Compliant Quote
+                    </Link>
                   </Button>
-                  <Button variant="outline" size="lg" className="border-golden text-golden hover:bg-golden hover:text-dark-bg px-8">
-                    <Mail className="w-5 h-5 mr-2" />
-                    Email Consultation
+                  <Button variant="outline" size="lg" asChild className="border-golden text-golden hover:bg-golden hover:text-dark-bg px-8">
+                    <Link to="/past-works">
+                      <Mail className="w-5 h-5 mr-2" />
+                      View Our Work
+                    </Link>
                   </Button>
                 </div>
               </div>
@@ -649,83 +653,38 @@ const ChichesterCarpentry = () => {
                 </div>
               </div>
               
-              <Card className="p-8">
-                <CardHeader className="p-0 mb-6">
-                  <CardTitle className="text-2xl">Get Your Heritage-Compliant Quote</CardTitle>
-                  <CardDescription>Tell us about your Chichester carpentry project</CardDescription>
+              <Card className="p-8 bg-gradient-to-br from-golden/5 to-golden/10 border-golden/20">
+                <CardHeader className="p-0 mb-6 text-center">
+                  <CardTitle className="text-2xl text-primary">Ready to Discuss Your Heritage Property?</CardTitle>
+                  <CardDescription>Get expert advice on your Chichester conservation project</CardDescription>
                 </CardHeader>
-                <CardContent className="p-0 space-y-4">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium mb-2">Name *</label>
-                      <input type="text" className="w-full p-3 border border-input rounded-md bg-background" required />
+                <CardContent className="p-0 space-y-6 text-center">
+                  <div className="flex items-center justify-center gap-4">
+                    <div className="w-12 h-12 bg-golden rounded-full flex items-center justify-center">
+                      <Phone className="w-6 h-6 text-dark-bg" />
                     </div>
-                    <div>
-                      <label className="block text-sm font-medium mb-2">Phone *</label>
-                      <input type="tel" className="w-full p-3 border border-input rounded-md bg-background" required />
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Email *</label>
-                    <input type="email" className="w-full p-3 border border-input rounded-md bg-background" required />
-                  </div>
-                  
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium mb-2">Chichester Area</label>
-                      <select className="w-full p-3 border border-input rounded-md bg-background">
-                        <option>Cathedral Quarter</option>
-                        <option>Pallant</option>
-                        <option>St. Pancras</option>
-                        <option>Summersdale</option>
-                        <option>Fishbourne</option>
-                        <option>Bosham</option>
-                        <option>Other</option>
-                      </select>
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium mb-2">Property Type</label>
-                      <select className="w-full p-3 border border-input rounded-md bg-background">
-                        <option>Listed Building</option>
-                        <option>Conservation Area</option>
-                        <option>Modern Home</option>
-                        <option>Period Property</option>
-                        <option>Other</option>
-                      </select>
+                    <div className="text-left">
+                      <h4 className="font-semibold text-primary">Call Direct</h4>
+                      <a href="tel:07399594658" className="text-golden hover:text-golden-hover text-lg">
+                        07399594658
+                      </a>
                     </div>
                   </div>
                   
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium mb-2">Service Required</label>
-                      <select className="w-full p-3 border border-input rounded-md bg-background">
-                        <option>Conservation Work</option>
-                        <option>Kitchen</option>
-                        <option>Extension</option>
-                        <option>Restoration</option>
-                        <option>Other</option>
-                      </select>
+                  <div className="flex items-center justify-center gap-4">
+                    <div className="w-12 h-12 bg-golden rounded-full flex items-center justify-center">
+                      <Mail className="w-6 h-6 text-dark-bg" />
                     </div>
-                    <div>
-                      <label className="block text-sm font-medium mb-2">Planning Status</label>
-                      <select className="w-full p-3 border border-input rounded-md bg-background">
-                        <option>Not Started</option>
-                        <option>Pre-Application</option>
-                        <option>Submitted</option>
-                        <option>Approved</option>
-                        <option>Not Required</option>
-                      </select>
+                    <div className="text-left">
+                      <h4 className="font-semibold text-primary">Email Us</h4>
+                      <a href="mailto:joewhitfield@jpwcarpentrybuilding.com" className="text-golden hover:text-golden-hover">
+                        joewhitfield@jpwcarpentrybuilding.com
+                      </a>
                     </div>
                   </div>
                   
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Project Description</label>
-                    <textarea className="w-full p-3 border border-input rounded-md bg-background h-24" placeholder="Tell us about your project..."></textarea>
-                  </div>
-                  
-                  <Button className="w-full bg-gradient-to-r from-golden to-golden-hover text-dark-bg font-semibold py-3">
-                    Request Heritage Property Consultation
+                  <Button size="lg" asChild className="w-full bg-gradient-to-r from-golden to-golden-hover text-dark-bg font-semibold py-3">
+                    <Link to="/#contact-section">Get Your Heritage Property Quote Online</Link>
                   </Button>
                 </CardContent>
               </Card>

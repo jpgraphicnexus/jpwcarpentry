@@ -895,142 +895,27 @@ const FarehamCarpentry = () => {
                 </div>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-lg border border-golden/20">
-                <h3 className="text-2xl font-semibold mb-6">Schedule Your Executive Consultation</h3>
-                <form className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Name *</Label>
-                      <Input id="name" placeholder="Your full name" required className="border-golden/30 focus:border-golden" />
+              <div className="bg-gradient-to-br from-golden/5 to-golden/10 p-8 rounded-lg border border-golden/20">
+                <h3 className="text-2xl font-semibold mb-6 text-center text-primary">Ready for Your Executive Project?</h3>
+                <div className="space-y-6">
+                  <div className="flex items-center justify-center gap-4">
+                    <div className="w-12 h-12 bg-golden rounded-full flex items-center justify-center">
+                      <Phone className="w-6 h-6 text-dark-bg" />
                     </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="phone">Phone *</Label>
-                      <Input id="phone" type="tel" placeholder="Your phone number" required className="border-golden/30 focus:border-golden" />
+                    <div className="text-left">
+                      <h4 className="font-semibold text-primary">Call Direct</h4>
+                      <a href="tel:07399594658" className="text-golden hover:text-golden-hover text-lg">
+                        07399594658
+                      </a>
                     </div>
                   </div>
                   
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email *</Label>
-                    <Input id="email" type="email" placeholder="Your email address" required className="border-golden/30 focus:border-golden" />
+                  <div className="text-center pt-4">
+                    <Button size="lg" asChild className="w-full bg-golden text-dark-bg hover:bg-golden-hover">
+                      <Link to="/#contact-section">Schedule Your Executive Consultation Online</Link>
+                    </Button>
                   </div>
-
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="area">Fareham Area</Label>
-                      <Select>
-                        <SelectTrigger className="border-golden/30 focus:border-golden bg-white">
-                          <SelectValue placeholder="Select your area" />
-                        </SelectTrigger>
-                        <SelectContent className="bg-white border border-golden/30 shadow-lg z-50">
-                          <SelectItem value="fareham-centre">Fareham Centre</SelectItem>
-                          <SelectItem value="whiteley">Whiteley</SelectItem>
-                          <SelectItem value="park-gate">Park Gate</SelectItem>
-                          <SelectItem value="titchfield">Titchfield</SelectItem>
-                          <SelectItem value="wickham">Wickham</SelectItem>
-                          <SelectItem value="stubbington">Stubbington</SelectItem>
-                          <SelectItem value="hill-head">Hill Head</SelectItem>
-                          <SelectItem value="other">Other</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="property-type">Property Type</Label>
-                      <Select>
-                        <SelectTrigger className="border-golden/30 focus:border-golden bg-white">
-                          <SelectValue placeholder="Select property type" />
-                        </SelectTrigger>
-                        <SelectContent className="bg-white border border-golden/30 shadow-lg z-50">
-                          <SelectItem value="executive-modern">Executive Modern</SelectItem>
-                          <SelectItem value="period-property">Period Property</SelectItem>
-                          <SelectItem value="family-estate">Family Estate</SelectItem>
-                          <SelectItem value="luxury-development">Luxury Development</SelectItem>
-                          <SelectItem value="waterfront">Waterfront</SelectItem>
-                          <SelectItem value="other">Other</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                  </div>
-
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="project-type">Project Type</Label>
-                      <Select>
-                        <SelectTrigger className="border-golden/30 focus:border-golden bg-white">
-                          <SelectValue placeholder="Select project type" />
-                        </SelectTrigger>
-                        <SelectContent className="bg-white border border-golden/30 shadow-lg z-50">
-                          <SelectItem value="extension">Extension</SelectItem>
-                          <SelectItem value="kitchen">Kitchen</SelectItem>
-                          <SelectItem value="home-office">Home Office</SelectItem>
-                          <SelectItem value="storage-solutions">Storage Solutions</SelectItem>
-                          <SelectItem value="restoration">Restoration</SelectItem>
-                          <SelectItem value="other">Other</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="budget">Budget Range</Label>
-                      <Select>
-                        <SelectTrigger className="border-golden/30 focus:border-golden bg-white">
-                          <SelectValue placeholder="Select budget range" />
-                        </SelectTrigger>
-                        <SelectContent className="bg-white border border-golden/30 shadow-lg z-50">
-                          <SelectItem value="10k-25k">£10k-£25k</SelectItem>
-                          <SelectItem value="25k-50k">£25k-£50k</SelectItem>
-                          <SelectItem value="50k-100k">£50k-£100k</SelectItem>
-                          <SelectItem value="100k-plus">£100k+</SelectItem>
-                          <SelectItem value="discuss-privately">Discuss Privately</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                  </div>
-
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="timeline">Timeline</Label>
-                      <Select>
-                        <SelectTrigger className="border-golden/30 focus:border-golden bg-white">
-                          <SelectValue placeholder="Select timeline" />
-                        </SelectTrigger>
-                        <SelectContent className="bg-white border border-golden/30 shadow-lg z-50">
-                          <SelectItem value="urgent">Urgent</SelectItem>
-                          <SelectItem value="3-months">Within 3 Months</SelectItem>
-                          <SelectItem value="6-months">Within 6 Months</SelectItem>
-                          <SelectItem value="planning">Planning Stage</SelectItem>
-                          <SelectItem value="flexible">Flexible</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="consultation">Preferred Consultation</Label>
-                      <Select>
-                        <SelectTrigger className="border-golden/30 focus:border-golden bg-white">
-                          <SelectValue placeholder="Select consultation type" />
-                        </SelectTrigger>
-                        <SelectContent className="bg-white border border-golden/30 shadow-lg z-50">
-                          <SelectItem value="property-visit">Property Visit</SelectItem>
-                          <SelectItem value="office-meeting">Office Meeting</SelectItem>
-                          <SelectItem value="video-call">Video Call</SelectItem>
-                          <SelectItem value="phone-discussion">Phone Discussion</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="description">Project Description</Label>
-                    <Textarea 
-                      id="description" 
-                      placeholder="Please describe your luxury project requirements and any specific executive considerations..."
-                      rows={4}
-                      className="border-golden/30 focus:border-golden"
-                    />
-                  </div>
-
-                  <Button type="submit" size="lg" variant="golden" className="w-full">
-                    Schedule Executive Consultation
-                  </Button>
-                </form>
+                </div>
               </div>
             </div>
           </div>

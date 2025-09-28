@@ -155,10 +155,8 @@ const GeneralBuildingWorks = () => {
               </div>
 
               <div className="pt-4">
-                 <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3"
-                   onClick={handleContactClick}
-                 >
-                  Get Building Quote
+                 <Button size="lg" className="bg-golden hover:bg-golden/90 text-dark-bg font-medium px-8 py-3" asChild>
+                  <Link to="/#contact-section">Get Building Quote</Link>
                 </Button>
               </div>
             </div>
