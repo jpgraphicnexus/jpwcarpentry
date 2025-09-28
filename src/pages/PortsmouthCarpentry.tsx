@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
 import { useSEO } from "@/hooks/useSEO";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -133,6 +134,27 @@ const PortsmouthCarpentry = () => {
   return (
     <>
       <SEO {...seoData} />
+      <LocalBusinessSchema 
+        pageType="service" 
+        customServices={[
+          {
+            name: "Portsmouth Kitchen Fitting & Renovation",
+            description: "Transform your Portsmouth kitchen with bespoke fitted units and professional installation"
+          },
+          {
+            name: "Portsmouth Home Extensions & Conversions", 
+            description: "Add value to your Portsmouth property with expert extensions and loft conversions"
+          },
+          {
+            name: "Portsmouth Built-in Storage Solutions",
+            description: "Maximize space in Portsmouth homes with custom wardrobes and storage solutions"
+          },
+          {
+            name: "Portsmouth Bespoke Joinery & Furniture",
+            description: "Handcrafted furniture and joinery designed specifically for Portsmouth homes"
+          }
+        ]}
+      />
       <div className="min-h-screen bg-background">
         <Header />
         

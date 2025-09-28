@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import SEO from "@/components/SEO";
 import { useSEO } from "@/hooks/useSEO";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
@@ -26,6 +27,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO {...seoData} />
+      <LocalBusinessSchema pageType="homepage" />
       <Header />
       <HeroSection />
       <ServicesSection />

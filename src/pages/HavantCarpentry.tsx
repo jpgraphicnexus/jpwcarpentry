@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
 import { useSEO } from "@/hooks/useSEO";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -137,6 +138,27 @@ const HavantCarpentry = () => {
   return (
     <>
       <SEO {...seoData} />
+      <LocalBusinessSchema 
+        pageType="service" 
+        customServices={[
+          {
+            name: "Havant Family Kitchen Renovations",
+            description: "Create the heart of your Havant home with practical, beautiful kitchens designed for family life"
+          },
+          {
+            name: "Havant Loft Conversions & Storage", 
+            description: "Add valuable space to your Havant family home without the need to move house"
+          },
+          {
+            name: "Havant Children's Bedroom Solutions",
+            description: "Built-in storage and study areas designed for growing families in Havant"
+          },
+          {
+            name: "Havant Home Office Conversions",
+            description: "Create productive workspaces perfect for hybrid working families in Havant"
+          }
+        ]}
+      />
       
       <div className="min-h-screen bg-background">
         <Header />

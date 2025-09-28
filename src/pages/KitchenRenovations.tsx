@@ -1,5 +1,6 @@
 import SEO from "@/components/SEO";
 import { useSEO } from "@/hooks/useSEO";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -10,7 +11,6 @@ import { useNavigate, useLocation, Link } from "react-router-dom";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin } from "lucide-react";
-import SEOComponent from "@/components/SEOComponent";
 import { Helmet } from "react-helmet-async";
 
 const KitchenRenovations = () => {
@@ -68,25 +68,8 @@ const KitchenRenovations = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO {...seoData} />
+      <LocalBusinessSchema pageType="service" serviceType="kitchen-renovations" />
       <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Kitchen Renovations Hampshire",
-            "description": "Professional kitchen renovation services across Hampshire including design, installation, and project management.",
-            "provider": {
-              "@type": "Organization",
-              "name": "JPW Carpentry & Building"
-            },
-            "areaServed": ["Portsmouth", "Chichester", "Havant", "Gosport", "Fareham"],
-            "offers": {
-              "@type": "Offer",
-              "priceRange": "£6,000 - £25,000",
-              "priceCurrency": "GBP"
-            }
-          })}
-        </script>
       </Helmet>
       <Header />
       

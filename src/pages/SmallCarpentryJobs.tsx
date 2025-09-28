@@ -1,5 +1,6 @@
 import SEO from "@/components/SEO";
 import { useSEO } from "@/hooks/useSEO";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -10,7 +11,6 @@ import { useNavigate, useLocation, Link } from "react-router-dom";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin } from "lucide-react";
-import SEOComponent from "@/components/SEOComponent";
 import { Helmet } from "react-helmet-async";
 
 const SmallCarpentryJobs = () => {
@@ -70,25 +70,8 @@ const SmallCarpentryJobs = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO {...seoData} />
+      <LocalBusinessSchema pageType="service" serviceType="small-carpentry-jobs" />
       <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Small Carpentry Jobs Hampshire",
-            "description": "Professional small carpentry jobs and minor repairs including shelving, door fitting, and custom solutions.",
-            "provider": {
-              "@type": "Organization",
-              "name": "JPW Carpentry & Building"
-            },
-            "areaServed": ["Portsmouth", "Chichester", "Havant", "Gosport", "Fareham"],
-            "offers": {
-              "@type": "Offer",
-              "priceRange": "£50 - £2,000",
-              "priceCurrency": "GBP"
-            }
-          })}
-        </script>
       </Helmet>
       <Header />
       

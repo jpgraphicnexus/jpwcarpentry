@@ -1,5 +1,6 @@
 import SEO from "@/components/SEO";
 import { useSEO } from "@/hooks/useSEO";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -10,7 +11,6 @@ import constructionWorkers from "@/assets/construction-workers.jpg";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { MapPin } from "lucide-react";
-import SEOComponent from "@/components/SEOComponent";
 import { Helmet } from "react-helmet-async";
 
 const GeneralBuildingWorks = () => {
@@ -88,25 +88,8 @@ const GeneralBuildingWorks = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO {...seoData} />
+      <LocalBusinessSchema pageType="service" serviceType="general-building-works" />
       <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "General Building Works Hampshire",
-            "description": "Comprehensive general building works including extensions, structural work, roofing, and construction services.",
-            "provider": {
-              "@type": "Organization",
-              "name": "JPW Carpentry & Building"
-            },
-            "areaServed": ["Portsmouth", "Chichester", "Havant", "Gosport", "Fareham"],
-            "offers": {
-              "@type": "Offer",
-              "priceRange": "£3,000 - £150,000",
-              "priceCurrency": "GBP"
-            }
-          })}
-        </script>
       </Helmet>
       <Header />
       

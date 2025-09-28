@@ -35,8 +35,8 @@ const App = () => (
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "JPW Carpentry & Building",
-            "url": "https://jpwcarpentry.lovable.app",
-            "logo": "https://jpwcarpentry.lovable.app/assets/jpw-logo.png",
+            "url": "https://jpwcarpentry.com",
+            "logo": "https://jpwcarpentry.com/assets/jpw-logo.png",
             "description": "Professional carpentry and building services across Hampshire including Portsmouth, Chichester, Havant, Gosport, and Fareham.",
             "founder": {
               "@type": "Person",
