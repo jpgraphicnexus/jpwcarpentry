@@ -99,6 +99,12 @@ const Services = () => {
       link: "/gosport-carpentry-services"
     },
     {
+      title: "Fareham Executive Carpentry",
+      description: "Premium carpentry services for Fareham's executive properties. Luxury extensions, designer kitchens, bespoke solutions.",
+      icon: "👑",
+      link: "/fareham-carpentry-services"
+    },
+    {
       title: "Kitchen Renovations",
       description: "Complete kitchen transformations including design, fitting, and all associated trades.",
       icon: "🏠"
