@@ -74,8 +74,8 @@ const App = () => (
               "@type": "GeoCircle",
               "geoMidpoint": {
                 "@type": "GeoCoordinates",
-                "latitude": 50.8429,
-                "longitude": -1.0761
+                "latitude": 50.9448858,
+                "longitude": -0.5723678
               },
               "geoRadius": "25000"
             },
@@ -87,7 +87,8 @@ const App = () => (
             },
             "sameAs": [
               "https://www.facebook.com/jpwcarpentry",
-              "https://www.instagram.com/jpwcarpentry"
+              "https://www.instagram.com/jpwcarpentry",
+              "https://www.checkatrade.com/trades/jpwcarpentry1129351"
             ]
           })}
         </script>

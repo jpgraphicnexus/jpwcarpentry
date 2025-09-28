@@ -50,16 +50,11 @@ export interface LocalBusinessSchema {
     "@type": string;
     name: string;
   };
-  aggregateRating?: {
-    "@type": string;
-    ratingValue: string;
-    reviewCount: number;
-    bestRating: string;
-  };
+  hasMap?: string;
   sameAs: string[];
 }
 
-// Base business information
+// Base business information with REAL GBP coordinates
 const baseBusinessInfo = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -69,7 +64,7 @@ const baseBusinessInfo = {
   email: "joewhitfield@jpwcarpentrybuilding.com",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "",
+    streetAddress: "", // Hidden for Service Area Business
     addressLocality: "Hampshire",
     addressRegion: "Hampshire",
     postalCode: "",
@@ -77,8 +72,8 @@ const baseBusinessInfo = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 51.0577,
-    longitude: -1.3081
+    latitude: 50.9448858,  // REAL GBP COORDINATES
+    longitude: -0.5723678  // REAL GBP COORDINATES
   },
   areaServed: [
     "Portsmouth",
@@ -96,8 +91,8 @@ const baseBusinessInfo = {
     "@type": "GeoCircle",
     geoMidpoint: {
       "@type": "GeoCoordinates",
-      latitude: 51.0577,
-      longitude: -1.3081
+      latitude: 50.9448858,  // REAL GBP COORDINATES
+      longitude: -0.5723678  // REAL GBP COORDINATES
     },
     geoRadius: "25000"
   },
@@ -113,15 +108,11 @@ const baseBusinessInfo = {
     "@type": "Person",
     name: "James Wilson"
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5.0",
-    reviewCount: 150,
-    bestRating: "5"
-  },
+  hasMap: "https://www.google.com/maps/place/JPW+Carpentry+%26+Building/@50.9448857,-0.5723678,10z/data=!3m1!4b1!4m6!3m5!1s0x23ad25a9271cec8d:0xc75c49b807a6e895!8m2!3d50.9448858!4d-0.5723678!16s%2Fg%2F11zj4tk8s2",
   sameAs: [
     "https://www.facebook.com/jpwcarpentry",
-    "https://www.instagram.com/jpwcarpentry"
+    "https://www.instagram.com/jpwcarpentry",
+    "https://www.checkatrade.com/trades/jpwcarpentry1129351"
   ]
 };
 

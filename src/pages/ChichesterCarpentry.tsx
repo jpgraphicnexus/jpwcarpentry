@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
 import { useSEO } from "@/hooks/useSEO";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -122,6 +123,27 @@ const ChichesterCarpentry = () => {
   return (
     <>
       <SEO {...seoData} />
+      <LocalBusinessSchema 
+        pageType="service" 
+        customServices={[
+          {
+            name: "Chichester Conservation Area Carpentry",
+            description: "Sympathetic renovations respecting Chichester's historic character with planning permission support"
+          },
+          {
+            name: "Chichester Period Property Restoration", 
+            description: "Victorian and Georgian property carpentry using authentic materials and traditional techniques"
+          },
+          {
+            name: "Chichester Heritage Window Restoration",
+            description: "Sash window repair and replacement in period style, Conservation Area approved"
+          },
+          {
+            name: "Chichester Listed Building Carpentry",
+            description: "Specialist work on Grade I and Grade II listed properties following Historic England guidelines"
+          }
+        ]}
+      />
       <LocalBusinessSchema 
         pageType="service" 
         customServices={[
