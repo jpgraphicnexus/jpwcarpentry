@@ -43,6 +43,7 @@ const SEOComponent = ({
       <meta property="og:image" content={ogImage || defaultImage} />
       <meta property="og:type" content={article ? "article" : "website"} />
       <meta property="og:site_name" content="JPW Carpentry" />
+      <meta property="og:locale" content="en_GB" />
       
       {/* Article-specific Open Graph Tags */}
       {article && (
@@ -62,6 +63,19 @@ const SEOComponent = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage || defaultImage} />
+      <meta name="twitter:site" content="@jpwcarpentry" />
+      <meta name="twitter:creator" content="@jpwcarpentry" />
+      
+      {/* Business-specific meta tags */}
+      <meta name="geo.region" content="GB-HAM" />
+      <meta name="geo.placename" content="Hampshire" />
+      <meta name="geo.position" content="50.8429;-1.0761" />
+      <meta name="ICBM" content="50.8429, -1.0761" />
+      
+      {/* Mobile optimization */}
+      <meta name="format-detection" content="telephone=yes" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
       
       {/* Additional SEO Tags */}
       <meta name="robots" content="index, follow" />

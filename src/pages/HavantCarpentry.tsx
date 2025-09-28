@@ -670,6 +670,58 @@ const HavantCarpentry = () => {
           </div>
         </section>
 
+        {/* FAQ Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair text-primary">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Common questions about our Havant family carpentry services
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto space-y-6">
+              {[
+                {
+                  question: "Do you offer family-friendly scheduling in Havant?",
+                  answer: "Yes, we understand family life in Havant and offer flexible scheduling including evening and weekend appointments to minimize disruption to your family routine."
+                },
+                {
+                  question: "How do you child-proof work areas during projects?",
+                  answer: "Safety is our priority. We secure all work areas, use dust barriers, and ensure tools are safely stored. We're experienced in working around families with young children in Havant homes."
+                },
+                {
+                  question: "What's the typical timeline for a family kitchen renovation in Havant?",
+                  answer: "Family kitchen renovations in Havant typically take 2-3 weeks. We coordinate with families to minimize disruption, often working in phases to maintain some kitchen functionality."
+                },
+                {
+                  question: "Do you provide free quotes for Havant family projects?",
+                  answer: "Yes, we provide free, comprehensive quotes for all Havant projects. We'll visit at a time convenient for your family schedule."
+                },
+                {
+                  question: "Which areas of Havant do you cover?",
+                  answer: "We cover all Havant areas including Leigh Park, Waterlooville, Emsworth, Hayling Island, and surrounding Hampshire family neighborhoods."
+                },
+                {
+                  question: "How do you handle noise and disruption for families?",
+                  answer: "We coordinate noisy work around school hours and nap times when possible. All families receive a detailed schedule so you can plan activities accordingly."
+                }
+              ].map((faq, index) => (
+                <Card key={index} className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-primary">{faq.question}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">{faq.answer}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Contact Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
@@ -865,6 +917,64 @@ const HavantCarpentry = () => {
 
         <Footer />
       </div>
+
+      {/* FAQ Schema Markup */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do you offer family-friendly scheduling in Havant?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we understand family life in Havant and offer flexible scheduling including evening and weekend appointments to minimize disruption to your family routine."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you child-proof work areas during projects?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Safety is our priority. We secure all work areas, use dust barriers, and ensure tools are safely stored. We're experienced in working around families with young children in Havant homes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What's the typical timeline for a family kitchen renovation in Havant?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Family kitchen renovations in Havant typically take 2-3 weeks. We coordinate with families to minimize disruption, often working in phases to maintain some kitchen functionality."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you provide free quotes for Havant family projects?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we provide free, comprehensive quotes for all Havant projects. We'll visit at a time convenient for your family schedule."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which areas of Havant do you cover?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We cover all Havant areas including Leigh Park, Waterlooville, Emsworth, Hayling Island, and surrounding Hampshire family neighborhoods."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you handle noise and disruption for families?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We coordinate noisy work around school hours and nap times when possible. All families receive a detailed schedule so you can plan activities accordingly."
+              }
+            }
+          ]
+        })}
+      </script>
 
       {/* Schema Markup */}
       <script type="application/ld+json">

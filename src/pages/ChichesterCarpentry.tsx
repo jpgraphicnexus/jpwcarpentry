@@ -522,6 +522,58 @@ const ChichesterCarpentry = () => {
           </div>
         </section>
 
+        {/* FAQ Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair text-primary">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Common questions about our Chichester carpentry services
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto space-y-6">
+              {[
+                {
+                  question: "Do you work on heritage properties in Chichester?",
+                  answer: "Yes, we specialize in heritage property restoration in Chichester. We understand the unique requirements of listed buildings and work closely with conservation officers to ensure compliance."
+                },
+                {
+                  question: "Are you familiar with Chichester District Council planning requirements?",
+                  answer: "Absolutely. We have extensive experience with Chichester District Council planning applications and building regulations, particularly for conservation areas and listed properties."
+                },
+                {
+                  question: "How long do luxury kitchen installations take in Chichester?",
+                  answer: "Premium kitchen installations in Chichester typically take 3-5 weeks, depending on the complexity and any structural modifications required for heritage properties."
+                },
+                {
+                  question: "Do you provide free consultations for Chichester properties?",
+                  answer: "Yes, we offer free consultations for all Chichester projects. For heritage properties, we provide detailed feasibility assessments at no cost."
+                },
+                {
+                  question: "What areas around Chichester do you serve?",
+                  answer: "We serve Chichester city center, Goodwood, Fishbourne, Bosham, West Wittering, and surrounding West Sussex villages within 15 miles of the cathedral."
+                },
+                {
+                  question: "Do you have experience with period property regulations?",
+                  answer: "Yes, we have over 15 years of experience working with period properties in Chichester, including Tudor, Georgian, and Victorian buildings requiring special conservation techniques."
+                }
+              ].map((faq, index) => (
+                <Card key={index} className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-primary">{faq.question}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">{faq.answer}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Contact Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
@@ -683,6 +735,64 @@ const ChichesterCarpentry = () => {
 
         <Footer />
       </div>
+
+      {/* FAQ Schema Markup */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do you work on heritage properties in Chichester?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we specialize in heritage property restoration in Chichester. We understand the unique requirements of listed buildings and work closely with conservation officers to ensure compliance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are you familiar with Chichester District Council planning requirements?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. We have extensive experience with Chichester District Council planning applications and building regulations, particularly for conservation areas and listed properties."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do luxury kitchen installations take in Chichester?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Premium kitchen installations in Chichester typically take 3-5 weeks, depending on the complexity and any structural modifications required for heritage properties."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you provide free consultations for Chichester properties?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we offer free consultations for all Chichester projects. For heritage properties, we provide detailed feasibility assessments at no cost."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What areas around Chichester do you serve?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We serve Chichester city center, Goodwood, Fishbourne, Bosham, West Wittering, and surrounding West Sussex villages within 15 miles of the cathedral."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you have experience with period property regulations?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we have over 15 years of experience working with period properties in Chichester, including Tudor, Georgian, and Victorian buildings requiring special conservation techniques."
+              }
+            }
+          ]
+        })}
+      </script>
 
       {/* Schema Markup */}
       <script type="application/ld+json">

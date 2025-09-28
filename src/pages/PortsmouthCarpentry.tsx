@@ -565,6 +565,58 @@ const PortsmouthCarpentry = () => {
           </div>
         </section>
 
+        {/* FAQ Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair text-primary">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Common questions about our Portsmouth carpentry services
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto space-y-6">
+              {[
+                {
+                  question: "Do you provide free quotes in Portsmouth?",
+                  answer: "Yes, we provide free, no-obligation quotes for all carpentry projects in Portsmouth and surrounding areas. We typically respond within 24 hours and can arrange a site visit at your convenience."
+                },
+                {
+                  question: "How long do kitchen renovations take in Portsmouth?",
+                  answer: "Most kitchen renovations in Portsmouth take 2-4 weeks depending on the scope of work and any structural changes required. We provide detailed timelines during the quote process."
+                },
+                {
+                  question: "Are you familiar with Portsmouth planning regulations?",
+                  answer: "Yes, we have extensive experience with Portsmouth City Council planning requirements. We can assist with planning applications and ensure all work complies with local building regulations."
+                },
+                {
+                  question: "Do you work on Victorian terraced houses in Portsmouth?",
+                  answer: "Absolutely! We specialize in working with Portsmouth's Victorian terraced houses, understanding their unique challenges and opportunities. Many of our projects involve renovating these character properties."
+                },
+                {
+                  question: "What areas of Portsmouth do you cover?",
+                  answer: "We cover all Portsmouth areas including Southsea, Old Portsmouth, North End, Fratton, Baffins, Milton, and surrounding Hampshire areas like Gosport and Fareham."
+                },
+                {
+                  question: "Do you provide guarantees on your work?",
+                  answer: "Yes, we provide comprehensive guarantees on all our work. Our commitment to quality means we stand behind every project we complete in Portsmouth."
+                }
+              ].map((faq, index) => (
+                <Card key={index} className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-primary">{faq.question}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">{faq.answer}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Contact Section */}
         <section className="py-20 bg-primary text-white">
           <div className="container mx-auto px-4">
@@ -737,6 +789,62 @@ const PortsmouthCarpentry = () => {
       </div>
 
       {/* JSON-LD Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do you provide free quotes in Portsmouth?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we provide free, no-obligation quotes for all carpentry projects in Portsmouth and surrounding areas. We typically respond within 24 hours and can arrange a site visit at your convenience."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do kitchen renovations take in Portsmouth?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most kitchen renovations in Portsmouth take 2-4 weeks depending on the scope of work and any structural changes required. We provide detailed timelines during the quote process."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are you familiar with Portsmouth planning regulations?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we have extensive experience with Portsmouth City Council planning requirements. We can assist with planning applications and ensure all work complies with local building regulations."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you work on Victorian terraced houses in Portsmouth?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely! We specialize in working with Portsmouth's Victorian terraced houses, understanding their unique challenges and opportunities. Many of our projects involve renovating these character properties."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What areas of Portsmouth do you cover?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We cover all Portsmouth areas including Southsea, Old Portsmouth, North End, Fratton, Baffins, Milton, and surrounding Hampshire areas like Gosport and Fareham."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you provide guarantees on your work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we provide comprehensive guarantees on all our work. Our commitment to quality means we stand behind every project we complete in Portsmouth."
+              }
+            }
+          ]
+        })}
+      </script>
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",

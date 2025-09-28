@@ -757,6 +757,58 @@ const FarehamCarpentry = () => {
           </div>
         </section>
 
+        {/* FAQ Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair text-primary">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Common questions about our Fareham executive carpentry services
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto space-y-6">
+              {[
+                {
+                  question: "Do you specialize in executive home improvements in Fareham?",
+                  answer: "Yes, we specialize in high-end executive home improvements throughout Fareham, Whiteley, and surrounding premium residential areas. We understand the exacting standards expected by discerning homeowners."
+                },
+                {
+                  question: "Can you work with architects on luxury projects?",
+                  answer: "Absolutely. We regularly collaborate with leading Hampshire architects on executive projects and can provide design-build services for complex luxury renovations."
+                },
+                {
+                  question: "What's the timeline for executive kitchen installations in Fareham?",
+                  answer: "Executive kitchen installations typically take 4-6 weeks, depending on complexity and premium finishes. We provide detailed project management throughout."
+                },
+                {
+                  question: "Do you offer private consultations for executive properties?",
+                  answer: "Yes, we provide discreet, private consultations at your convenience. We understand the need for confidentiality and professional discretion with executive properties."
+                },
+                {
+                  question: "Which premium areas of Fareham do you serve?",
+                  answer: "We serve all premium Fareham areas including Whiteley executive developments, Park Gate estates, Titchfield village, Hill Head waterfront properties, and Wickham period homes."
+                },
+                {
+                  question: "Do you provide investment value assessments?",
+                  answer: "Yes, we can provide detailed assessments of how proposed improvements will enhance your property value, backed by our extensive experience with executive properties in the Fareham market."
+                }
+              ].map((faq, index) => (
+                <Card key={index} className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-primary">{faq.question}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">{faq.answer}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Contact Section */}
         <section id="contact" className="py-20 bg-background">
           <div className="container mx-auto px-4">
@@ -986,6 +1038,67 @@ const FarehamCarpentry = () => {
       </main>
 
       <Footer />
+
+      {/* FAQ Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Do you specialize in executive home improvements in Fareham?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we specialize in high-end executive home improvements throughout Fareham, Whiteley, and surrounding premium residential areas. We understand the exacting standards expected by discerning homeowners."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can you work with architects on luxury projects?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolutely. We regularly collaborate with leading Hampshire architects on executive projects and can provide design-build services for complex luxury renovations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What's the timeline for executive kitchen installations in Fareham?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Executive kitchen installations typically take 4-6 weeks, depending on complexity and premium finishes. We provide detailed project management throughout."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you offer private consultations for executive properties?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we provide discreet, private consultations at your convenience. We understand the need for confidentiality and professional discretion with executive properties."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which premium areas of Fareham do you serve?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We serve all premium Fareham areas including Whiteley executive developments, Park Gate estates, Titchfield village, Hill Head waterfront properties, and Wickham period homes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide investment value assessments?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we can provide detailed assessments of how proposed improvements will enhance your property value, backed by our extensive experience with executive properties in the Fareham market."
+                }
+              }
+            ]
+          })
+        }}
+      />
 
       {/* Schema Markup */}
       <script

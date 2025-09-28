@@ -739,6 +739,58 @@ const GosportCarpentry = () => {
           </div>
         </section>
 
+        {/* FAQ Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair text-primary">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Common questions about our Gosport naval community carpentry services
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto space-y-6">
+              {[
+                {
+                  question: "Do you work with naval families on deployment schedules?",
+                  answer: "Yes, we're experienced in working with naval families and understand deployment cycles. We can adjust project timelines to coordinate with deployments and leave periods."
+                },
+                {
+                  question: "Are you security cleared to work on naval properties?",
+                  answer: "While we don't hold formal security clearance, we're trusted by many naval families and understand the discretion and professionalism required for MOD residential work."
+                },
+                {
+                  question: "How quickly can you complete emergency repairs for naval families?",
+                  answer: "We prioritize emergency repairs for naval families, especially those facing deployment. Most urgent repairs can be completed within 24-48 hours."
+                },
+                {
+                  question: "Do you offer payment plans for naval families?",
+                  answer: "Yes, we understand naval pay cycles and can arrange flexible payment schedules to accommodate monthly naval salaries and deployment allowances."
+                },
+                {
+                  question: "Which areas of Gosport do you serve?",
+                  answer: "We serve all Gosport areas including Alverstoke, Lee-on-the-Solent, Stubbington, Bridgemary, and all MOD residential areas in the Gosport peninsula."
+                },
+                {
+                  question: "Can you work around naval family moving schedules?",
+                  answer: "Absolutely. We understand PCS moves and can expedite projects before postings or prepare properties for new naval families arriving in Gosport."
+                }
+              ].map((faq, index) => (
+                <Card key={index} className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-primary">{faq.question}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">{faq.answer}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Contact Section */}
         <section id="contact" className="py-20 bg-background">
           <div className="container mx-auto px-4">
@@ -951,6 +1003,67 @@ const GosportCarpentry = () => {
       </main>
 
       <Footer />
+
+      {/* FAQ Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Do you work with naval families on deployment schedules?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we're experienced in working with naval families and understand deployment cycles. We can adjust project timelines to coordinate with deployments and leave periods."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are you security cleared to work on naval properties?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "While we don't hold formal security clearance, we're trusted by many naval families and understand the discretion and professionalism required for MOD residential work."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How quickly can you complete emergency repairs for naval families?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We prioritize emergency repairs for naval families, especially those facing deployment. Most urgent repairs can be completed within 24-48 hours."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you offer payment plans for naval families?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we understand naval pay cycles and can arrange flexible payment schedules to accommodate monthly naval salaries and deployment allowances."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which areas of Gosport do you serve?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We serve all Gosport areas including Alverstoke, Lee-on-the-Solent, Stubbington, Bridgemary, and all MOD residential areas in the Gosport peninsula."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can you work around naval family moving schedules?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolutely. We understand PCS moves and can expedite projects before postings or prepare properties for new naval families arriving in Gosport."
+                }
+              }
+            ]
+          })
+        }}
+      />
 
       {/* Schema Markup */}
       <script
