@@ -18,11 +18,11 @@ All colors MUST be HSL.
     --popover-foreground: 220 13% 18%;
 
     /* JPW Brand Colors */
-    --primary: 220 100% 60%; /* Blue */
+    --primary: 220 13% 18%; /* Dark charcoal */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 100% 88%;
-    --secondary-foreground: 220 13% 18%;
+    --secondary: 220 100% 60%; /* Blue */
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 210 20% 96%;
     --muted-foreground: 215 16% 47%;
