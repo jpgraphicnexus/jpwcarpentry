@@ -17,8 +17,8 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 220 13% 18%;
 
-    /* BUILDCORE Brand Colors */
-    --primary: 220 13% 18%; /* Dark charcoal */
+    /* JPW Brand Colors */
+    --primary: 220 100% 60%; /* Blue */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 100% 88%;
