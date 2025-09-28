@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import carpenterWorking from "@/assets/carpenter-working.jpg";
 import drivewayProject from "@/assets/driveway-project.webp";
 import officeInterior from "@/assets/office-interior.jpg";
-import woodenFencingProject from "@/assets/wooden-fencing-project.jpg";
+import fencingProject from "@/assets/fencing.webp";
 
 const HeroSection = () => {
   return (
@@ -25,8 +25,8 @@ const HeroSection = () => {
             {/* Workers Image with Experience Badge */}
             <div className="relative">
               <img
-                src={woodenFencingProject}
-                srcSet={`${woodenFencingProject} 576w`}
+                src={fencingProject}
+                srcSet={`${fencingProject} 576w`}
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 576px"
                 alt="Professional wooden fencing installation by JPW Carpentry & Building"
                 className="w-full h-[450px] object-cover object-center rounded-lg"
