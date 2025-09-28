@@ -38,8 +38,8 @@ All colors MUST be HSL.
     --ring: 220 100% 60%;
 
     /* Custom JPWCarpentry tokens */
-    --golden: 45 100% 50%; /* Golden yellow */
-    --golden-hover: 45 100% 40%; /* Darker golden */
+    --golden: 220 100% 60%; /* Blue */
+    --golden-hover: 220 100% 50%; /* Darker blue */
     --dark-bg: 220 13% 18%;
     --light-gray: 210 20% 96%;
     --medium-gray: 215 16% 47%;
@@ -116,11 +116,11 @@ All colors MUST be HSL.
   .shimmer-text {
     background: linear-gradient(
       90deg,
-      hsl(var(--golden)) 0%,
+      hsl(220 100% 60%) 0%,
       hsl(220 100% 70%) 25%,
       hsl(220 100% 50%) 50%,
       hsl(220 100% 70%) 75%,
-      hsl(var(--golden)) 100%
+      hsl(220 100% 60%) 100%
     );
     background-size: 200% 100%;
     background-clip: text;
