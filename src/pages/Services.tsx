@@ -93,6 +93,12 @@ const Services = () => {
       link: "/havant-carpentry-services"
     },
     {
+      title: "Gosport Marine Carpentry",
+      description: "Marine-grade carpentry for coastal properties and naval families. Specialist waterfront and boat storage solutions.",
+      icon: "⚓",
+      link: "/gosport-carpentry-services"
+    },
+    {
       title: "Kitchen Renovations",
       description: "Complete kitchen transformations including design, fitting, and all associated trades.",
       icon: "🏠"
