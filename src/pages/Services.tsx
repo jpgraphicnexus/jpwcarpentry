@@ -81,6 +81,12 @@ const Services = () => {
       link: "/portsmouth-carpentry-services"
     },
     {
+      title: "Chichester Heritage Carpentry",
+      description: "Premium carpentry services for Chichester's historic properties and Conservation Areas.",
+      icon: "🏛️",
+      link: "/chichester-carpentry-services"
+    },
+    {
       title: "Kitchen Renovations",
       description: "Complete kitchen transformations including design, fitting, and all associated trades.",
       icon: "🏠"

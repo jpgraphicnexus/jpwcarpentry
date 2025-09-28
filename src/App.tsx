@@ -18,6 +18,7 @@ const GeneralBuildingWorks = React.lazy(() => import("./pages/GeneralBuildingWor
 const Blog = React.lazy(() => import("./pages/Blog"));
 const BlogPost = React.lazy(() => import("./pages/BlogPost"));
 const PortsmouthCarpentry = React.lazy(() => import("./pages/PortsmouthCarpentry"));
+const ChichesterCarpentry = React.lazy(() => import("./pages/ChichesterCarpentry"));
 const NotFound = React.lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
@@ -40,6 +41,7 @@ const App = () => (
               <Route path="/services/home-renovations" element={<HomeRenovations />} />
               <Route path="/services/general-building-works" element={<GeneralBuildingWorks />} />
               <Route path="/portsmouth-carpentry-services" element={<PortsmouthCarpentry />} />
+              <Route path="/chichester-carpentry-services" element={<ChichesterCarpentry />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
