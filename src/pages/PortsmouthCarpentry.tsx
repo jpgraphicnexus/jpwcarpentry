@@ -367,7 +367,7 @@ const PortsmouthCarpentry = () => {
 
             <div className="text-center mt-8">
               <p className="text-muted-foreground mb-4">
-                Our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">kitchen renovation services</Link> are particularly popular in Portsmouth's Victorian terraces, while many Portsmouth families choose our <Link to="/services/home-renovations" className=\"text-golden hover:underline">loft conversion expertise</Link> to add space without moving house.
+                Our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">kitchen renovation services</Link> are particularly popular in Portsmouth's Victorian terraces, while many Portsmouth families choose our <Link to="/services/home-renovations" className="text-golden hover:underline">loft conversion expertise</Link> to add space without moving house.
               </p>
               <Button variant="outline" asChild>
                 <Link to="/services">View All Services</Link>
@@ -770,114 +770,4 @@ const PortsmouthCarpentry = () => {
             },
             {
               "@type": "Question",
-              "name": "Do you work on Victorian terraced houses in Portsmouth?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Absolutely! We specialize in working with Portsmouth's Victorian terraced houses, understanding their unique challenges and opportunities. Many of our projects involve renovating these character properties."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What areas of Portsmouth do you cover?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "We cover all Portsmouth areas including Southsea, Old Portsmouth, North End, Fratton, Baffins, Milton, and surrounding Hampshire areas like Gosport and Fareham."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Do you provide guarantees on your work?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, we provide comprehensive guarantees on all our work. Our commitment to quality means we stand behind every project we complete in Portsmouth."
-              }
-            }
-          ]
-        })}
-      </script>
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "JPW Carpentry & Building",
-          "description": "Professional carpentry services in Portsmouth, Hampshire. Kitchen fitting, built-in storage, home extensions, and bespoke joinery.",
-          "url": "https://jpwcarpentry.lovable.app/portsmouth-carpentry-services",
-          "telephone": "07399594658",
-          "email": "joewhitfield@jpwcarpentrybuilding.com",
-          "areaServed": [
-            "Portsmouth",
-            "Southsea", 
-            "Old Portsmouth",
-            "North End",
-            "Fratton",
-            "Baffins",
-            "Milton",
-            "Gosport",
-            "Fareham",
-            "Hampshire"
-          ],
-          "serviceArea": {
-            "@type": "GeoCircle",
-            "geoMidpoint": {
-              "@type": "GeoCoordinates",
-              "latitude": 50.8198,
-              "longitude": -1.0880
-            },
-            "geoRadius": "20000"
-          },
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Carpentry Services",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Kitchen Fitting & Renovation Portsmouth",
-                  "description": "Transform your Portsmouth kitchen with bespoke fitted units"
-                }
-              },
-              {
-                "@type": "Offer", 
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Home Extensions Portsmouth",
-                  "description": "Add value to your Portsmouth property with expert extensions"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service", 
-                  "name": "Built-in Storage Portsmouth",
-                  "description": "Maximize space in Portsmouth homes with custom storage"
-                }
-              }
-            ]
-          },
-          "review": testimonials.map(testimonial => ({
-            "@type": "Review",
-            "author": {
-              "@type": "Person",
-              "name": testimonial.name
-            },
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": testimonial.rating,
-              "bestRating": "5"
-            },
-            "reviewBody": testimonial.review
-          })),
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5",
-            "reviewCount": testimonials.length,
-            "bestRating": "5"
-          }
-        })}
-      </script>
-    </>
-  );
-};
-
-export default PortsmouthCarpentry;
+              "name": "Do you work on Victorian terraced houses in Portsmouth?
