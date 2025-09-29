@@ -477,7 +477,7 @@ const HavantCarpentry = () => {
 
             <div className="text-center mt-8">
               <p className="text-muted-foreground mb-4">
-                Many Havant families choose our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">family kitchen renovations</Link> to create the heart of their home, while our <Link to="/services/home-renovations" className=\"text-golden hover:underline">loft conversion services</Link> help growing families add space without the disruption of moving.
+                Our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">kitchen renovation services</Link> are particularly popular with Havant families, while our <Link to="/services/home-renovations" className="text-golden hover:underline">home extension expertise</Link> helps growing families add space without moving house.
               </p>
               <Button variant="outline" asChild>
                 <Link to="/services">View All Services</Link>
