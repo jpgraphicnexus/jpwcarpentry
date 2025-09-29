@@ -30,7 +30,7 @@ const Header = () => {
             alt="JPW Carpentry & Building Logo" 
             className="w-12 h-12 object-contain"
           />
-          <h1 className="text-2xl font-bold text-primary">JPW Carpentry & Building</h1>
+          <h1 className="text-2xl font-bold text-primary hidden md:block">JPW Carpentry & Building</h1>
         </Link>
 
         {/* Navigation */}
