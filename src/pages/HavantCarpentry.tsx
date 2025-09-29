@@ -477,7 +477,7 @@ const HavantCarpentry = () => {
 
             <div className="text-center mt-8">
               <p className="text-muted-foreground mb-4">
-                Our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">kitchen renovation services</Link> are particularly popular with Havant families, while our <Link to="/services/home-renovations" className="text-golden hover:underline">home extension expertise</Link> helps growing families add space without moving house.
+                Our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">kitchen renovation services</Link> are particularly popular with Havant families, while our <Link to="/services/home-renovations" className=\"text-golden hover:underline">home extension expertise</Link> helps growing families add space without moving house.
               </p>
               <Button variant="outline" asChild>
                 <Link to="/services">View All Services</Link>
