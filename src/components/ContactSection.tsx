@@ -2,13 +2,60 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { useToast } from "@/hooks/use-toast";
+import { useState } from "react";
 import claddingWork from "@/assets/cladding.webp";
 
 const ContactSection = () => {
-  const handleSubmit = (e: React.FormEvent) => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted');
+    
+    setIsSubmitting(true);
+    
+    const formData = new FormData(e.target as HTMLFormElement);
+    const quoteData = {
+      firstName: formData.get('firstName'),
+      lastName: formData.get('lastName'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      address: formData.get('address'),
+      projectDetails: formData.get('projectDetails'),
+      submittedAt: new Date().toISOString(),
+      source: 'JPW Carpentry Website'
+    };
+
+    try {
+      const response = await fetch('https://jacks-n8n.onrender.com/webhook-test/13bc896d-f1d3-4250-9d36-9c005372d12f', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(quoteData),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Quote Request Submitted!",
+          description: "We'll get back to you within 24 hours with your free quote.",
+        });
+        
+        // Reset form
+        (e.target as HTMLFormElement).reset();
+      } else {
+        throw new Error('Failed to submit quote request');
+      }
+    } catch (error) {
+      toast({
+        title: "Submission Failed",
+        description: "Please try again or call us directly at 07399594658.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -46,6 +93,7 @@ const ContactSection = () => {
                   </Label>
                   <Input
                     id="firstName"
+                    name="firstName"
                     placeholder="Enter your first name"
                     className="bg-background border-border"
                     required
@@ -57,6 +105,7 @@ const ContactSection = () => {
                   </Label>
                   <Input
                     id="lastName"
+                    name="lastName"
                     placeholder="Enter your last name"
                     className="bg-background border-border"
                     required
@@ -70,6 +119,7 @@ const ContactSection = () => {
                 </Label>
                 <Input
                   id="email"
+                  name="email"
                   type="email"
                   placeholder="Enter your email address"
                   className="bg-background border-border"
@@ -83,6 +133,7 @@ const ContactSection = () => {
                 </Label>
                 <Input
                   id="phone"
+                  name="phone"
                   type="tel"
                   placeholder="Enter your phone number"
                   className="bg-background border-border"
@@ -96,6 +147,7 @@ const ContactSection = () => {
                 </Label>
                 <Input
                   id="address"
+                  name="address"
                   placeholder="Enter the project address"
                   className="bg-background border-border"
                   required
@@ -108,6 +160,7 @@ const ContactSection = () => {
                 </Label>
                 <Textarea
                   id="projectDetails"
+                  name="projectDetails"
                   placeholder="Tell us about your carpentry project. What type of work do you need? Custom cabinetry, furniture, trim work, etc."
                   className="bg-background border-border min-h-[120px]"
                   required
@@ -116,9 +169,10 @@ const ContactSection = () => {
 
               <Button 
                 type="submit" 
+                disabled={isSubmitting}
                 className="w-full bg-golden hover:bg-golden-hover text-dark-bg font-medium py-3"
               >
-                Request Quote
+                {isSubmitting ? "Submitting..." : "Request Quote"}
               </Button>
             </form>
 
