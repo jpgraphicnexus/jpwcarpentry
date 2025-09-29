@@ -5,7 +5,6 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Mitchell",
       location: "PO19",
       rating: 5,
       service: "Kitchen Steps & Carpentry",
@@ -14,7 +13,6 @@ const TestimonialsSection = () => {
     },
     {
       id: 2,
-      name: "David Thompson", 
       location: "BN18",
       rating: 5,
       service: "Interior Doors Installation",
@@ -23,7 +21,6 @@ const TestimonialsSection = () => {
     },
     {
       id: 3,
-      name: "Emma Wilson",
       location: "PO20", 
       rating: 5,
       service: "Wall Panelling",
@@ -32,7 +29,6 @@ const TestimonialsSection = () => {
     },
     {
       id: 4,
-      name: "Michael Chen",
       location: "PO2",
       rating: 5,
       service: "Door Installation",
@@ -41,7 +37,6 @@ const TestimonialsSection = () => {
     },
     {
       id: 5,
-      name: "Lisa Rodriguez",
       location: "PO21",
       rating: 5,
       service: "Loft Insulation",
@@ -50,7 +45,6 @@ const TestimonialsSection = () => {
     },
     {
       id: 6,
-      name: "James Parker",
       location: "BN17",
       rating: 5,
       service: "Home Extension", 
@@ -80,7 +74,7 @@ const TestimonialsSection = () => {
         <div className="border-t border-border pt-4">
           <div className="flex justify-between items-center">
             <div>
-              <h4 className="font-semibold text-primary">{testimonial.name}</h4>
+              <h4 className="font-semibold text-primary">Customer Review</h4>
               <p className="text-sm text-medium-gray">{testimonial.service}</p>
             </div>
             <div className="text-right">
