@@ -338,7 +338,7 @@ const ChichesterCarpentry = () => {
 
             <div className="text-center mt-8">
               <p className="text-muted-foreground mb-4">
-                Our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">heritage kitchen services</Link> are specially designed for Chichester's Conservation Areas, while our <Link to="/services/home-renovations" className="text-golden hover:underline">period extension expertise</Link> ensures compliance with historic building requirements.
+                Our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">heritage kitchen services</Link> are specially designed for Chichester's Conservation Areas, while our <Link to="/services/home-renovations" className=\"text-golden hover:underline">period extension expertise</Link> ensures compliance with historic building requirements.
               </p>
               <Button variant="outline" asChild>
                 <Link to="/services">View All Services</Link>
