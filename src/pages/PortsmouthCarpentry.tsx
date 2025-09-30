@@ -770,4 +770,17 @@ const PortsmouthCarpentry = () => {
             },
             {
               "@type": "Question",
-              "name": "Do you work on Victorian terraced houses in Portsmouth?
+              "name": "Do you work on Victorian terraced houses in Portsmouth?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, Victorian terraced houses are one of our specialties. We understand the unique challenges and opportunities of working with period properties in Portsmouth and have extensive experience maintaining their character while adding modern functionality."
+              }
+            }
+          ]
+        })}
+      </script>
+    </>
+  );
+};
+
+export default PortsmouthCarpentry;

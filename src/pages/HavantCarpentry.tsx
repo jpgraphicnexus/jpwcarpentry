@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
 import { useSEO } from "@/hooks/useSEO";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
-import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -477,7 +476,7 @@ const HavantCarpentry = () => {
 
             <div className="text-center mt-8">
               <p className="text-muted-foreground mb-4">
-                Our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">family kitchen services</Link> are perfect for Havant's growing families, while our <Link to="/services/home-renovations" className=\"text-golden hover:underline">home extension expertise</Link> helps families expand without the stress of moving house.
+                Our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">family kitchen services</Link> are perfect for Havant's growing families, while our <Link to="/services/home-renovations" className="text-golden hover:underline">home extension expertise</Link> helps families expand without the stress of moving house.
               </p>
               <Button variant="outline" asChild>
                 <Link to="/services">View All Services</Link>

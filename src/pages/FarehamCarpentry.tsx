@@ -1,6 +1,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import SEOComponent from "@/components/SEOComponent";
+import SEO from "@/components/SEO";
+import { useSEO } from "@/hooks/useSEO";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -14,13 +16,19 @@ import { Link } from "react-router-dom";
 import homeRenovationImage from "@/assets/home-renovation.webp";
 
 const FarehamCarpentry = () => {
+  const seoData = useSEO('/fareham-carpentry-services');
+  
   return (
     <>
-      <SEOComponent
-        title="Fareham Carpentry Services | Executive Home Specialists | JPW Carpentry"
-        description="Premium carpentry services in Fareham, Hampshire. Executive home extensions, luxury kitchens, bespoke storage solutions. Serving Fareham's finest properties with exceptional craftsmanship."
-        keywords="Fareham carpentry, carpenter Fareham, executive home improvements Fareham, luxury kitchen Fareham, home extension Fareham, bespoke carpentry Fareham"
-        canonicalUrl="/fareham-carpentry-services"
+      <SEO {...seoData} />
+      <LocalBusinessSchema 
+        pageType="service" 
+        customServices={[
+          {
+            name: "Fareham Carpentry Services",
+            description: "Premium carpentry services in Fareham, Hampshire"
+          }
+        ]}
       />
       <Header />
       

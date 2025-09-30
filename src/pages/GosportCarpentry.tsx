@@ -1,6 +1,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import SEOComponent from "@/components/SEOComponent";
+import SEO from "@/components/SEO";
+import { useSEO } from "@/hooks/useSEO";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -15,13 +17,19 @@ import carpenterWorkingImage from "@/assets/carpenter-working.jpg";
 import deckingProject from "@/assets/decking-project.webp";
 
 const GosportCarpentry = () => {
+  const seoData = useSEO('/gosport-carpentry-services');
+  
   return (
     <>
-      <SEOComponent
-        title="Gosport Carpentry Services | Marine Grade Quality | JPW Carpentry"
-        description="Professional carpentry services in Gosport, Hampshire. Coastal property specialists, marine-grade materials, naval family trusted. Waterfront homes, boat storage, sea-resistant solutions."
-        keywords="Gosport carpentry, carpenter Gosport, coastal property carpentry, marine carpentry Gosport, waterfront homes Gosport, naval base carpentry"
-        canonicalUrl="/gosport-carpentry-services"
+      <SEO {...seoData} />
+      <LocalBusinessSchema 
+        pageType="service" 
+        customServices={[
+          {
+            name: "Gosport Carpentry Services",
+            description: "Professional carpentry services in Gosport, Hampshire"
+          }
+        ]}
       />
       <Header />
       
