@@ -11,10 +11,15 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { Phone, Mail, MapPin, Clock, Star, Shield, Anchor, Waves, Ship, CheckCircle, Award, Users, Home, Building } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Star, Shield, CheckCircle, Award, Home, Building, Wrench } from "lucide-react";
 import { Link } from "react-router-dom";
-import carpenterWorkingImage from "@/assets/carpenter-working.jpg";
-import deckingProject from "@/assets/decking-project.webp";
+import kitchenRenovation from "@/assets/kitchen-renovation.webp";
+import homeRenovation from "@/assets/home-renovation.webp";
+import oakStaircase from "@/assets/oak-staircase.webp";
+import flooringInstallation from "@/assets/flooring-installation.webp";
+import bespokeJoinery from "@/assets/bespoke-joinery.webp";
+import builtInStorage from "@/assets/built-in-storage.webp";
+import doorsWindows from "@/assets/doors-windows.webp";
 
 const GosportCarpentry = () => {
   const seoData = useSEO('/gosport-carpentry-services');
@@ -54,204 +59,224 @@ const GosportCarpentry = () => {
         </section>
 
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground overflow-hidden">
-          <div className="absolute inset-0 bg-black/20"></div>
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="space-y-8">
-                <div className="space-y-6">
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                    Gosport's Marine-Grade Carpentry Specialists
-                  </h1>
-                  <p className="text-xl md:text-2xl text-primary-foreground/90 leading-relaxed">
-                    Serving Gosport's naval community and coastal properties with sea-tested quality and maritime-grade craftsmanship since 2004
-                  </p>
-                </div>
+        <section className="relative py-20 bg-gradient-to-br from-primary to-secondary">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="text-white">
+                <Badge className="mb-4 bg-golden text-dark-bg">Gosport's Trusted Carpentry Service</Badge>
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 font-playfair">
+                  Professional Carpentry Services in Gosport
+                </h1>
+                <p className="text-xl mb-8 text-white/90">
+                  Expert carpenters serving Gosport, Alverstoke, Lee-on-the-Solent and surrounding Hampshire areas with 20+ years of experience
+                </p>
                 
-                <div className="flex flex-wrap gap-4">
-                  <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
-                    <Ship className="h-5 w-5" />
-                    <span className="font-medium">Naval Community Trusted</span>
+                {/* Trust Signals */}
+                <div className="flex flex-wrap gap-6 mb-8">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-golden" />
+                    <span>Serving Gosport families for 20+ years</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
-                    <Anchor className="h-5 w-5" />
-                    <span className="font-medium">Marine Grade Quality</span>
+                  <div className="flex items-center gap-2">
+                    <Award className="w-5 h-5 text-golden" />
+                    <span>Expert Craftsmanship</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
-                    <Waves className="h-5 w-5" />
-                    <span className="font-medium">Coastal Specialists</span>
+                  <div className="flex items-center gap-2">
+                    <Shield className="w-5 h-5 text-golden" />
+                    <span>Fully Insured</span>
                   </div>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" variant="secondary" className="text-lg px-8 py-6" asChild>
-                    <Link to="/#contact-section">Get Your Coastal-Ready Quote</Link>
+                  <Button size="lg" asChild className="bg-golden text-dark-bg hover:bg-golden-hover font-semibold">
+                    <Link to="/#contact-section">
+                      <Phone className="w-5 h-5 mr-2" />
+                      Get Your Free Gosport Quote Today
+                    </Link>
                   </Button>
-                  <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-white text-dark-bg bg-white hover:bg-gray-100" asChild>
-                    <Link to="/past-works">View Our Work</Link>
+                  <Button size="lg" variant="outline" asChild className="border-white text-dark-bg bg-white hover:bg-gray-100">
+                    <Link to="/past-works">
+                      View Our Work
+                    </Link>
                   </Button>
                 </div>
               </div>
               
               <div className="relative">
-                <img 
-                  src={deckingProject} 
-                  alt="Professional carpenter working on marine-grade carpentry project in Gosport"
-                  className="rounded-lg shadow-2xl w-full h-auto"
-                  loading="eager"
+                <img
+                  src={oakStaircase}
+                  alt="Professional carpenter working on Gosport home renovation project"
+                  className="w-full h-[500px] object-cover rounded-lg shadow-2xl"
                 />
+                <div className="absolute -bottom-6 -left-6 bg-golden text-dark-bg p-4 rounded-lg shadow-lg">
+                  <div className="text-2xl font-bold">Free Quotes</div>
+                  <div className="text-sm">Within 24 Hours</div>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Services Section */}
-        <section className="py-20 bg-background">
+        <section className="py-20 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Specialized Carpentry for Gosport's Coastal Environment
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair text-primary">
+                Complete Carpentry Services Across Gosport
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Marine-grade solutions designed to withstand coastal conditions and serve the unique needs of Gosport's naval community
+                From family homes in Alverstoke to modern developments in Bridgemary, 
+                we provide expert carpentry services throughout Gosport and Hampshire.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <Card className="border-l-4 border-l-primary hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="p-2 bg-primary/10 rounded-lg">
-                      <Waves className="h-6 w-6 text-primary" />
-                    </div>
-                    <Badge variant="secondary">From £18,000</Badge>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <Card className="hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="relative h-48 overflow-hidden rounded-t-lg">
+                  <img 
+                    src={kitchenRenovation} 
+                    alt="Kitchen Fitting & Renovation in Gosport"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-4 right-4">
+                    <Badge className="bg-golden text-dark-bg">From £8,000</Badge>
                   </div>
-                  <CardTitle>Marine-Grade Home Extensions</CardTitle>
-                  <CardDescription>
-                    Salt-resistant extensions built to withstand coastal conditions
-                  </CardDescription>
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-xl text-primary">Kitchen Fitting & Renovation</CardTitle>
+                  <CardDescription className="text-base">Transform your Gosport kitchen with bespoke fitted units</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Enhanced weatherproofing, marine-grade fixings
+                  <p className="text-sm text-muted-foreground mb-4">
+                    <strong>Popular in:</strong> Alverstoke, Town Centre, Lee-on-the-Solent
                   </p>
-                  <Button variant="outline" size="sm" asChild>
-                    <a href="#contact">Get Extension Quote</a>
+                  <Button asChild className="w-full bg-primary hover:bg-primary/90">
+                    <Link to="/#contact-section">Get Quote for This Service</Link>
                   </Button>
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-primary hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="p-2 bg-primary/10 rounded-lg">
-                      <Anchor className="h-6 w-6 text-primary" />
-                    </div>
-                    <Badge variant="secondary">From £3,000</Badge>
+              <Card className="hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="relative h-48 overflow-hidden rounded-t-lg">
+                  <img 
+                    src={builtInStorage} 
+                    alt="Built-in Storage Solutions in Gosport"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-4 right-4">
+                    <Badge className="bg-golden text-dark-bg">From £800</Badge>
                   </div>
-                  <CardTitle>Boat Storage & Workshop Solutions</CardTitle>
-                  <CardDescription>
-                    Custom boat storage, marine workshops, and sailing equipment storage
-                  </CardDescription>
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-xl text-primary">Built-in Storage Solutions</CardTitle>
+                  <CardDescription className="text-base">Maximize space in Gosport homes with custom storage</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Popular in Alverstoke, Hardway, Lee-on-the-Solent
+                  <p className="text-sm text-muted-foreground mb-4">
+                    <strong>Popular in:</strong> Family homes, modern developments
                   </p>
-                  <Button variant="outline" size="sm" asChild>
-                    <a href="#contact">Discuss Storage Solutions</a>
+                  <Button asChild className="w-full bg-primary hover:bg-primary/90">
+                    <Link to="/#contact-section">Get Quote for This Service</Link>
                   </Button>
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-primary hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="p-2 bg-primary/10 rounded-lg">
-                      <Ship className="h-6 w-6 text-primary" />
-                    </div>
-                    <Badge variant="secondary">From £8,000</Badge>
+              <Card className="hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="relative h-48 overflow-hidden rounded-t-lg">
+                  <img 
+                    src={homeRenovation} 
+                    alt="Home Extensions & Conversions in Gosport"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-4 right-4">
+                    <Badge className="bg-golden text-dark-bg">From £15,000</Badge>
                   </div>
-                  <CardTitle>Waterfront Property Renovations</CardTitle>
-                  <CardDescription>
-                    Specialist renovations for properties facing Portsmouth Harbour
-                  </CardDescription>
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-xl text-primary">Home Extensions & Conversions</CardTitle>
+                  <CardDescription className="text-base">Add value to your Gosport property with expert extensions</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Salt damage repair, enhanced ventilation, moisture control
+                  <p className="text-sm text-muted-foreground mb-4">
+                    <strong>Popular in:</strong> Planning permission support included
                   </p>
-                  <Button variant="outline" size="sm" asChild>
-                    <a href="#contact">Coastal Renovation Quote</a>
+                  <Button asChild className="w-full bg-primary hover:bg-primary/90">
+                    <Link to="/#contact-section">Get Quote for This Service</Link>
                   </Button>
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-primary hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="p-2 bg-primary/10 rounded-lg">
-                      <Users className="h-6 w-6 text-primary" />
-                    </div>
-                    <Badge variant="secondary">From £7,500</Badge>
+              <Card className="hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="relative h-48 overflow-hidden rounded-t-lg">
+                  <img 
+                    src={bespokeJoinery} 
+                    alt="Bespoke Joinery & Furniture in Gosport"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-4 right-4">
+                    <Badge className="bg-golden text-dark-bg">From £500</Badge>
                   </div>
-                  <CardTitle>Naval Family Kitchen Solutions</CardTitle>
-                  <CardDescription>
-                    Practical, durable kitchens designed for busy naval families
-                  </CardDescription>
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-xl text-primary">Bespoke Joinery & Furniture</CardTitle>
+                  <CardDescription className="text-base">Handcrafted furniture designed for Gosport homes</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Deployment-ready storage, low-maintenance finishes
+                  <p className="text-sm text-muted-foreground mb-4">
+                    <strong>Popular in:</strong> Traditional and contemporary styles
                   </p>
-                  <Button variant="outline" size="sm" asChild>
-                    <a href="#contact">Kitchen Consultation</a>
+                  <Button asChild className="w-full bg-primary hover:bg-primary/90">
+                    <Link to="/#contact-section">Get Quote for This Service</Link>
                   </Button>
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-primary hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="p-2 bg-primary/10 rounded-lg">
-                      <Shield className="h-6 w-6 text-primary" />
-                    </div>
-                    <Badge variant="secondary">From £2,500</Badge>
+              <Card className="hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="relative h-48 overflow-hidden rounded-t-lg">
+                  <img 
+                    src={flooringInstallation} 
+                    alt="Flooring Installation in Gosport"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-4 right-4">
+                    <Badge className="bg-golden text-dark-bg">From £25/m²</Badge>
                   </div>
-                  <CardTitle>Coastal Garden Structures</CardTitle>
-                  <CardDescription>
-                    Wind-resistant pergolas, decking, and outdoor entertainment areas
-                  </CardDescription>
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-xl text-primary">Flooring Installation</CardTitle>
+                  <CardDescription className="text-base">Professional flooring for Gosport properties</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Treated timber, stainless steel fixings, marine varnishes
+                  <p className="text-sm text-muted-foreground mb-4">
+                    <strong>Popular in:</strong> Hardwood, laminate, engineered
                   </p>
-                  <Button variant="outline" size="sm" asChild>
-                    <a href="#contact">Outdoor Project Quote</a>
+                  <Button asChild className="w-full bg-primary hover:bg-primary/90">
+                    <Link to="/#contact-section">Get Quote for This Service</Link>
                   </Button>
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-primary hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="p-2 bg-primary/10 rounded-lg">
-                      <Award className="h-6 w-6 text-primary" />
-                    </div>
-                    <Badge variant="secondary">From £5,000</Badge>
+              <Card className="hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="relative h-48 overflow-hidden rounded-t-lg">
+                  <img 
+                    src={doorsWindows} 
+                    alt="Internal Doors & Windows in Gosport"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-4 right-4">
+                    <Badge className="bg-golden text-dark-bg">From £200 per door</Badge>
                   </div>
-                  <CardTitle>Heritage Naval Property Restoration</CardTitle>
-                  <CardDescription>
-                    Sympathetic restoration of historic naval quarters and period properties
-                  </CardDescription>
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-xl text-primary">Internal Doors & Windows</CardTitle>
+                  <CardDescription className="text-base">Quality door and window installation across Gosport</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Royal Naval Hospital, Historic Dockyard vicinity
+                  <p className="text-sm text-muted-foreground mb-4">
+                    <strong>Popular in:</strong> Period property expertise
                   </p>
-                  <Button variant="outline" size="sm" asChild>
-                    <a href="#contact">Heritage Consultation</a>
+                  <Button asChild className="w-full bg-primary hover:bg-primary/90">
+                    <Link to="/#contact-section">Get Quote for This Service</Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -264,10 +289,10 @@ const GosportCarpentry = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Serving All Gosport's Maritime Communities
+                Serving All Gosport Areas
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                From the town centre to the coastal edges, we understand the unique needs of each Gosport area
+                From the town centre to Lee-on-the-Solent, we serve all Gosport communities
               </p>
             </div>
 
@@ -299,10 +324,10 @@ const GosportCarpentry = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Why Gosport's Naval Community Trusts JPW Carpentry
+                Why Choose JPW Carpentry in Gosport
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Specialized expertise in coastal conditions and understanding of military family needs
+                Experienced, professional carpentry services for Gosport homes
               </p>
             </div>
 
@@ -311,75 +336,23 @@ const GosportCarpentry = () => {
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
                     <div className="p-3 bg-primary/10 rounded-lg">
-                      <Waves className="h-8 w-8 text-primary" />
+                      <Award className="h-8 w-8 text-primary" />
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-3">Coastal Expertise</h3>
+                    <h3 className="text-xl font-semibold mb-3">20+ Years Experience</h3>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span>20+ years working with salt air and marine conditions</span>
+                        <span>Over two decades serving Gosport families</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span>Understanding of tidal effects on coastal properties</span>
+                        <span>Expert knowledge of local properties</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span>Specialist knowledge of marine-grade materials and treatments</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="p-3 bg-primary/10 rounded-lg">
-                      <Ship className="h-8 w-8 text-primary" />
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-3">Naval Family Understanding</h3>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span>Flexible scheduling around deployment cycles</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span>Rapid response for urgent repairs before departures</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span>Secure storage and key-holding services during deployments</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div className="space-y-8">
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="p-3 bg-primary/10 rounded-lg">
-                      <Anchor className="h-8 w-8 text-primary" />
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-3">Marine-Grade Quality</h3>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span>Only marine-grade fixings and fastenings used</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span>Salt-resistant treatments and protective coatings</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span>Enhanced weatherproofing for coastal exposure</span>
+                        <span>Trusted by hundreds of Gosport homeowners</span>
                       </li>
                     </ul>
                   </div>
@@ -392,19 +365,71 @@ const GosportCarpentry = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-3">Local Maritime Knowledge</h3>
+                    <h3 className="text-xl font-semibold mb-3">Quality Guaranteed</h3>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span>Understanding of Portsmouth Harbour tidal patterns</span>
+                        <span>Premium materials and craftsmanship</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span>Knowledge of local planning requirements near naval facilities</span>
+                        <span>Fully insured and qualified tradespeople</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span>Respect for naval security and base protocols</span>
+                        <span>Workmanship guarantee on all projects</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-8">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="p-3 bg-primary/10 rounded-lg">
+                      <Home className="h-8 w-8 text-primary" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3">Local & Reliable</h3>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Based locally in Gosport area</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Flexible scheduling to suit you</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Free, no-obligation quotes</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="p-3 bg-primary/10 rounded-lg">
+                      <Building className="h-8 w-8 text-primary" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3">Complete Service</h3>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>From small repairs to full renovations</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Planning and building regulation support</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Clean, tidy, and professional service</span>
                       </li>
                     </ul>
                   </div>
@@ -415,62 +440,62 @@ const GosportCarpentry = () => {
         </section>
 
         {/* Cross-Service Links */}
-        <section className="py-16 bg-slate-50">
+        <section className="py-16 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Marine-Grade Services for Gosport Properties
+                Popular Services for Gosport Properties
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Our coastal expertise ensures your Gosport property withstands maritime conditions
+                Our specialized services are perfectly suited to Gosport's family homes and properties
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <Link to="/services/kitchen-renovations" className="group">
-                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-primary/50 bg-white">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50">
                   <CardContent className="p-6 text-center">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                      <Home className="h-6 w-6 text-primary" />
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Home className="h-6 w-6 text-golden" />
                     </div>
-                    <h3 className="font-semibold text-primary mb-2">Coastal Kitchens</h3>
-                    <p className="text-sm text-muted-foreground">Salt-resistant materials and enhanced ventilation</p>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Kitchen Renovations</h3>
+                    <p className="text-sm text-muted-foreground">Perfect for Gosport's family homes</p>
                   </CardContent>
                 </Card>
               </Link>
 
               <Link to="/services/home-renovations" className="group">
-                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-primary/50 bg-white">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50">
                   <CardContent className="p-6 text-center">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                      <Building className="h-6 w-6 text-primary" />
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Building className="h-6 w-6 text-golden" />
                     </div>
-                    <h3 className="font-semibold text-primary mb-2">Marine Extensions</h3>
-                    <p className="text-sm text-muted-foreground">Waterfront extensions with enhanced weatherproofing</p>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Home Extensions</h3>
+                    <p className="text-sm text-muted-foreground">Add space without moving - popular in Gosport</p>
                   </CardContent>
                 </Card>
               </Link>
 
               <Link to="/services/small-carpentry-jobs" className="group">
-                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-primary/50 bg-white">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50">
                   <CardContent className="p-6 text-center">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                      <Users className="h-6 w-6 text-primary" />
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Wrench className="h-6 w-6 text-golden" />
                     </div>
-                    <h3 className="font-semibold text-primary mb-2">Naval Storage</h3>
-                    <p className="text-sm text-muted-foreground">Secure storage solutions for naval families</p>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Built-in Storage</h3>
+                    <p className="text-sm text-muted-foreground">Custom storage solutions for Gosport homes</p>
                   </CardContent>
                 </Card>
               </Link>
 
               <Link to="/services/general-building-works" className="group">
-                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-primary/50 bg-white">
+                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50">
                   <CardContent className="p-6 text-center">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                      <Anchor className="h-6 w-6 text-primary" />
+                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
+                      <Award className="h-6 w-6 text-golden" />
                     </div>
-                    <h3 className="font-semibold text-primary mb-2">Boat Workshops</h3>
-                    <p className="text-sm text-muted-foreground">Custom marine workshops and storage facilities</p>
+                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Loft Conversions</h3>
+                    <p className="text-sm text-muted-foreground">Popular choice for Gosport families needing extra space</p>
                   </CardContent>
                 </Card>
               </Link>
@@ -478,7 +503,7 @@ const GosportCarpentry = () => {
 
             <div className="text-center mt-8">
               <p className="text-muted-foreground mb-4">
-                Our <Link to="/services/kitchen-renovations" className="text-primary hover:underline">coastal kitchen renovations</Link> use marine-grade materials perfect for Gosport's seafront properties, while our <Link to="/services/general-building-works" className="text-primary hover:underline">specialized building services</Link> include boat storage and marine workshop solutions.
+                Our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">kitchen renovation services</Link> are particularly popular in Gosport, while many families choose our <Link to="/services/home-renovations" className="text-golden hover:underline">loft conversion expertise</Link> to add space without moving house.
               </p>
               <Button variant="outline" asChild>
                 <Link to="/services">View All Services</Link>
@@ -488,14 +513,14 @@ const GosportCarpentry = () => {
         </section>
 
         {/* Project Showcase */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Recent Gosport Maritime Carpentry Projects
+                Recent Gosport Carpentry Projects
               </h2>
               <p className="text-xl text-muted-foreground">
-                Showcasing our expertise in coastal and naval community projects
+                Showcasing our quality work across Gosport
               </p>
             </div>
 
@@ -503,31 +528,31 @@ const GosportCarpentry = () => {
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="flex items-center gap-2 mb-2">
-                    <Waves className="h-5 w-5 text-primary" />
-                    <Badge variant="outline">Waterfront Project</Badge>
+                    <Home className="h-5 w-5 text-primary" />
+                    <Badge variant="outline">Kitchen Project</Badge>
                   </div>
-                  <CardTitle>Alverstoke Waterfront Extension</CardTitle>
-                  <CardDescription>Single-storey extension with panoramic harbour views</CardDescription>
+                  <CardTitle>Alverstoke Kitchen Renovation</CardTitle>
+                  <CardDescription>Complete kitchen transformation for family home</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
                     <div>
                       <p className="font-medium text-sm">Challenge:</p>
-                      <p className="text-sm text-muted-foreground">Salt exposure, high winds, tidal considerations</p>
+                      <p className="text-sm text-muted-foreground">Limited space, outdated layout</p>
                     </div>
                     <div>
                       <p className="font-medium text-sm">Solution:</p>
-                      <p className="text-sm text-muted-foreground">Marine-grade materials, enhanced drainage, wind-resistant design</p>
+                      <p className="text-sm text-muted-foreground">Bespoke units, integrated appliances, optimized layout</p>
                     </div>
                     <div className="flex justify-between items-center pt-2">
-                      <span className="text-sm font-medium">Timeline: 10 weeks</span>
+                      <span className="text-sm font-medium">Timeline: 3 weeks</span>
                       <div className="flex items-center gap-1">
                         {[...Array(5)].map((_, i) => (
                           <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                         ))}
                       </div>
                     </div>
-                    <p className="text-sm italic text-muted-foreground">"Perfect for watching the naval ships"</p>
+                    <p className="text-sm italic text-muted-foreground">"Transformed our family home"</p>
                   </div>
                 </CardContent>
               </Card>
@@ -535,31 +560,31 @@ const GosportCarpentry = () => {
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="flex items-center gap-2 mb-2">
-                    <Ship className="h-5 w-5 text-primary" />
-                    <Badge variant="outline">Naval Family</Badge>
+                    <Building className="h-5 w-5 text-primary" />
+                    <Badge variant="outline">Extension</Badge>
                   </div>
-                  <CardTitle>Naval Family Kitchen Renovation</CardTitle>
-                  <CardDescription>Complete kitchen refit for serving naval officer's family</CardDescription>
+                  <CardTitle>Bridgemary Home Extension</CardTitle>
+                  <CardDescription>Single-storey rear extension with bi-fold doors</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
                     <div>
                       <p className="font-medium text-sm">Challenge:</p>
-                      <p className="text-sm text-muted-foreground">Deployment timeline, children at home, budget constraints</p>
+                      <p className="text-sm text-muted-foreground">Planning permission, narrow access</p>
                     </div>
                     <div>
                       <p className="font-medium text-sm">Solution:</p>
-                      <p className="text-sm text-muted-foreground">Phased work, secure storage, deployment-ready completion</p>
+                      <p className="text-sm text-muted-foreground">Careful planning, quality materials, professional finish</p>
                     </div>
                     <div className="flex justify-between items-center pt-2">
-                      <span className="text-sm font-medium">Timeline: 4 weeks</span>
+                      <span className="text-sm font-medium">Timeline: 12 weeks</span>
                       <div className="flex items-center gap-1">
                         {[...Array(5)].map((_, i) => (
                           <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                         ))}
                       </div>
                     </div>
-                    <p className="text-sm italic text-muted-foreground">"Ready for our next posting"</p>
+                    <p className="text-sm italic text-muted-foreground">"Added so much space to our home"</p>
                   </div>
                 </CardContent>
               </Card>
@@ -567,31 +592,31 @@ const GosportCarpentry = () => {
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="flex items-center gap-2 mb-2">
-                    <Anchor className="h-5 w-5 text-primary" />
-                    <Badge variant="outline">Marine Storage</Badge>
+                    <Wrench className="h-5 w-5 text-primary" />
+                    <Badge variant="outline">Storage Solution</Badge>
                   </div>
-                  <CardTitle>Lee-on-the-Solent Boat Workshop</CardTitle>
-                  <CardDescription>Custom workshop and boat storage facility</CardDescription>
+                  <CardTitle>Lee-on-the-Solent Built-in Storage</CardTitle>
+                  <CardDescription>Custom wardrobes and storage throughout</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
                     <div>
                       <p className="font-medium text-sm">Challenge:</p>
-                      <p className="text-sm text-muted-foreground">Planning permission, marine access, equipment storage</p>
+                      <p className="text-sm text-muted-foreground">Limited storage, awkward spaces</p>
                     </div>
                     <div>
                       <p className="font-medium text-sm">Solution:</p>
-                      <p className="text-sm text-muted-foreground">Multi-use design, marine-grade construction, security features</p>
+                      <p className="text-sm text-muted-foreground">Bespoke fitted units, maximized every space</p>
                     </div>
                     <div className="flex justify-between items-center pt-2">
-                      <span className="text-sm font-medium">Timeline: 6 weeks</span>
+                      <span className="text-sm font-medium">Timeline: 2 weeks</span>
                       <div className="flex items-center gap-1">
                         {[...Array(5)].map((_, i) => (
                           <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                         ))}
                       </div>
                     </div>
-                    <p className="text-sm italic text-muted-foreground">"Perfect for maintaining our yacht"</p>
+                    <p className="text-sm italic text-muted-foreground">"Finally have enough storage!"</p>
                   </div>
                 </CardContent>
               </Card>
@@ -600,14 +625,14 @@ const GosportCarpentry = () => {
         </section>
 
         {/* Testimonials */}
-        <section className="py-20 bg-background">
+        <section className="py-20 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                What Gosport's Naval Families Say
+                What Gosport Homeowners Say
               </h2>
               <p className="text-xl text-muted-foreground">
-                Trusted by the naval community for quality and reliability
+                Trusted by Gosport families for quality and reliability
               </p>
             </div>
 
@@ -620,14 +645,14 @@ const GosportCarpentry = () => {
                     ))}
                   </div>
                   <p className="text-muted-foreground mb-4 italic">
-                    "JPW understood our deployment schedule perfectly and completed our extension while I was at sea. The marine-grade quality is evident - no salt damage after two winters. Highly recommended for naval families."
+                    "JPW transformed our cramped Alverstoke kitchen into a modern family space. Professional, clean, and finished exactly on time. Highly recommend to any Gosport homeowner."
                   </p>
                   <div className="flex items-center gap-3">
                     <div className="p-2 bg-primary/10 rounded-full">
-                      <Ship className="h-4 w-4 text-primary" />
+                      <Home className="h-4 w-4 text-primary" />
                     </div>
                     <div>
-                      <p className="font-semibold">Commander Sarah T.</p>
+                      <p className="font-semibold">Sarah M.</p>
                       <p className="text-sm text-muted-foreground">Alverstoke (PO12)</p>
                     </div>
                   </div>
@@ -642,15 +667,15 @@ const GosportCarpentry = () => {
                     ))}
                   </div>
                   <p className="text-muted-foreground mb-4 italic">
-                    "Our waterfront property needed specialist attention due to salt exposure. JPW's knowledge of coastal conditions saved us thousands in future repairs. Excellent maritime expertise."
+                    "Excellent work on our home extension. They understood the planning requirements and delivered quality work that respects our property. Very professional team."
                   </p>
                   <div className="flex items-center gap-3">
                     <div className="p-2 bg-primary/10 rounded-full">
-                      <Waves className="h-4 w-4 text-primary" />
+                      <Building className="h-4 w-4 text-primary" />
                     </div>
                     <div>
-                      <p className="font-semibold">The Henderson Family</p>
-                      <p className="text-sm text-muted-foreground">Hardway (PO12)</p>
+                      <p className="font-semibold">David R.</p>
+                      <p className="text-sm text-muted-foreground">Lee-on-the-Solent (PO13)</p>
                     </div>
                   </div>
                 </CardContent>
@@ -664,86 +689,19 @@ const GosportCarpentry = () => {
                     ))}
                   </div>
                   <p className="text-muted-foreground mb-4 italic">
-                    "Fantastic boat storage solution that's both secure and practical. JPW worked around base security requirements and delivered exactly what we needed for our sailing equipment."
+                    "Built-in wardrobes and storage throughout our house. Fantastic attention to detail and great value for money. Will definitely use again."
                   </p>
                   <div className="flex items-center gap-3">
                     <div className="p-2 bg-primary/10 rounded-full">
-                      <Anchor className="h-4 w-4 text-primary" />
+                      <Wrench className="h-4 w-4 text-primary" />
                     </div>
                     <div>
-                      <p className="font-semibold">Petty Officer Mark R.</p>
+                      <p className="font-semibold">Lisa T.</p>
                       <p className="text-sm text-muted-foreground">Bridgemary (PO13)</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-            </div>
-          </div>
-        </section>
-
-        {/* Coastal Expertise */}
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Gosport's Coastal Carpentry Specialists
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                Marine environment solutions and specialized naval community services
-              </p>
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-12">
-              <div>
-                <h3 className="text-2xl font-semibold mb-6">Marine Environment Solutions</h3>
-                <div className="space-y-4">
-                  {[
-                    { icon: Shield, title: "Salt Damage Prevention", desc: "Protective treatments and resistant materials" },
-                    { icon: Waves, title: "Wind Load Calculations", desc: "Structures designed for coastal wind exposure" },
-                    { icon: Anchor, title: "Moisture Management", desc: "Enhanced ventilation and damp-proofing" },
-                    { icon: Ship, title: "Marine-Grade Hardware", desc: "Stainless steel, bronze, and galvanized fixings" }
-                  ].map((item) => (
-                    <div key={item.title} className="flex gap-4">
-                      <div className="flex-shrink-0">
-                        <div className="p-2 bg-primary/10 rounded-lg">
-                          <item.icon className="h-6 w-6 text-primary" />
-                        </div>
-                      </div>
-                      <div>
-                        <h4 className="font-semibold mb-1">{item.title}</h4>
-                        <p className="text-sm text-muted-foreground">{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-semibold mb-6">Specialized Services</h3>
-                <div className="space-y-4">
-                  {[
-                    "Boat Storage Solutions - Custom workshops, equipment storage, marine access",
-                    "Waterfront Decking - Salt-resistant, non-slip, marine-grade materials",
-                    "Coastal Garden Structures - Wind-resistant pergolas, privacy screens",
-                    "Naval Quarter Renovations - Historic property restoration with modern standards"
-                  ].map((service, index) => (
-                    <div key={index} className="flex gap-3">
-                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-sm">{service}</span>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="mt-8 p-6 bg-primary/5 rounded-lg border border-primary/20">
-                  <div className="flex items-center gap-3 mb-3">
-                    <Award className="h-6 w-6 text-primary" />
-                    <h4 className="font-semibold">Naval Community Recognition</h4>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    Trusted by 200+ naval families with security clearance awareness and deployment-flexible scheduling
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -756,35 +714,35 @@ const GosportCarpentry = () => {
                 Frequently Asked Questions
               </h2>
               <p className="text-xl text-muted-foreground">
-                Common questions about our Gosport naval community carpentry services
+                Common questions about our Gosport carpentry services
               </p>
             </div>
 
             <div className="max-w-4xl mx-auto space-y-6">
               {[
                 {
-                  question: "Do you work with naval families on deployment schedules?",
-                  answer: "Yes, we're experienced in working with naval families and understand deployment cycles. We can adjust project timelines to coordinate with deployments and leave periods."
+                  question: "What areas of Gosport do you cover?",
+                  answer: "We serve all Gosport areas including Alverstoke, Lee-on-the-Solent, Bridgemary, Town Centre, Hardway, and surrounding Hampshire areas."
                 },
                 {
-                  question: "Are you security cleared to work on naval properties?",
-                  answer: "While we don't hold formal security clearance, we're trusted by many naval families and understand the discretion and professionalism required for MOD residential work."
+                  question: "How quickly can you provide a quote?",
+                  answer: "We aim to provide all quotes within 24-48 hours. For urgent projects, we can often arrange a same-day consultation."
                 },
                 {
-                  question: "How quickly can you complete emergency repairs for naval families?",
-                  answer: "We prioritize emergency repairs for naval families, especially those facing deployment. Most urgent repairs can be completed within 24-48 hours."
+                  question: "Do you handle planning permission?",
+                  answer: "Yes, we can assist with planning permission applications and building regulations for extensions and major renovations."
                 },
                 {
-                  question: "Do you offer payment plans for naval families?",
-                  answer: "Yes, we understand naval pay cycles and can arrange flexible payment schedules to accommodate monthly naval salaries and deployment allowances."
+                  question: "What is your typical project timeline?",
+                  answer: "Timelines vary by project. Small jobs can be completed in days, while full renovations may take several weeks. We'll provide a detailed schedule with your quote."
                 },
                 {
-                  question: "Which areas of Gosport do you serve?",
-                  answer: "We serve all Gosport areas including Alverstoke, Lee-on-the-Solent, Stubbington, Bridgemary, and all MOD residential areas in the Gosport peninsula."
+                  question: "Are you fully insured?",
+                  answer: "Yes, we carry full public liability insurance and all our work is guaranteed. We're also registered with local trading standards."
                 },
                 {
-                  question: "Can you work around naval family moving schedules?",
-                  answer: "Absolutely. We understand PCS moves and can expedite projects before postings or prepare properties for new naval families arriving in Gosport."
+                  question: "Do you offer payment plans?",
+                  answer: "Yes, we can arrange flexible payment schedules for larger projects to help spread the cost of your renovation or extension."
                 }
               ].map((faq, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow">
@@ -808,7 +766,7 @@ const GosportCarpentry = () => {
                 Ready to Discuss Your Gosport Carpentry Project?
               </h2>
               <p className="text-xl text-muted-foreground">
-                Get your marine-grade quote with naval family scheduling options
+                Get your free quote for quality carpentry in Gosport
               </p>
             </div>
 
@@ -853,8 +811,8 @@ const GosportCarpentry = () => {
                         <Clock className="h-6 w-6 text-primary" />
                       </div>
                       <div>
-                        <p className="font-medium">Naval Family Service</p>
-                        <p className="text-muted-foreground">Flexible scheduling for deployment cycles</p>
+                        <p className="font-medium">Working Hours</p>
+                        <p className="text-muted-foreground">Monday - Friday: 8am - 6pm</p>
                       </div>
                     </div>
                   </div>
@@ -862,25 +820,25 @@ const GosportCarpentry = () => {
 
                 <div className="p-6 bg-muted/50 rounded-lg">
                   <h4 className="font-semibold mb-3 flex items-center gap-2">
-                    <Ship className="h-5 w-5 text-primary" />
-                    Naval Family Benefits
+                    <Award className="h-5 w-5 text-primary" />
+                    Why Choose Us
                   </h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Deployment-flexible scheduling</span>
+                      <span>20+ years experience in Gosport</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Security-conscious work practices</span>
+                      <span>Fully insured and qualified</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Rapid response for urgent repairs</span>
+                      <span>Free, no-obligation quotes</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Key-holding services during deployments</span>
+                      <span>Clean, professional service</span>
                     </li>
                   </ul>
                 </div>
@@ -915,7 +873,7 @@ const GosportCarpentry = () => {
                   
                   <div className="text-center pt-4">
                     <Button size="lg" asChild className="w-full bg-golden text-dark-bg hover:bg-golden-hover">
-                      <Link to="/#contact-section">Get Your Marine-Grade Quote Online</Link>
+                      <Link to="/#contact-section">Get Your Free Quote Online</Link>
                     </Button>
                   </div>
                 </div>
@@ -937,50 +895,50 @@ const GosportCarpentry = () => {
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "Do you work with naval families on deployment schedules?",
+                "name": "What areas of Gosport do you cover?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, we're experienced in working with naval families and understand deployment cycles. We can adjust project timelines to coordinate with deployments and leave periods."
+                  "text": "We serve all Gosport areas including Alverstoke, Lee-on-the-Solent, Bridgemary, Town Centre, Hardway, and surrounding Hampshire areas."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Are you security cleared to work on naval properties?",
+                "name": "How quickly can you provide a quote?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "While we don't hold formal security clearance, we're trusted by many naval families and understand the discretion and professionalism required for MOD residential work."
+                  "text": "We aim to provide all quotes within 24-48 hours. For urgent projects, we can often arrange a same-day consultation."
                 }
               },
               {
                 "@type": "Question",
-                "name": "How quickly can you complete emergency repairs for naval families?",
+                "name": "Do you handle planning permission?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "We prioritize emergency repairs for naval families, especially those facing deployment. Most urgent repairs can be completed within 24-48 hours."
+                  "text": "Yes, we can assist with planning permission applications and building regulations for extensions and major renovations."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Do you offer payment plans for naval families?",
+                "name": "What is your typical project timeline?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, we understand naval pay cycles and can arrange flexible payment schedules to accommodate monthly naval salaries and deployment allowances."
+                  "text": "Timelines vary by project. Small jobs can be completed in days, while full renovations may take several weeks. We'll provide a detailed schedule with your quote."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Which areas of Gosport do you serve?",
+                "name": "Are you fully insured?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "We serve all Gosport areas including Alverstoke, Lee-on-the-Solent, Stubbington, Bridgemary, and all MOD residential areas in the Gosport peninsula."
+                  "text": "Yes, we carry full public liability insurance and all our work is guaranteed. We're also registered with local trading standards."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Can you work around naval family moving schedules?",
+                "name": "Do you offer payment plans?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Absolutely. We understand PCS moves and can expedite projects before postings or prepare properties for new naval families arriving in Gosport."
+                  "text": "Yes, we can arrange flexible payment schedules for larger projects to help spread the cost of your renovation or extension."
                 }
               }
             ]
@@ -997,7 +955,7 @@ const GosportCarpentry = () => {
             "@type": "LocalBusiness",
             "name": "JPW Carpentry - Gosport Specialists",
             "image": "https://jpwcarpentry.lovable.app/assets/carpenter-working.jpg",
-            "description": "Professional carpentry services in Gosport, Hampshire. Coastal property specialists, marine-grade materials, naval family trusted.",
+            "description": "Professional carpentry services in Gosport, Hampshire. Expert kitchen renovations, home extensions, and bespoke joinery.",
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "Gosport",
@@ -1018,12 +976,12 @@ const GosportCarpentry = () => {
               "Browndown"
             ],
             "serviceType": [
-              "Marine-Grade Carpentry",
-              "Coastal Property Renovations", 
-              "Boat Storage Solutions",
-              "Naval Family Services",
-              "Waterfront Extensions",
-              "Heritage Naval Property Restoration"
+              "Kitchen Fitting & Renovation",
+              "Home Extensions & Conversions", 
+              "Built-in Storage Solutions",
+              "Bespoke Joinery & Furniture",
+              "Flooring Installation",
+              "Internal Doors & Windows"
             ],
             "priceRange": "£500-£50000",
             "aggregateRating": {
@@ -1036,13 +994,13 @@ const GosportCarpentry = () => {
                 "@type": "Review",
                 "author": {
                   "@type": "Person",
-                  "name": "Commander Sarah T."
+                  "name": "Sarah M."
                 },
                 "reviewRating": {
                   "@type": "Rating",
                   "ratingValue": "5"
                 },
-                "reviewBody": "JPW understood our deployment schedule perfectly and completed our extension while I was at sea. The marine-grade quality is evident - no salt damage after two winters. Highly recommended for naval families."
+                "reviewBody": "JPW transformed our cramped Alverstoke kitchen into a modern family space. Professional, clean, and finished exactly on time. Highly recommend to any Gosport homeowner."
               }
             ]
           })
