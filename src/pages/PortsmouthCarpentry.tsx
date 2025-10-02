@@ -14,11 +14,13 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Phone, Mail, MapPin, Clock, Star, Shield, Award, CircleCheck as CheckCircle, Building, Chrome as Home, Wrench } from "lucide-react";
-import carpenterWorking from "@/assets/carpenter-working.jpg";
 import kitchenRenovation from "@/assets/kitchen-renovation.webp";
 import homeRenovation from "@/assets/home-renovation.webp";
-import customFurniture from "@/assets/custom-furniture.jpg";
 import oakStaircase from "@/assets/oak-staircase.webp";
+import flooringInstallation from "@/assets/flooring-installation.webp";
+import bespokeJoinery from "@/assets/bespoke-joinery.webp";
+import builtInStorage from "@/assets/built-in-storage.webp";
+import doorsWindows from "@/assets/doors-windows.webp";
 
 const PortsmouthCarpentry = () => {
   const seoData = useSEO('/portsmouth-carpentry-services');
@@ -41,7 +43,7 @@ const PortsmouthCarpentry = () => {
       description: "Maximize space in Portsmouth homes with custom storage",
       price: "From £800",
       popular: "Victorian terraces, modern developments",
-      image: customFurniture
+      image: builtInStorage
     },
     {
       title: "Home Extensions & Conversions",
@@ -55,21 +57,21 @@ const PortsmouthCarpentry = () => {
       description: "Handcrafted furniture designed for Portsmouth homes",
       price: "From £500", 
       popular: "Traditional and contemporary styles",
-      image: customFurniture
+      image: bespokeJoinery
     },
     {
       title: "Flooring Installation",
       description: "Professional flooring for Portsmouth properties",
       price: "From £25/m²",
       popular: "Hardwood, laminate, engineered",
-      image: carpenterWorking
+      image: flooringInstallation
     },
     {
       title: "Internal Doors & Windows", 
       description: "Quality door and window installation across Portsmouth",
       price: "From £200 per door",
       popular: "Period property expertise", 
-      image: carpenterWorking
+      image: doorsWindows
     }
   ];
 
