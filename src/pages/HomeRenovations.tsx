@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import homeRenovation from "@/assets/home-renovation.webp";
-import modernBuilding from "@/assets/modern-building.jpg";
+import completeRenovation from "@/assets/complete-renovation.webp";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
@@ -212,7 +212,7 @@ const HomeRenovations = () => {
             
             <div className="relative">
               <img
-                src={modernBuilding}
+                src={completeRenovation}
                 alt="Complete Home Renovation - JPW Carpentry & Building"
                 className="w-full h-96 object-cover rounded-lg"
                 width="576"
