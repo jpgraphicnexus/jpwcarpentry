@@ -64,27 +64,6 @@ const HavantCarpentry = () => {
   ];
 
 
-  const testimonials = [
-    {
-      name: "The Mitchell Family",
-      location: "Waterlooville (PO7)",
-      review: "JPW transformed our cramped kitchen into a space where our family actually wants to spend time. They worked around our children's routines and kept disruption to a minimum. Excellent value for money.",
-      rating: 5
-    },
-    {
-      name: "Sarah & Tom",
-      location: "Havant (PO9)",
-      review: "Our loft conversion gave us the extra bedrooms we desperately needed. JPW's team was professional, tidy, and surprisingly quiet considering the work involved. The kids barely noticed the disruption.",
-      rating: 5
-    },
-    {
-      name: "The Roberts Family",
-      location: "Emsworth (PO10)",
-      review: "Built-in storage throughout our house has been a game-changer for family organization. JPW understood exactly what we needed and delivered beyond expectations. Highly recommend to other families.",
-      rating: 5
-    }
-  ];
-
   const areas = [
     { name: "Central Havant", description: "Town center, residential streets, period properties" },
     { name: "Waterlooville", description: "Family estates, modern developments, suburban homes" },
@@ -448,36 +427,6 @@ const HavantCarpentry = () => {
           </div>
         </section>
 
-        {/* Testimonials */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4">What Havant Families Say About JPW</h2>
-            </div>
-            
-            <div className="grid lg:grid-cols-3 gap-8">
-              {testimonials.map((testimonial, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <div className="flex items-center space-x-1 mb-2">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 fill-golden text-golden" />
-                      ))}
-                    </div>
-                    <CardTitle className="text-lg flex items-center">
-                      <Heart className="w-5 h-5 mr-2 text-golden" />
-                      {testimonial.name}
-                    </CardTitle>
-                    <CardDescription>{testimonial.location}</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground italic">"{testimonial.review}"</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* Family-Friendly Features */}
         <section className="py-20 bg-secondary/5">

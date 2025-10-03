@@ -79,28 +79,6 @@ const PortsmouthCarpentry = () => {
     { name: "Milton", details: "Lakeside developments, contemporary homes" }
   ];
 
-  const testimonials = [
-    {
-      name: "Sarah M.",
-      location: "Southsea (PO4)",
-      review: "JPW transformed our cramped Victorian kitchen into a modern family space. Professional, clean, and finished exactly on time. Highly recommend to any Portsmouth homeowner.",
-      rating: 5
-    },
-    {
-      name: "David R.", 
-      location: "Old Portsmouth (PO1)",
-      review: "Excellent work on our period property extension. They understood the planning requirements and delivered quality work that respects the building's character.",
-      rating: 5
-    },
-    {
-      name: "Lisa T.",
-      location: "Fratton (PO1)", 
-      review: "Built-in wardrobes and storage throughout our house. Fantastic attention to detail and great value for money. Will definitely use again.",
-      rating: 5
-    }
-  ];
-
-
   return (
     <>
       <SEO {...seoData} />
@@ -436,46 +414,6 @@ const PortsmouthCarpentry = () => {
           </div>
         </section>
 
-        {/* Testimonials */}
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair text-primary">
-                What Portsmouth Customers Say
-              </h2>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {testimonials.map((testimonial, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
-                  <CardContent className="pt-6">
-                    <div className="flex mb-4">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 fill-golden text-golden" />
-                      ))}
-                    </div>
-                    <p className="text-muted-foreground mb-6 italic">"{testimonial.review}"</p>
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                        <span className="text-white font-semibold">{testimonial.name[0]}</span>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-primary">{testimonial.name}</p>
-                        <p className="text-sm text-muted-foreground">{testimonial.location}</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
-            <div className="text-center mt-12">
-              <Button size="lg" asChild className="bg-golden text-dark-bg hover:bg-golden-hover">
-                <Link to="/#contact-section">Join Happy Portsmouth Customers</Link>
-              </Button>
-            </div>
-          </div>
-        </section>
 
         {/* Planning & Regulations */}
         <section className="py-20">

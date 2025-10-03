@@ -55,27 +55,6 @@ const ChichesterCarpentry = () => {
   ];
 
 
-  const testimonials = [
-    {
-      name: "Lady Margaret S.",
-      location: "Cathedral Close (PO19)",
-      review: "JPW's work on our Georgian townhouse was exemplary. They understood the heritage requirements perfectly and delivered craftsmanship worthy of the Cathedral Quarter. Highly recommended for period properties.",
-      rating: 5
-    },
-    {
-      name: "James & Caroline H.",
-      location: "Summersdale (PO19)",
-      review: "Our kitchen renovation exceeded all expectations. JPW managed the entire project professionally, from planning permission to the final installation. The quality is outstanding.",
-      rating: 5
-    },
-    {
-      name: "Dr. Richard P.",
-      location: "Fishbourne (PO18)",
-      review: "Exceptional restoration work on our listed cottage. JPW's knowledge of traditional techniques and materials is unmatched in Chichester. A pleasure to work with.",
-      rating: 5
-    }
-  ];
-
   const areas = [
     { name: "Cathedral Quarter", description: "Historic city center, Cathedral Close, Canon Lane" },
     { name: "Pallant", description: "Georgian townhouses, period properties, conservation area" },
@@ -397,33 +376,6 @@ const ChichesterCarpentry = () => {
           </div>
         </section>
 
-        {/* Testimonials */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4">What Chichester Clients Say</h2>
-            </div>
-            
-            <div className="grid lg:grid-cols-3 gap-8">
-              {testimonials.map((testimonial, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <div className="flex items-center space-x-1 mb-2">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 fill-golden text-golden" />
-                      ))}
-                    </div>
-                    <CardTitle className="text-lg">{testimonial.name}</CardTitle>
-                    <CardDescription>{testimonial.location}</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground italic">"{testimonial.review}"</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* Conservation & Planning Section */}
         <section className="py-20 bg-secondary/5">
