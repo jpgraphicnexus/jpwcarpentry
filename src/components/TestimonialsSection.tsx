@@ -45,10 +45,10 @@ const TestimonialsSection = () => {
     },
     {
       id: 6,
-      location: "BN17",
+      location: "PO19",
       rating: 5,
-      service: "Home Extension", 
-      review: "Outstanding work on our home extension. Professional, reliable, and the attention to detail was exceptional. Would highly recommend JPW Carpentry & Building.",
+      service: "Garage Door Repair", 
+      review: "Really pleased with the work done to remove and replace rotten wood from our garage doors. Joe arrived at the time arranged, and did a great job.",
       date: "15 April"
     }
   ];
