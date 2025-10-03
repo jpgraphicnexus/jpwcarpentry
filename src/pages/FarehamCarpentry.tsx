@@ -132,7 +132,6 @@ const FarehamCarpentry = () => {
                     <div className="p-2 bg-golden/10 rounded-lg group-hover:bg-golden/20 transition-colors">
                       <Building className="h-6 w-6 text-golden" />
                     </div>
-                    <Badge variant="secondary" className="bg-golden/20 text-golden">From £35,000</Badge>
                   </div>
                   <CardTitle className="text-xl">Executive Home Extensions</CardTitle>
                   <CardDescription>
@@ -155,7 +154,6 @@ const FarehamCarpentry = () => {
                     <div className="p-2 bg-golden/10 rounded-lg group-hover:bg-golden/20 transition-colors">
                       <Gem className="h-6 w-6 text-golden" />
                     </div>
-                    <Badge variant="secondary" className="bg-golden/20 text-golden">From £15,000</Badge>
                   </div>
                   <CardTitle className="text-xl">Designer Kitchen Installations</CardTitle>
                   <CardDescription>
@@ -178,7 +176,6 @@ const FarehamCarpentry = () => {
                     <div className="p-2 bg-golden/10 rounded-lg group-hover:bg-golden/20 transition-colors">
                       <Crown className="h-6 w-6 text-golden" />
                     </div>
-                    <Badge variant="secondary" className="bg-golden/20 text-golden">From £8,000</Badge>
                   </div>
                   <CardTitle className="text-xl">Luxury Home Offices</CardTitle>
                   <CardDescription>
@@ -201,7 +198,6 @@ const FarehamCarpentry = () => {
                     <div className="p-2 bg-golden/10 rounded-lg group-hover:bg-golden/20 transition-colors">
                       <Award className="h-6 w-6 text-golden" />
                     </div>
-                    <Badge variant="secondary" className="bg-golden/20 text-golden">From £2,500</Badge>
                   </div>
                   <CardTitle className="text-xl">Bespoke Storage Solutions</CardTitle>
                   <CardDescription>
@@ -224,7 +220,6 @@ const FarehamCarpentry = () => {
                     <div className="p-2 bg-golden/10 rounded-lg group-hover:bg-golden/20 transition-colors">
                       <Home className="h-6 w-6 text-golden" />
                     </div>
-                    <Badge variant="secondary" className="bg-golden/20 text-golden">From £12,000</Badge>
                   </div>
                   <CardTitle className="text-xl">Premium Outdoor Living</CardTitle>
                   <CardDescription>
@@ -247,7 +242,6 @@ const FarehamCarpentry = () => {
                     <div className="p-2 bg-golden/10 rounded-lg group-hover:bg-golden/20 transition-colors">
                       <Shield className="h-6 w-6 text-golden" />
                     </div>
-                    <Badge variant="secondary" className="bg-golden/20 text-golden">From £10,000</Badge>
                   </div>
                   <CardTitle className="text-xl">Period Property Restoration</CardTitle>
                   <CardDescription>
@@ -491,127 +485,6 @@ const FarehamCarpentry = () => {
               <Button variant="outline" asChild>
                 <Link to="/services">View All Services</Link>
               </Button>
-            </div>
-          </div>
-        </section>
-
-        {/* Project Showcase */}
-        <section id="portfolio" className="py-20 bg-slate-50">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Prestigious Fareham Property Transformations
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                Showcasing our commitment to excellence in Fareham's finest properties
-              </p>
-            </div>
-
-            <div className="grid lg:grid-cols-3 gap-8">
-              <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 bg-white">
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Crown className="h-5 w-5 text-golden" />
-                    <Badge variant="outline" className="border-golden text-golden">Executive Project</Badge>
-                  </div>
-                  <CardTitle>Whiteley Executive Extension</CardTitle>
-                  <CardDescription>Two-storey rear extension with luxury kitchen and master suite</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div>
-                      <p className="font-medium text-sm">Challenge:</p>
-                      <p className="text-sm text-muted-foreground">Executive timeline, premium finishes, architectural integration</p>
-                    </div>
-                    <div>
-                      <p className="font-medium text-sm">Solution:</p>
-                      <p className="text-sm text-muted-foreground">Fast-track project management, premium suppliers, luxury specifications</p>
-                    </div>
-                    <div className="flex justify-between items-center pt-2">
-                      <span className="text-sm font-medium">Timeline: 16 weeks</span>
-                      <div className="flex items-center gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="h-4 w-4 fill-golden text-golden" />
-                        ))}
-                      </div>
-                    </div>
-                    <div className="p-3 bg-golden/5 rounded-lg border border-golden/20">
-                      <p className="text-sm font-medium text-golden">Property value increased £85,000</p>
-                      <p className="text-xs italic text-muted-foreground">"Exceeded our highest expectations"</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 bg-white">
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Shield className="h-5 w-5 text-golden" />
-                    <Badge variant="outline" className="border-golden text-golden">Period Restoration</Badge>
-                  </div>
-                  <CardTitle>Titchfield Period Restoration</CardTitle>
-                  <CardDescription>Georgian townhouse complete renovation and modernization</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div>
-                      <p className="font-medium text-sm">Challenge:</p>
-                      <p className="text-sm text-muted-foreground">Historic building constraints, modern luxury integration</p>
-                    </div>
-                    <div>
-                      <p className="font-medium text-sm">Solution:</p>
-                      <p className="text-sm text-muted-foreground">Heritage-compliant design, hidden modern systems, period authenticity</p>
-                    </div>
-                    <div className="flex justify-between items-center pt-2">
-                      <span className="text-sm font-medium">Timeline: 20 weeks</span>
-                      <div className="flex items-center gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="h-4 w-4 fill-golden text-golden" />
-                        ))}
-                      </div>
-                    </div>
-                    <div className="p-3 bg-golden/5 rounded-lg border border-golden/20">
-                      <p className="text-sm font-medium text-golden">Featured in Hampshire Life</p>
-                      <p className="text-xs italic text-muted-foreground">"Perfect blend of history and luxury"</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 bg-white">
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Gem className="h-5 w-5 text-golden" />
-                    <Badge variant="outline" className="border-golden text-golden">Luxury Kitchen</Badge>
-                  </div>
-                  <CardTitle>Park Gate Luxury Kitchen</CardTitle>
-                  <CardDescription>German kitchen installation with stone island and wine storage</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div>
-                      <p className="font-medium text-sm">Challenge:</p>
-                      <p className="text-sm text-muted-foreground">Open-plan integration, premium appliances, family functionality</p>
-                    </div>
-                    <div>
-                      <p className="font-medium text-sm">Solution:</p>
-                      <p className="text-sm text-muted-foreground">Bespoke design, integrated technology, luxury materials</p>
-                    </div>
-                    <div className="flex justify-between items-center pt-2">
-                      <span className="text-sm font-medium">Timeline: 6 weeks</span>
-                      <div className="flex items-center gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="h-4 w-4 fill-golden text-golden" />
-                        ))}
-                      </div>
-                    </div>
-                    <div className="p-3 bg-golden/5 rounded-lg border border-golden/20">
-                      <p className="text-sm font-medium text-golden">Award-winning design</p>
-                      <p className="text-xs italic text-muted-foreground">"The heart of our executive entertaining"</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </section>

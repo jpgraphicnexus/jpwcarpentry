@@ -34,42 +34,36 @@ const PortsmouthCarpentry = () => {
     {
       title: "Kitchen Fitting & Renovation",
       description: "Transform your Portsmouth kitchen with bespoke fitted units",
-      price: "From £8,000",
       popular: "Southsea, Old Portsmouth, North End",
       image: kitchenRenovation
     },
     {
       title: "Built-in Storage Solutions", 
       description: "Maximize space in Portsmouth homes with custom storage",
-      price: "From £800",
       popular: "Victorian terraces, modern developments",
       image: builtInStorage
     },
     {
       title: "Home Extensions & Conversions",
       description: "Add value to your Portsmouth property with expert extensions", 
-      price: "From £15,000",
       popular: "Planning permission support included",
       image: homeRenovation
     },
     {
       title: "Bespoke Joinery & Furniture",
       description: "Handcrafted furniture designed for Portsmouth homes",
-      price: "From £500", 
       popular: "Traditional and contemporary styles",
       image: bespokeJoinery
     },
     {
       title: "Flooring Installation",
       description: "Professional flooring for Portsmouth properties",
-      price: "From £25/m²",
       popular: "Hardwood, laminate, engineered",
       image: flooringInstallation
     },
     {
       title: "Internal Doors & Windows", 
       description: "Quality door and window installation across Portsmouth",
-      price: "From £200 per door",
       popular: "Period property expertise", 
       image: doorsWindows
     }
@@ -106,32 +100,6 @@ const PortsmouthCarpentry = () => {
     }
   ];
 
-  const projects = [
-    {
-      title: "Southsea Kitchen Renovation",
-      subtitle: "Victorian terrace kitchen transformation",
-      challenge: "Limited space, period features to preserve",
-      solution: "Bespoke units, integrated appliances, original features retained",
-      timeline: "3 weeks",
-      feedback: "Exceeded expectations"
-    },
-    {
-      title: "Old Portsmouth Loft Conversion", 
-      subtitle: "Historic property loft conversion with planning permission",
-      challenge: "Conservation area restrictions",
-      solution: "Sympathetic design, traditional materials",
-      timeline: "8 weeks",
-      feedback: "Added value: £35,000"
-    },
-    {
-      title: "North End Extension",
-      subtitle: "Single-storey rear extension with bi-fold doors", 
-      challenge: "Narrow access, neighbor considerations",
-      solution: "Careful planning, quality materials",
-      timeline: "12 weeks",
-      feedback: "Open-plan family living"
-    }
-  ];
 
   return (
     <>
@@ -283,9 +251,6 @@ const PortsmouthCarpentry = () => {
                       alt={`${service.title} in Portsmouth`}
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute top-4 right-4">
-                      <Badge className="bg-golden text-dark-bg">{service.price}</Badge>
-                    </div>
                   </div>
                   <CardHeader>
                     <CardTitle className="text-xl text-primary">{service.title}</CardTitle>
@@ -467,48 +432,6 @@ const PortsmouthCarpentry = () => {
                   <li>Respect for your home and neighbors</li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Project Showcase */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair text-primary">
-                Recent Portsmouth Carpentry Projects
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                See how we've transformed Portsmouth homes across the city
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {projects.map((project, index) => (
-                <Card key={index} className="hover:shadow-xl transition-shadow">
-                  <CardHeader>
-                    <CardTitle className="text-xl text-primary">{project.title}</CardTitle>
-                    <CardDescription className="text-base font-medium">{project.subtitle}</CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div>
-                      <h4 className="font-semibold text-primary mb-1">Challenge:</h4>
-                      <p className="text-muted-foreground">{project.challenge}</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-1">Solution:</h4>
-                      <p className="text-muted-foreground">{project.solution}</p>
-                    </div>
-                    <div className="flex justify-between items-center pt-4 border-t">
-                      <div>
-                        <span className="text-sm font-medium text-primary">Timeline:</span>
-                        <span className="text-sm text-muted-foreground ml-2">{project.timeline}</span>
-                      </div>
-                      <Badge variant="secondary">{project.feedback}</Badge>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
             </div>
           </div>
         </section>

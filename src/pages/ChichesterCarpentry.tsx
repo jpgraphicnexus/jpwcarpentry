@@ -19,73 +19,41 @@ const ChichesterCarpentry = () => {
     {
       title: "Conservation Area Carpentry",
       description: "Sympathetic renovations respecting Chichester's historic character",
-      priceRange: "From £1,200",
       speciality: "Planning permission support included",
       areas: ["Cathedral Quarter", "Pallant", "St. Pancras"]
     },
     {
       title: "Period Property Restoration",
       description: "Victorian and Georgian property carpentry with authentic materials",
-      priceRange: "From £2,000",
       speciality: "Traditional techniques",
       areas: ["Cathedral Quarter", "Pallant", "St. Pancras"]
     },
     {
       title: "Bespoke Kitchen Design",
       description: "Handcrafted kitchens for Chichester's finest homes",
-      priceRange: "From £12,000",
       speciality: "Traditional and contemporary fusion",
       areas: ["Summersdale", "Fishbourne", "Cathedral Quarter"]
     },
     {
       title: "Heritage Window Restoration",
       description: "Sash window repair and replacement in period style",
-      priceRange: "From £400 per window",
       speciality: "Conservation Area approved",
       areas: ["Historic properties", "Listed buildings"]
     },
     {
       title: "Listed Building Carpentry",
       description: "Specialist work on Grade I and Grade II listed properties",
-      priceRange: "POA",
       speciality: "Historic England guidelines",
       areas: ["Cathedral Close", "Historic properties"]
     },
     {
       title: "Luxury Home Extensions",
       description: "Premium extensions for Chichester's executive homes",
-      priceRange: "From £25,000",
       speciality: "Architect collaboration",
       areas: ["Summersdale", "Fishbourne", "Bosham"]
     }
   ];
 
-  const projects = [
-    {
-      title: "Cathedral Quarter Georgian Restoration",
-      description: "Grade II listed townhouse complete renovation",
-      challenge: "Historic England compliance, original features preservation",
-      solution: "Traditional lime mortar, hand-forged ironwork, period-appropriate materials",
-      timeline: "16 weeks",
-      result: "'Exemplary heritage restoration' - Conservation Officer"
-    },
-    {
-      title: "Pallant Conservation Area Kitchen",
-      description: "Bespoke kitchen in 18th-century townhouse",
-      challenge: "Conservation Area restrictions, structural limitations",
-      solution: "Hidden modern appliances, traditional cabinetry, heritage colors",
-      timeline: "6 weeks",
-      result: "Added value: £45,000"
-    },
-    {
-      title: "Summersdale Executive Extension",
-      description: "Contemporary extension on 1930s family home",
-      challenge: "Neighbor consultation, planning requirements",
-      solution: "Sympathetic design, premium materials, landscape integration",
-      timeline: "14 weeks",
-      result: "'Seamless blend of old and new'"
-    }
-  ];
 
   const testimonials = [
     {
@@ -254,11 +222,6 @@ const ChichesterCarpentry = () => {
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-4">
-                    <div className="flex justify-between items-center">
-                      <Badge variant="outline" className="border-golden text-golden">
-                        {service.priceRange}
-                      </Badge>
-                    </div>
                     <div className="space-y-2">
                       <p className="text-sm font-semibold text-primary">Speciality:</p>
                       <p className="text-sm text-muted-foreground">{service.speciality}</p>
@@ -430,50 +393,6 @@ const ChichesterCarpentry = () => {
                   </ul>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Project Showcase */}
-        <section className="py-20 bg-secondary/5">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                Prestigious Chichester Carpentry Projects
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                Showcasing our expertise with heritage properties and luxury homes
-              </p>
-            </div>
-            
-            <div className="grid lg:grid-cols-3 gap-8">
-              {projects.map((project, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <CardTitle className="text-xl text-golden">{project.title}</CardTitle>
-                    <CardDescription className="text-base">{project.description}</CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div>
-                      <p className="font-semibold text-sm mb-1">Challenge:</p>
-                      <p className="text-sm text-muted-foreground">{project.challenge}</p>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-sm mb-1">Solution:</p>
-                      <p className="text-sm text-muted-foreground">{project.solution}</p>
-                    </div>
-                    <div className="flex justify-between items-center pt-2">
-                      <Badge variant="outline" className="border-golden text-golden">
-                        <Clock className="w-3 h-3 mr-1" />
-                        {project.timeline}
-                      </Badge>
-                    </div>
-                    <div className="border-t pt-3">
-                      <p className="text-sm font-medium italic text-primary">{project.result}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
             </div>
           </div>
         </section>

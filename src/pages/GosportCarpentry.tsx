@@ -132,16 +132,13 @@ const GosportCarpentry = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <Card className="hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="relative h-48 overflow-hidden rounded-t-lg">
-                  <img 
-                    src={kitchenRenovation} 
-                    alt="Kitchen Fitting & Renovation in Gosport"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute top-4 right-4">
-                    <Badge className="bg-golden text-dark-bg">From £8,000</Badge>
+                  <div className="relative h-48 overflow-hidden rounded-t-lg">
+                    <img 
+                      src={kitchenRenovation} 
+                      alt="Kitchen Fitting & Renovation in Gosport"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                </div>
                 <CardHeader>
                   <CardTitle className="text-xl text-primary">Kitchen Fitting & Renovation</CardTitle>
                   <CardDescription className="text-base">Transform your Gosport kitchen with bespoke fitted units</CardDescription>
@@ -157,16 +154,13 @@ const GosportCarpentry = () => {
               </Card>
 
               <Card className="hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="relative h-48 overflow-hidden rounded-t-lg">
-                  <img 
-                    src={builtInStorage} 
-                    alt="Built-in Storage Solutions in Gosport"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute top-4 right-4">
-                    <Badge className="bg-golden text-dark-bg">From £800</Badge>
+                  <div className="relative h-48 overflow-hidden rounded-t-lg">
+                    <img 
+                      src={builtInStorage} 
+                      alt="Built-in Storage Solutions in Gosport"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                </div>
                 <CardHeader>
                   <CardTitle className="text-xl text-primary">Built-in Storage Solutions</CardTitle>
                   <CardDescription className="text-base">Maximize space in Gosport homes with custom storage</CardDescription>
@@ -182,16 +176,13 @@ const GosportCarpentry = () => {
               </Card>
 
               <Card className="hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="relative h-48 overflow-hidden rounded-t-lg">
-                  <img 
-                    src={homeRenovation} 
-                    alt="Home Extensions & Conversions in Gosport"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute top-4 right-4">
-                    <Badge className="bg-golden text-dark-bg">From £15,000</Badge>
+                  <div className="relative h-48 overflow-hidden rounded-t-lg">
+                    <img 
+                      src={homeRenovation} 
+                      alt="Home Extensions & Conversions in Gosport"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                </div>
                 <CardHeader>
                   <CardTitle className="text-xl text-primary">Home Extensions & Conversions</CardTitle>
                   <CardDescription className="text-base">Add value to your Gosport property with expert extensions</CardDescription>
@@ -207,16 +198,13 @@ const GosportCarpentry = () => {
               </Card>
 
               <Card className="hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="relative h-48 overflow-hidden rounded-t-lg">
-                  <img 
-                    src={bespokeJoinery} 
-                    alt="Bespoke Joinery & Furniture in Gosport"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute top-4 right-4">
-                    <Badge className="bg-golden text-dark-bg">From £500</Badge>
+                  <div className="relative h-48 overflow-hidden rounded-t-lg">
+                    <img 
+                      src={bespokeJoinery} 
+                      alt="Bespoke Joinery & Furniture in Gosport"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                </div>
                 <CardHeader>
                   <CardTitle className="text-xl text-primary">Bespoke Joinery & Furniture</CardTitle>
                   <CardDescription className="text-base">Handcrafted furniture designed for Gosport homes</CardDescription>
@@ -232,16 +220,13 @@ const GosportCarpentry = () => {
               </Card>
 
               <Card className="hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="relative h-48 overflow-hidden rounded-t-lg">
-                  <img 
-                    src={flooringInstallation} 
-                    alt="Flooring Installation in Gosport"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute top-4 right-4">
-                    <Badge className="bg-golden text-dark-bg">From £25/m²</Badge>
+                  <div className="relative h-48 overflow-hidden rounded-t-lg">
+                    <img 
+                      src={flooringInstallation} 
+                      alt="Flooring Installation in Gosport"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                </div>
                 <CardHeader>
                   <CardTitle className="text-xl text-primary">Flooring Installation</CardTitle>
                   <CardDescription className="text-base">Professional flooring for Gosport properties</CardDescription>
@@ -257,16 +242,13 @@ const GosportCarpentry = () => {
               </Card>
 
               <Card className="hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="relative h-48 overflow-hidden rounded-t-lg">
-                  <img 
-                    src={doorsWindows} 
-                    alt="Internal Doors & Windows in Gosport"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute top-4 right-4">
-                    <Badge className="bg-golden text-dark-bg">From £200 per door</Badge>
+                  <div className="relative h-48 overflow-hidden rounded-t-lg">
+                    <img 
+                      src={doorsWindows} 
+                      alt="Internal Doors & Windows in Gosport"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                </div>
                 <CardHeader>
                   <CardTitle className="text-xl text-primary">Internal Doors & Windows</CardTitle>
                   <CardDescription className="text-base">Quality door and window installation across Gosport</CardDescription>
@@ -508,118 +490,6 @@ const GosportCarpentry = () => {
               <Button variant="outline" asChild>
                 <Link to="/services">View All Services</Link>
               </Button>
-            </div>
-          </div>
-        </section>
-
-        {/* Project Showcase */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Recent Gosport Carpentry Projects
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                Showcasing our quality work across Gosport
-              </p>
-            </div>
-
-            <div className="grid lg:grid-cols-3 gap-8">
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Home className="h-5 w-5 text-primary" />
-                    <Badge variant="outline">Kitchen Project</Badge>
-                  </div>
-                  <CardTitle>Alverstoke Kitchen Renovation</CardTitle>
-                  <CardDescription>Complete kitchen transformation for family home</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div>
-                      <p className="font-medium text-sm">Challenge:</p>
-                      <p className="text-sm text-muted-foreground">Limited space, outdated layout</p>
-                    </div>
-                    <div>
-                      <p className="font-medium text-sm">Solution:</p>
-                      <p className="text-sm text-muted-foreground">Bespoke units, integrated appliances, optimized layout</p>
-                    </div>
-                    <div className="flex justify-between items-center pt-2">
-                      <span className="text-sm font-medium">Timeline: 3 weeks</span>
-                      <div className="flex items-center gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                        ))}
-                      </div>
-                    </div>
-                    <p className="text-sm italic text-muted-foreground">"Transformed our family home"</p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Building className="h-5 w-5 text-primary" />
-                    <Badge variant="outline">Extension</Badge>
-                  </div>
-                  <CardTitle>Bridgemary Home Extension</CardTitle>
-                  <CardDescription>Single-storey rear extension with bi-fold doors</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div>
-                      <p className="font-medium text-sm">Challenge:</p>
-                      <p className="text-sm text-muted-foreground">Planning permission, narrow access</p>
-                    </div>
-                    <div>
-                      <p className="font-medium text-sm">Solution:</p>
-                      <p className="text-sm text-muted-foreground">Careful planning, quality materials, professional finish</p>
-                    </div>
-                    <div className="flex justify-between items-center pt-2">
-                      <span className="text-sm font-medium">Timeline: 12 weeks</span>
-                      <div className="flex items-center gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                        ))}
-                      </div>
-                    </div>
-                    <p className="text-sm italic text-muted-foreground">"Added so much space to our home"</p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Wrench className="h-5 w-5 text-primary" />
-                    <Badge variant="outline">Storage Solution</Badge>
-                  </div>
-                  <CardTitle>Lee-on-the-Solent Built-in Storage</CardTitle>
-                  <CardDescription>Custom wardrobes and storage throughout</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div>
-                      <p className="font-medium text-sm">Challenge:</p>
-                      <p className="text-sm text-muted-foreground">Limited storage, awkward spaces</p>
-                    </div>
-                    <div>
-                      <p className="font-medium text-sm">Solution:</p>
-                      <p className="text-sm text-muted-foreground">Bespoke fitted units, maximized every space</p>
-                    </div>
-                    <div className="flex justify-between items-center pt-2">
-                      <span className="text-sm font-medium">Timeline: 2 weeks</span>
-                      <div className="flex items-center gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                        ))}
-                      </div>
-                    </div>
-                    <p className="text-sm italic text-muted-foreground">"Finally have enough storage!"</p>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </section>

@@ -22,7 +22,6 @@ const HavantCarpentry = () => {
     {
       title: "Family Kitchen Renovations",
       description: "Create the heart of your Havant home with practical, beautiful kitchens",
-      priceRange: "From £6,500",
       icon: <Home className="w-8 h-8 text-golden" />,
       areas: ["Waterlooville", "Leigh Park", "Bedhampton"],
       features: ["Family-friendly layouts", "Durable surfaces", "Smart storage", "Child safety features"]
@@ -30,7 +29,6 @@ const HavantCarpentry = () => {
     {
       title: "Loft Conversions & Storage",
       description: "Add valuable space to your Havant family home",
-      priceRange: "From £12,000",
       icon: <Users className="w-8 h-8 text-golden" />,
       benefit: "No need to move house - extend up instead",
       features: ["Extra bedrooms", "Play areas", "Home offices", "Storage solutions"]
@@ -38,7 +36,6 @@ const HavantCarpentry = () => {
     {
       title: "Children's Bedroom Solutions",
       description: "Built-in storage and study areas for growing families",
-      priceRange: "From £800",
       icon: <Heart className="w-8 h-8 text-golden" />,
       popular: "Bunk beds, wardrobes, desk areas",
       features: ["Custom storage", "Study zones", "Safety features", "Growth adaptable"]
@@ -46,7 +43,6 @@ const HavantCarpentry = () => {
     {
       title: "Home Office Conversions",
       description: "Create productive workspaces in Havant homes",
-      priceRange: "From £1,500",
       icon: <Shield className="w-8 h-8 text-golden" />,
       trend: "Perfect for hybrid working families",
       features: ["Quiet zones", "Built-in desks", "Tech solutions", "Flexible spaces"]
@@ -54,7 +50,6 @@ const HavantCarpentry = () => {
     {
       title: "Garden Room & Outdoor Spaces",
       description: "Extend your living space into the garden",
-      priceRange: "From £8,000",
       icon: <Home className="w-8 h-8 text-golden" />,
       popular: "Family entertainment, teenage retreats",
       features: ["All-weather use", "Family gathering", "Teen spaces", "Exercise rooms"]
@@ -62,39 +57,12 @@ const HavantCarpentry = () => {
     {
       title: "Utility & Storage Solutions",
       description: "Organize your busy family life with smart storage",
-      priceRange: "From £600",
       icon: <Users className="w-8 h-8 text-golden" />,
       essential: "Mudrooms, pantries, garage storage",
       features: ["Boot rooms", "Pantry storage", "Toy organization", "Sports equipment"]
     }
   ];
 
-  const projects = [
-    {
-      title: "Waterlooville Kitchen Extension",
-      description: "Open-plan kitchen-diner for growing family",
-      challenge: "Limited space, tight budget, young children at home",
-      solution: "Single-storey extension, family-friendly layout, phased construction",
-      timeline: "8 weeks",
-      result: "'Finally have space for family meals' - The Johnson Family"
-    },
-    {
-      title: "Leigh Park Loft Conversion",
-      description: "Two-bedroom loft conversion for expanding family",
-      challenge: "Trussed roof, limited headroom, noise considerations",
-      solution: "Steel frame, dormer windows, sound insulation",
-      timeline: "10 weeks",
-      result: "Added value: £28,000 - no need to move house"
-    },
-    {
-      title: "Bedhampton Home Office",
-      description: "Garden office for working parent",
-      challenge: "Planning permission, garden access, family budget",
-      solution: "Permitted development design, modular construction",
-      timeline: "4 weeks",
-      result: "'Perfect work-life balance solution'"
-    }
-  ];
 
   const testimonials = [
     {
@@ -273,11 +241,6 @@ const HavantCarpentry = () => {
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-4">
-                    <div className="text-center">
-                      <Badge variant="outline" className="border-golden text-golden px-4 py-1">
-                        {service.priceRange}
-                      </Badge>
-                    </div>
                     
                     {service.areas && (
                       <div className="space-y-2">
@@ -481,50 +444,6 @@ const HavantCarpentry = () => {
               <Button variant="outline" asChild>
                 <Link to="/services">View All Services</Link>
               </Button>
-            </div>
-          </div>
-        </section>
-
-        {/* Project Showcase */}
-        <section className="py-20 bg-secondary/5">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                Recent Havant Family Home Transformations
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                Real projects for real families in your local area
-              </p>
-            </div>
-            
-            <div className="grid lg:grid-cols-3 gap-8">
-              {projects.map((project, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <CardTitle className="text-xl text-golden">{project.title}</CardTitle>
-                    <CardDescription className="text-base">{project.description}</CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div>
-                      <p className="font-semibold text-sm mb-1">Challenge:</p>
-                      <p className="text-sm text-muted-foreground">{project.challenge}</p>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-sm mb-1">Solution:</p>
-                      <p className="text-sm text-muted-foreground">{project.solution}</p>
-                    </div>
-                    <div className="flex justify-between items-center pt-2">
-                      <Badge variant="outline" className="border-golden text-golden">
-                        <Clock className="w-3 h-3 mr-1" />
-                        {project.timeline}
-                      </Badge>
-                    </div>
-                    <div className="border-t pt-3">
-                      <p className="text-sm font-medium italic text-primary">{project.result}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
             </div>
           </div>
         </section>
