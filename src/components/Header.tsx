@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import jpwLogo from "@/assets/jpw-logo.png";
 
@@ -43,15 +42,12 @@ const Header = () => {
               Blog
             </Link>
           </nav>
-          <Button 
-            variant="ghost" 
+          <Button
+            variant="ghost"
             className="text-primary hover:text-golden font-medium"
             onClick={handleContactClick}
           >
             Contact
-          </Button>
-          <Button variant="ghost" size="icon" className="md:hidden">
-            <Menu className="h-5 w-5" />
           </Button>
         </div>
       </div>
