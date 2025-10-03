@@ -8,7 +8,7 @@ import fencingProject from "@/assets/fencing.webp";
 const HeroSection = () => {
   return (
     <section className="w-full min-h-screen bg-background">
-      <div className="max-w-7xl mx-auto px-8 py-16">
+      <div className="max-w-7xl mx-auto px-8 py-8 md:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left Content */}
           <div className="space-y-8">
@@ -40,16 +40,6 @@ const HeroSection = () => {
                 <div className="text-3xl font-bold text-primary">JPW</div>
                 <div className="text-sm text-medium-gray">Quality Carpentry</div>
               </div>
-            </div>
-
-            {/* Service Tags */}
-            <div className="flex flex-wrap gap-4">
-              <Button variant="outline" className="rounded-full">
-                custom woodwork
-              </Button>
-              <Button variant="outline" className="rounded-full">
-                furniture design
-              </Button>
             </div>
           </div>
 
