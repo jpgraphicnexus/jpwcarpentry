@@ -14,13 +14,13 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Phone, Mail, MapPin, Clock, Star, Shield, Award, CircleCheck as CheckCircle, Building, Chrome as Home, Wrench } from "lucide-react";
-import kitchenRenovation from "@/assets/kitchen-renovation.webp";
-import homeRenovation from "@/assets/home-renovation.webp";
+import kitchenRenovation from "@/assets/kitchen-renovation-project.webp";
+import homeRenovation from "@/assets/complete-renovation.webp";
 import oakStaircase from "@/assets/oak-staircase.webp";
 import flooringInstallation from "@/assets/flooring-installation.webp";
 import bespokeJoinery from "@/assets/bespoke-joinery.webp";
 import builtInStorage from "@/assets/built-in-storage.webp";
-import doorsWindows from "@/assets/doors-windows.webp";
+import doorsWindows from "@/assets/oak-doors.webp";
 
 const PortsmouthCarpentry = () => {
   const seoData = useSEO('/portsmouth-carpentry-services');

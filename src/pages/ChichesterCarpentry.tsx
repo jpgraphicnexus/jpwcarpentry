@@ -17,53 +17,37 @@ const ChichesterCarpentry = () => {
   
   const services = [
     {
-      title: "Conservation Area Carpentry",
-      description: "Sympathetic renovations respecting Chichester's historic character",
-      speciality: "Planning permission support included",
-      areas: ["Cathedral Quarter", "Pallant", "St. Pancras"]
+      title: "Conservation Work",
+      description: "Keeping work in keeping with the great architecture of Chichester and historic value"
     },
     {
-      title: "Period Property Restoration",
-      description: "Victorian and Georgian property carpentry with authentic materials",
-      speciality: "Traditional techniques",
-      areas: ["Cathedral Quarter", "Pallant", "St. Pancras"]
+      title: "Renovating Period Properties",
+      description: "Taking care to use original materials and keeping the job authentic"
     },
     {
       title: "Bespoke Kitchen Design",
-      description: "Handcrafted kitchens for Chichester's finest homes",
-      speciality: "Traditional and contemporary fusion",
-      areas: ["Summersdale", "Fishbourne", "Cathedral Quarter"]
+      description: "Handcrafted kitchens for Chichester's finest homes"
     },
     {
-      title: "Heritage Window Restoration",
-      description: "Sash window repair and replacement in period style",
-      speciality: "Conservation Area approved",
-      areas: ["Historic properties", "Listed buildings"]
+      title: "Loft Conversions",
+      description: "Loft conversions available in the Chichester area"
     },
     {
-      title: "Listed Building Carpentry",
-      description: "Specialist work on Grade I and Grade II listed properties",
-      speciality: "Historic England guidelines",
-      areas: ["Cathedral Close", "Historic properties"]
-    },
-    {
-      title: "Luxury Home Extensions",
-      description: "Premium extensions for Chichester's executive homes",
-      speciality: "Architect collaboration",
-      areas: ["Summersdale", "Fishbourne", "Bosham"]
+      title: "Home Extensions",
+      description: "Premium extensions for Chichester homes"
     }
   ];
 
 
   const areas = [
-    { name: "Cathedral Quarter", description: "Historic city center, Cathedral Close, Canon Lane" },
-    { name: "Pallant", description: "Georgian townhouses, period properties, conservation area" },
-    { name: "St. Pancras", description: "Victorian terraces, family homes, heritage properties" },
-    { name: "Summersdale", description: "Executive homes, modern developments, luxury properties" },
-    { name: "Fishbourne", description: "Village properties, period cottages, Roman heritage area" },
-    { name: "Bosham", description: "Waterfront properties, historic village, sailing community" },
-    { name: "Westgate", description: "Residential area, mixed property types, family homes" },
-    { name: "South Downs Villages", description: "Singleton, West Dean, Charlton, rural properties" }
+    { name: "Cathedral Quarter" },
+    { name: "Pallant" },
+    { name: "St. Pancras" },
+    { name: "Summersdale" },
+    { name: "Fishbourne" },
+    { name: "Bosham" },
+    { name: "Westgate" },
+    { name: "South Downs Villages" }
   ];
 
   return (
@@ -122,21 +106,17 @@ const ChichesterCarpentry = () => {
               <div className="space-y-8">
                 <div className="space-y-4">
                   <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
-                    Chichester's Heritage Carpentry Specialists
+                    Chichester based carpentry and building specialists
                   </h1>
                   <p className="text-xl text-muted-foreground leading-relaxed">
-                    Expert craftsmen serving Chichester's historic properties and modern homes with traditional skills and contemporary standards
+                    A team of passionate, precise and professional tradesmen based in the Chichester area, carrying out a high-quality level of work to the customer's needs.
                   </p>
                 </div>
                 
                 <div className="flex flex-wrap gap-4">
                   <Badge variant="secondary" className="px-4 py-2 text-sm">
                     <Shield className="w-4 h-4 mr-2" />
-                    Cathedral City Specialists
-                  </Badge>
-                  <Badge variant="outline" className="px-4 py-2 text-sm">
-                    <Award className="w-4 h-4 mr-2" />
-                    Conservation Area Experts
+                    High Quality Craftsmen
                   </Badge>
                   <Badge variant="outline" className="px-4 py-2 text-sm">
                     <CheckCircle className="w-4 h-4 mr-2" />
@@ -148,7 +128,7 @@ const ChichesterCarpentry = () => {
                   <Button size="lg" asChild className="bg-gradient-to-r from-golden to-golden-hover text-dark-bg font-semibold px-8">
                     <Link to="/#contact-section">
                       <Phone className="w-5 h-5 mr-2" />
-                      Get Your Heritage-Compliant Quote
+                      Get Your Quote Now
                     </Link>
                   </Button>
                   <Button variant="outline" size="lg" asChild className="border-golden text-golden hover:bg-golden hover:text-dark-bg px-8">
@@ -166,12 +146,6 @@ const ChichesterCarpentry = () => {
                   alt="Expert carpenter working on heritage property in Chichester"
                   className="rounded-lg shadow-2xl w-full h-auto"
                 />
-                <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-lg shadow-lg border">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-golden">20+</div>
-                    <div className="text-sm text-muted-foreground">Years Heritage Experience</div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -182,10 +156,10 @@ const ChichesterCarpentry = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                Specialist Carpentry Services for Chichester Properties
+                Specialist Carpentry Services for Chichester
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                From Conservation Area compliance to luxury home extensions, we deliver exceptional craftsmanship for Chichester's most discerning homeowners
+                From bespoke kitchens to pitching a new hand-cut roof, JPW can cover all your carpentry and construction needs in and around the Chichester area.
               </p>
             </div>
             
@@ -200,91 +174,8 @@ const ChichesterCarpentry = () => {
                       {service.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="space-y-2">
-                      <p className="text-sm font-semibold text-primary">Speciality:</p>
-                      <p className="text-sm text-muted-foreground">{service.speciality}</p>
-                    </div>
-                    <div className="space-y-2">
-                      <p className="text-sm font-semibold text-primary">Popular in:</p>
-                      <p className="text-sm text-muted-foreground">{service.areas.join(", ")}</p>
-                    </div>
-                  </CardContent>
                 </Card>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Cross-Service Links */}
-        <section className="py-16 bg-slate-50">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Premium Services for Chichester's Historic Properties
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Our heritage expertise perfectly complements Chichester's Conservation Areas and period properties
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Link to="/services/kitchen-renovations" className="group">
-                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50 bg-white">
-                  <CardContent className="p-6 text-center">
-                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
-                      <Home className="h-6 w-6 text-golden" />
-                    </div>
-                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Heritage Kitchens</h3>
-                    <p className="text-sm text-muted-foreground">Sympathetic kitchen design for period properties</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link to="/services/home-renovations" className="group">
-                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50 bg-white">
-                  <CardContent className="p-6 text-center">
-                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
-                      <Building className="h-6 w-6 text-golden" />
-                    </div>
-                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Period Extensions</h3>
-                    <p className="text-sm text-muted-foreground">Conservation Area compliant extensions and conversions</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link to="/services/small-carpentry-jobs" className="group">
-                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50 bg-white">
-                  <CardContent className="p-6 text-center">
-                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
-                      <Wrench className="h-6 w-6 text-golden" />
-                    </div>
-                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Period Joinery</h3>
-                    <p className="text-sm text-muted-foreground">Traditional carpentry techniques for historic properties</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link to="/services/general-building-works" className="group">
-                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50 bg-white">
-                  <CardContent className="p-6 text-center">
-                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
-                      <Award className="h-6 w-6 text-golden" />
-                    </div>
-                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Heritage Restoration</h3>
-                    <p className="text-sm text-muted-foreground">Listed building restoration and conservation work</p>
-                  </CardContent>
-                </Card>
-              </Link>
-            </div>
-
-            <div className="text-center mt-8">
-              <p className="text-muted-foreground mb-4">
-                Our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">heritage kitchen services</Link> are specially designed for Chichester's Conservation Areas, while our <Link to="/services/home-renovations" className="text-golden hover:underline">period extension expertise</Link> ensures compliance with historic building requirements.
-              </p>
-              <Button variant="outline" asChild>
-                <Link to="/services">View All Services</Link>
-              </Button>
             </div>
           </div>
         </section>
@@ -294,147 +185,21 @@ const ChichesterCarpentry = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                Serving Historic Chichester and Surrounding Villages
+                Serving Chichester and Surrounding Villages
               </h2>
-              <p className="text-xl text-muted-foreground">
-                Comprehensive carpentry services across West Sussex's most prestigious areas
-              </p>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {areas.map((area, index) => (
-                <Card key={index} className="hover:shadow-md transition-shadow">
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-lg flex items-center">
+                <Card key={index} className="hover:shadow-md transition-shadow text-center">
+                  <CardHeader>
+                    <CardTitle className="text-lg flex items-center justify-center">
                       <MapPin className="w-5 h-5 mr-2 text-golden" />
                       {area.name}
                     </CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground">{area.description}</p>
-                  </CardContent>
                 </Card>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Why Choose JPW */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                Why Chichester's Discerning Homeowners Choose JPW
-              </h2>
-            </div>
-            
-            <div className="grid lg:grid-cols-2 gap-12">
-              <div className="space-y-8">
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold text-golden">Heritage Expertise</h3>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />20+ years working with Chichester's historic properties</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Deep understanding of Conservation Area requirements</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Established relationships with Chichester District Council planning</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Traditional joinery techniques combined with modern standards</li>
-                  </ul>
-                </div>
-                
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold text-golden">Premium Quality</h3>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Only the finest materials sourced from specialist suppliers</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Time-served craftsmen with heritage property experience</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Attention to detail that matches Chichester's high standards</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Bespoke solutions for unique period property challenges</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div className="space-y-8">
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold text-golden">Local Knowledge</h3>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Born and raised in West Sussex - understand local architecture</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />South Downs National Park planning expertise</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Cathedral city parking and access solutions</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Network of trusted local suppliers and specialists</li>
-                  </ul>
-                </div>
-                
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold text-golden">Comprehensive Service</h3>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Full project management from design to completion</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Planning permission and Building Regulations support</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Listed Building Consent applications</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Insurance work and period property surveys</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-        {/* Conservation & Planning Section */}
-        <section className="py-20 bg-secondary/5">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                Chichester Conservation Area & Planning Expertise
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                Navigate complex heritage requirements with confidence
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 items-center">
-              <Card className="text-center p-6">
-                <CardContent className="space-y-2">
-                  <CheckCircle className="w-8 h-8 text-golden mx-auto" />
-                  <h3 className="font-semibold">Chichester District Council</h3>
-                  <p className="text-sm text-muted-foreground">Established planning relationships</p>
-                </CardContent>
-              </Card>
-              
-              <Card className="text-center p-6">
-                <CardContent className="space-y-2">
-                  <Shield className="w-8 h-8 text-golden mx-auto" />
-                  <h3 className="font-semibold">Conservation Areas</h3>
-                  <p className="text-sm text-muted-foreground">Cathedral Quarter, Pallant, St. Pancras expertise</p>
-                </CardContent>
-              </Card>
-              
-              <Card className="text-center p-6">
-                <CardContent className="space-y-2">
-                  <Award className="w-8 h-8 text-golden mx-auto" />
-                  <h3 className="font-semibold">Listed Buildings</h3>
-                  <p className="text-sm text-muted-foreground">Grade I, Grade II, and Grade II* experience</p>
-                </CardContent>
-              </Card>
-              
-              <Card className="text-center p-6">
-                <CardContent className="space-y-2">
-                  <MapPin className="w-8 h-8 text-golden mx-auto" />
-                  <h3 className="font-semibold">South Downs National Park</h3>
-                  <p className="text-sm text-muted-foreground">Landscape and heritage considerations</p>
-                </CardContent>
-              </Card>
-              
-              <Card className="text-center p-6">
-                <CardContent className="space-y-2">
-                  <CheckCircle className="w-8 h-8 text-golden mx-auto" />
-                  <h3 className="font-semibold">Historic England</h3>
-                  <p className="text-sm text-muted-foreground">Compliance with national heritage guidelines</p>
-                </CardContent>
-              </Card>
-            </div>
-            
-            <div className="text-center mt-12">
-              <Badge variant="outline" className="border-golden text-golden px-6 py-3 text-lg">
-                98% planning approval rate for Chichester applications
-              </Badge>
             </div>
           </div>
         </section>
@@ -472,10 +237,6 @@ const ChichesterCarpentry = () => {
                 {
                   question: "What areas around Chichester do you serve?",
                   answer: "We serve Chichester city center, Goodwood, Fishbourne, Bosham, West Wittering, and surrounding West Sussex villages within 15 miles of the cathedral."
-                },
-                {
-                  question: "Do you have experience with period property regulations?",
-                  answer: "Yes, we have over 15 years of experience working with period properties in Chichester, including Tudor, Georgian, and Victorian buildings requiring special conservation techniques."
                 }
               ].map((faq, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow">
@@ -652,14 +413,6 @@ const ChichesterCarpentry = () => {
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "We serve Chichester city center, Goodwood, Fishbourne, Bosham, West Wittering, and surrounding West Sussex villages within 15 miles of the cathedral."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Do you have experience with period property regulations?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, we have over 15 years of experience working with period properties in Chichester, including Tudor, Georgian, and Victorian buildings requiring special conservation techniques."
               }
             }
           ]

@@ -146,14 +146,6 @@ const HavantCarpentry = () => {
                 </div>
                 
                 <div className="flex flex-wrap gap-4">
-                  <Badge variant="secondary" className="px-4 py-2 text-sm">
-                    <Heart className="w-4 h-4 mr-2" />
-                    500+ Happy Families
-                  </Badge>
-                  <Badge variant="outline" className="px-4 py-2 text-sm">
-                    <Shield className="w-4 h-4 mr-2" />
-                    15+ Years in Havant
-                  </Badge>
                   <Badge variant="outline" className="px-4 py-2 text-sm">
                     <PoundSterling className="w-4 h-4 mr-2" />
                     Fixed Price Guarantee
@@ -182,12 +174,6 @@ const HavantCarpentry = () => {
                   alt="Family home renovation project in Havant by JPW Carpentry"
                   className="rounded-lg shadow-2xl w-full h-auto"
                 />
-                <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-lg shadow-lg border">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-golden">500+</div>
-                    <div className="text-sm text-muted-foreground">Happy Families Served</div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -284,149 +270,6 @@ const HavantCarpentry = () => {
             </div>
           </div>
         </section>
-
-        {/* Why Choose JPW */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                Why Havant Families Trust JPW Carpentry
-              </h2>
-            </div>
-            
-            <div className="grid lg:grid-cols-2 gap-12">
-              <div className="space-y-8">
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold text-golden flex items-center">
-                    <Heart className="w-6 h-6 mr-3" />
-                    Family Understanding
-                  </h3>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />We're a family business serving family homes</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Understand the challenges of living with children during renovations</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Flexible scheduling around school runs and family life</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Child-safe work practices and secure site management</li>
-                  </ul>
-                </div>
-                
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold text-golden flex items-center">
-                    <PoundSterling className="w-6 h-6 mr-3" />
-                    Honest Pricing
-                  </h3>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />No-surprise fixed pricing with detailed breakdowns</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Family budget-friendly payment plans available</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Value engineering to maximize your investment</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />10% discount for multiple room projects</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div className="space-y-8">
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold text-golden flex items-center">
-                    <Shield className="w-6 h-6 mr-3" />
-                    Reliable Service
-                  </h3>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Turn up when we say we will - respect for busy families</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Clean, tidy work practices - minimal disruption</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Direct communication with project manager</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Emergency callout service for urgent repairs</li>
-                  </ul>
-                </div>
-                
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold text-golden flex items-center">
-                    <Users className="w-6 h-6 mr-3" />
-                    Local Commitment
-                  </h3>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />15+ years serving Havant and surrounding areas</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Children attend local schools - we're part of the community</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Supporting local suppliers and tradespeople</li>
-                    <li className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-golden flex-shrink-0 mt-0.5" />Long-term relationships with Havant families</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Cross-Service Links */}
-        <section className="py-16 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Family-Focused Services for Havant Homes
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Our services are designed around busy family life, perfect for Havant's family-oriented communities
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Link to="/services/kitchen-renovations" className="group">
-                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50">
-                  <CardContent className="p-6 text-center">
-                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
-                      <Home className="h-6 w-6 text-golden" />
-                    </div>
-                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Family Kitchens</h3>
-                    <p className="text-sm text-muted-foreground">Practical kitchen designs for busy family life</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link to="/services/home-renovations" className="group">
-                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50">
-                  <CardContent className="p-6 text-center">
-                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
-                      <Building className="h-6 w-6 text-golden" />
-                    </div>
-                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Loft Conversions</h3>
-                    <p className="text-sm text-muted-foreground">Add bedrooms without moving - perfect for growing families</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link to="/services/small-carpentry-jobs" className="group">
-                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50">
-                  <CardContent className="p-6 text-center">
-                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
-                      <Users className="h-6 w-6 text-golden" />
-                    </div>
-                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Children's Storage</h3>
-                    <p className="text-sm text-muted-foreground">Built-in wardrobes and toy storage solutions</p>
-                  </CardContent>
-                </Card>
-              </Link>
-
-              <Link to="/services/general-building-works" className="group">
-                <Card className="hover:shadow-lg transition-all duration-300 group-hover:border-golden/50">
-                  <CardContent className="p-6 text-center">
-                    <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-golden/20 transition-colors">
-                      <Home className="h-6 w-6 text-golden" />
-                    </div>
-                    <h3 className="font-semibold text-primary mb-2 group-hover:text-golden transition-colors">Home Offices</h3>
-                    <p className="text-sm text-muted-foreground">Create workspace for hybrid working parents</p>
-                  </CardContent>
-                </Card>
-              </Link>
-            </div>
-
-            <div className="text-center mt-8">
-              <p className="text-muted-foreground mb-4">
-                Our <Link to="/services/kitchen-renovations" className="text-golden hover:underline">family kitchen services</Link> are perfect for Havant's growing families, while our <Link to="/services/home-renovations" className="text-golden hover:underline">home extension expertise</Link> helps families expand without the stress of moving house.
-              </p>
-              <Button variant="outline" asChild>
-                <Link to="/services">View All Services</Link>
-              </Button>
-            </div>
-          </div>
-        </section>
-
 
         {/* Family-Friendly Features */}
         <section className="py-20 bg-secondary/5">
