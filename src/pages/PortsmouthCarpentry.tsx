@@ -18,7 +18,7 @@ import kitchenRenovation from "@/assets/kitchen-renovation-project.webp";
 import homeRenovation from "@/assets/complete-renovation.webp";
 import oakStaircase from "@/assets/oak-staircase.webp";
 import flooringInstallation from "@/assets/flooring-project.jpg";
-import bespokeJoinery from "@/assets/bespoke-joinery.webp";
+import bespokeJoinery from "@/assets/bespoke-joinery-project.jpg";
 import builtInStorage from "@/assets/built-in-storage-project.jpg";
 import doorsWindows from "@/assets/oak-doors.webp";
 
