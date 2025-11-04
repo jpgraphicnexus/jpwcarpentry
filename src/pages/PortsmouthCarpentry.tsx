@@ -17,7 +17,7 @@ import { Phone, Mail, MapPin, Clock, Star, Shield, Award, CircleCheck as CheckCi
 import kitchenRenovation from "@/assets/kitchen-renovation-project.webp";
 import homeRenovation from "@/assets/complete-renovation.webp";
 import oakStaircase from "@/assets/oak-staircase.webp";
-import flooringInstallation from "@/assets/flooring-installation.webp";
+import flooringInstallation from "@/assets/flooring-project.jpg";
 import bespokeJoinery from "@/assets/bespoke-joinery.webp";
 import builtInStorage from "@/assets/built-in-storage.webp";
 import doorsWindows from "@/assets/oak-doors.webp";
