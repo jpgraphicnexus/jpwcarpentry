@@ -28,7 +28,7 @@ const ContactSection = () => {
     };
 
     try {
-      const response = await fetch('https://jacks-n8n.onrender.com/webhook/13bc896d-f1d3-4250-9d36-9c005372d12f', {
+      const response = await fetch('https://jacks-n8n.graphicnexus.uk/webhook/13bc896d-f1d3-4250-9d36-9c005372d12f', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
